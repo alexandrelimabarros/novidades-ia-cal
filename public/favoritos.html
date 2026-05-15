@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Favoritos · Novidades IA · CAL</title>
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link active" href="/favoritos.html">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <section class="fav-hero">
+    <div class="kicker">Seus favoritos</div>
+    <h1>Matérias para voltar.</h1>
+    <p>Tudo o que você marcou com estrela nas edições. Os favoritos ficam salvos só neste navegador (localStorage) — privacidade total, mas se trocar de máquina ou limpar dados, o histórico vai junto.</p>
+  </section>
+
+  <div class="fav-empty" id="fav-empty" style="display:none">Nenhuma matéria favoritada ainda. Abra uma edição e clique na estrela ao lado de uma matéria.</div>
+
+  <div class="fav-list" id="fav-list"></div>
+
+  <footer class="foot">
+    <h4>Dica</h4>
+    <p>Para sincronizar favoritos entre dispositivos, exporte com o console: <span class="mono">copy(localStorage.getItem('cal:favs'))</span> e cole em outro navegador com <span class="mono">localStorage.setItem('cal:favs', '...')</span>.</p>
+  </footer>
+
+  <div class="signoff">— Novidades IA · CAL —</div>
+
+</div>
+
+<script src="/assets/app.js"></script>
+</body>
+</html>

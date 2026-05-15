@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01",
+    "shortTitle": "Maio/2026",
+    "title": "Boletim CAL Nº 01",
+    "date": "15.05.2026",
+    "desc": "16 movimentos para automatizar conteúdo, atendimento, gestão e produto digital.",
+    "url": "/edicoes/01-maio-2026.html",
+    "upcoming": false
+  },
+  {
+    "id": "02",
+    "shortTitle": "Jun/2026",
+    "title": "Boletim CAL Nº 02 (em preparo)",
+    "date": "Jun/2026",
+    "desc": "Tema previsto: LGPD aplicada na clínica, dados em saúde e ferramentas científicas para o agente do CLO.",
+    "url": "#",
+    "upcoming": true
+  }
+]

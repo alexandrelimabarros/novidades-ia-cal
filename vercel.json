@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/edicao/01", "destination": "/edicoes/01-maio-2026.html", "permanent": false },
+    { "source": "/ultima", "destination": "/edicoes/01-maio-2026.html", "permanent": false }
+  ]
+}

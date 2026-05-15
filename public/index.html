@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Novidades IA · CAL</title>
+<meta name="description" content="Boletim pessoal sobre IA, automação e estratégia para a Clínica Alexandre Lima." />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link" href="/favoritos.html">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <section class="hero">
+    <div class="kicker">Boletim pessoal · Dr. Alexandre Lima</div>
+    <h1>Novidades de IA e automação <em>para a Clínica</em>.</h1>
+    <p class="lede">Curadoria mensal alinhada ao Conselho Administrativo CAL e ao Pacto de Visão 2029–2031. Tudo numa página, com favoritos para você voltar nas matérias que importaram.</p>
+  </section>
+
+  <section class="editions-grid" id="editions-grid">
+    <!-- Renderizado via JS para refletir edicoes.json sempre atualizado -->
+  </section>
+
+  <footer class="foot">
+    <h4>Sobre o boletim</h4>
+    <p>Edição pessoal não-pública, preparada para Dr. Alexandre Lima · Clínica Alexandre Lima · Belo Horizonte. Curadoria com base nos documentos do Conselho Administrativo CAL e no Pacto de Visão 2029–2031 em construção.</p>
+    <p>Código-fonte: <a href="https://github.com/alexandrelimabarros/novidades-ia-cal">github.com/alexandrelimabarros/novidades-ia-cal</a>. Próxima edição prevista: junho/2026.</p>
+  </footer>
+
+  <div class="signoff">— Novidades IA · CAL —</div>
+
+</div>
+
+<script src="/assets/app.js"></script>
+<script>
+  // Renderiza grid a partir do manifesto
+  fetch("/edicoes.json", {cache:"no-store"}).then(r=>r.json()).then(list => {
+    const grid = document.getElementById("editions-grid");
+    grid.innerHTML = list.map(e => `
+      <a class="edition-card ${e.upcoming?'upcoming':''}" href="${e.url}">
+        <div class="date">${e.date}</div>
+        <div class="title">${e.title}</div>
+        <div class="desc">${e.desc}</div>
+        <div class="num">Edição Nº ${e.id}</div>
+      </a>
+    `).join("");
+  });
+</script>
+</body>
+</html>
