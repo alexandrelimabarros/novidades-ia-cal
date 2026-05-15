@@ -4,6 +4,10 @@ Boletim pessoal mensal do Dr. Alexandre Lima sobre IA, automação e estratégia
 
 **Online:** https://novidades-ia-cal.vercel.app
 
+## Curadoria
+
+Diretrizes de tom e mix de cada edição em [`CURADORIA.md`](./CURADORIA.md). Resumo: 11 matérias alinhadas ao contexto CAL + 5 matérias "fora da caixa" (vida pessoal, família, treino, aprendizado, wildcard).
+
 ## Estrutura
 
 ```
