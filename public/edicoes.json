@@ -1,7 +1,16 @@
 [
   {
+    "id": "02",
+    "shortTitle": "Mai–Jun/2026",
+    "title": "Boletim CAL Nº 02",
+    "date": "16.05.2026",
+    "desc": "LGPD, prontuário inteligente, distribuição além do Meta — e cinco fora da caixa: corrida, francês, filhas, IA local.",
+    "url": "/edicoes/02-junho-2026.html",
+    "upcoming": false
+  },
+  {
     "id": "01",
-    "shortTitle": "Maio/2026",
+    "shortTitle": "Mai/2026",
     "title": "Boletim CAL Nº 01",
     "date": "15.05.2026",
     "desc": "16 movimentos para automatizar conteúdo, atendimento, gestão e produto digital.",
@@ -9,11 +18,11 @@
     "upcoming": false
   },
   {
-    "id": "02",
+    "id": "03",
     "shortTitle": "Jun/2026",
-    "title": "Boletim CAL Nº 02 (em preparo)",
+    "title": "Boletim CAL Nº 03 (em preparo)",
     "date": "Jun/2026",
-    "desc": "Tema previsto: LGPD aplicada na clínica, dados em saúde e ferramentas científicas para o agente do CLO.",
+    "desc": "Tema possível: agente financeiro CFO em produção, geração ética de imagem médica, e mais cinco fora da caixa.",
     "url": "#",
     "upcoming": true
   }

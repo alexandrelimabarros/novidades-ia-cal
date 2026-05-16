@@ -4,6 +4,7 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/edicao/01", "destination": "/edicoes/01-maio-2026.html", "permanent": false },
-    { "source": "/ultima", "destination": "/edicoes/01-maio-2026.html", "permanent": false }
+    { "source": "/edicao/02", "destination": "/edicoes/02-junho-2026.html", "permanent": false },
+    { "source": "/ultima", "destination": "/edicoes/02-junho-2026.html", "permanent": false }
   ]
 }

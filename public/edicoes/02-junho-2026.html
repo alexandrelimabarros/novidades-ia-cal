@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Edição 02 · Maio/Jun 2026 · Novidades IA · CAL</title>
+<meta name="description" content="LGPD, prontuário inteligente, distribuição além do Meta — e cinco matérias fora da caixa." />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link" href="/favoritos">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="cover">
+    <div class="top"><span>CAL · Conselho Administrativo</span><span>Vol. 02 · Mai–Jun/2026</span></div>
+    <h1>Os dados, <em>a equipe</em> e a vida.</h1>
+    <p class="lede">Dezesseis matérias. Onze para a Clínica — LGPD, prontuário, equipe, distribuição além do Meta. Cinco fora da caixa: corrida, francês, filhas, IA local, captura passiva do dia.</p>
+    <div class="meta">
+      <span>Edição pessoal · Alexandre Lima</span>
+      <span>BH · 16.05.2026</span>
+    </div>
+  </header>
+
+  <div class="editorial">
+    <div class="kicker">Editorial</div>
+    <h2>Quem te avisa que a IA leu sua LGPD errado, é você.</h2>
+    <p>A edição 01 te deu ferramentas para escalar conteúdo, atendimento e produto. A 02 cuida das fundações que ninguém percebe quando estão funcionando — e que custam caro quando falham: tratamento de dado de paciente, ata viva de reunião do Conselho, prontuário decente, e onde plantar audiência fora do Meta antes do próximo bug do Instagram quebrar três dias de DMs.</p>
+    <p>Da metade pra frente, cumpro a regra nova de curadoria: cinco matérias que <strong>fogem do escopo CAL</strong> direto. Treino para maratona, francês, IA com Beatriz e Letícia, captura passiva do seu dia, e Llama rodando no seu Mac sem precisar da nuvem. O ponto não é ROI direto — é alargar a superfície de exposição. Se uma dessas cinco grudar, ótimo. Se nenhuma grudar, o boletim já registrou onde você não quer ir.</p>
+    <div class="pull">"Tudo o que você grava sem combinar com o paciente é prova futura contra você." — princípio que orienta esta edição.</div>
+    <p>As <strong>matérias 1, 4, 5, 9 e 11</strong> são as de maior alavanca neste mês. A matéria <strong>16</strong> (Ollama local) é a que mais muda sua relação de longo prazo com a tecnologia, embora não te dê retorno em 30 dias. Estrelas continuam funcionando — favoritos atravessam edições.</p>
+  </div>
+
+  <nav class="toc">
+    <h3>Sumário desta edição</h3>
+    <ol>
+      <li><a href="#i1">DPO virtual — LGPD com agente CLO</a></li>
+      <li><a href="#i2">Anonimização antes de subir para IA</a></li>
+      <li><a href="#i3">CFM 2336 + Código de Ética — Validador automático</a></li>
+      <li><a href="#i4">PubMed e Scielo via MCP — Pesquisador Científico</a></li>
+      <li><a href="#i5">Whisper + diarização — transcrição de consulta</a></li>
+      <li><a href="#i6">Skill própria de prontuário HTML padrão CAL</a></li>
+      <li><a href="#i7">Granola / Otter — atas vivas do Conselho</a></li>
+      <li><a href="#i8">Checklists Gawande digitais — POPs com revisão automática</a></li>
+      <li><a href="#i9">Google AI Overviews — SEO virou GEO</a></li>
+      <li><a href="#i10">Bluesky e Threads — segunda casa fora do Meta</a></li>
+      <li><a href="#i11">Comunidade Telegram/Discord como complemento Club</a></li>
+      <li><a href="#i12">Bee, Granola Cleft, Limitless — captura passiva do dia</a></li>
+      <li><a href="#i13">Khanmigo e Brisk — IA tutora para Beatriz e Letícia</a></li>
+      <li><a href="#i14">Runna + Garmin Connect+ — coach IA para maratona</a></li>
+      <li><a href="#i15">ChatGPT Voice / Pi / Sesame — fluência em francês</a></li>
+      <li><a href="#i16">Ollama + LM Studio — IA local no seu Mac</a></li>
+    </ol>
+  </nav>
+
+  <section class="chapter">
+    <span class="badge">Seção I</span>
+    <h2>Dados, LGPD e ética</h2>
+    <div class="sub">A camada chata. A que evita processo, multa e manchete.</div>
+
+    <article class="item" id="i1" data-aid="02-01">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 01 · Alto retorno</div>
+        <span class="tag">LGPD</span><span class="tag">CLO</span><span class="tag">Claude</span>
+        <h3>DPO virtual: o agente CLO ganhando teclado</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você tem a cadeira CLO no Conselho com Adriana Maluf, Roberto d'Avila e o framework regulatório CFM+CEM+LGPD. Falta uma camada operacional: um sub-agente que mantém o registro de tratamento de dados da clínica vivo, revisa contratos de fornecedor, e responde requisição de titular (acesso, exclusão, portabilidade) em até 15 dias úteis como manda a lei.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Inventário automático: o agente lê suas planilhas, identifica onde estão CPFs e fotos clínicas, e gera o ROPA (Record of Processing Activities) que a ANPD pede em fiscalização.</li>
+        <li>Avaliação de impacto (DPIA) sempre que entrar fornecedor novo — Vizard, HeyGen, ManyChat. Cada um vira uma página padronizada.</li>
+        <li>Pacientes Club ganham um portal simples (Google Form + script) para exercer direitos. Resposta-padrão é redigida pelo agente, você só assina.</li>
+      </ul>
+      <div class="box"><strong>Realidade</strong> · LGPD com dado clínico é categoria especial (art. 11). Multa pode chegar a 2% do faturamento, limitada a R$ 50 milhões por infração. Para a CAL a probabilidade de fiscalização é baixa, mas a multa numa única denúncia de paciente é devastadora.</div>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Criar skill <span class="mono">dpo_cal.md</span> com texto da LGPD, CFM 2336, CEM como contexto fixo.</li>
+        <li>Template ROPA em planilha. Agente roda mensalmente, devolve diffs.</li>
+        <li>Política de privacidade pública revisada — gerada e mantida pelo agente.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.gov.br/anpd/pt-br">ANPD</a>
+        <a href="https://www.youtube.com/results?search_query=lgpd+cl%C3%ADnica+m%C3%A9dica+ropa+tutorial+portugu%C3%AAs">Tutoriais em PT</a>
+      </div>
+    </article>
+
+    <article class="item" id="i2" data-aid="02-02">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 02</div>
+        <span class="tag">Anonimização</span><span class="tag">Pré-processamento</span>
+        <h3>Anonimize antes de subir — toda vez, sem exceção</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você já joga áudio de consulta no Whisper, sobe foto antes/depois no Vizard, manda transcrição para o Claude. Cada upload de dado pessoal sensível para nuvem americana sem anonimização é uma transferência internacional de dado de saúde sem base legal explícita. Pré-processar antes resolve.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Script local que roda <span class="mono">presidio</span> (Microsoft, open-source) sobre transcrições e troca nomes, CPF, endereços por tokens reversíveis. Você guarda o mapa local, a nuvem só vê <span class="mono">[PACIENTE_42]</span>.</li>
+        <li>Para fotos: blur automático de tatuagens, sinais distintivos, jóias, plano de fundo. <span class="mono">presidio-image-redactor</span> ou solução custom com YOLO.</li>
+        <li>Vira pré-requisito do fluxo n8n (matéria 8 da edição 01): nó "anonimizar" antes de qualquer envio para IA externa.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Container Docker local com Presidio. Custo: zero. Roda offline.</li>
+        <li>Treinar regex específico para a CAL: prontuários, nomes recorrentes de equipe, padrões de telefone BH.</li>
+        <li>Auditoria: log de cada anonimização, retenção de 5 anos.</li>
+      </ul>
+      <div class="links">
+        <a href="https://microsoft.github.io/presidio/">Presidio (Microsoft)</a>
+        <a href="https://www.youtube.com/results?search_query=presidio+anonimiza%C3%A7%C3%A3o+lgpd+tutorial+portugu%C3%AAs">Tutoriais em PT</a>
+      </div>
+    </article>
+
+    <article class="item" id="i3" data-aid="02-03">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 03</div>
+        <span class="tag">CFM 2336</span><span class="tag">CEM</span><span class="tag">Validador</span>
+        <h3>CFM 2336 + Código de Ética como guardrail antes do publicar</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Resolução CFM 2.336/2023 ainda é a vigente sobre publicidade médica e proíbe antes/depois sem consentimento específico, garantia de resultado, equipamento como protagonista, autoexposição que erotize. Em vez de você lembrar, um agente Validador lê todo Reel, story, post antes de ir ao ar e devolve um <em>laudo</em> em três linhas: PODE / TIRE ISTO / NÃO PUBLIQUE.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Vira a chancela final do fluxo de conteúdo da matéria 6 da edição 01. Custa ~2 segundos por peça.</li>
+        <li>Pega erros típicos: foto antes/depois sem disclaimer, depoimento de paciente sem consentimento expresso, promessa de resultado.</li>
+        <li>Treinar com seus posts antigos: peça que classifique 200 posts já publicados. Devolve relatório do que hoje violaria a 2336 — você apaga ou ajusta.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Skill Claude Code <span class="mono">validador_publicidade.md</span> com texto integral da Resolução + CEM como contexto fixo.</li>
+        <li>Inputs: texto da peça, presença de imagem antes/depois (boolean), origem do depoimento.</li>
+        <li>Output: PODE/AJUSTE/VETO + justificativa citando artigo específico.</li>
+      </ul>
+      <div class="links">
+        <a href="https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2023/2336">CFM 2336 íntegra</a>
+        <a href="https://www.youtube.com/results?search_query=cfm+publicidade+m%C3%A9dica+2336+resumo">Tutoriais em PT</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção II</span>
+    <h2>Pesquisa científica e prontuário</h2>
+    <div class="sub">A produção intelectual real do médico — não o reels.</div>
+
+    <article class="item" id="i4" data-aid="02-04">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 04 · Alto retorno</div>
+        <span class="tag">PubMed</span><span class="tag">MCP</span><span class="tag">Scielo</span>
+        <h3>Pesquisador Científico via MCP — fim do copia-e-cola</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Em 2026 existem MCPs maduros para PubMed (NCBI E-utilities) e Scielo (search + full-text quando aberto). O Claude para de "achar" coisas científicas e passa a citar PMID com link real. O seu agente Pesquisador Científico da Camada 4 sai do papel.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Antes de gravar vídeo, agente devolve 5 papers dos últimos 24 meses sobre o tema, em ordem de impacto, com 2 frases-chave cada.</li>
+        <li>Roteiro YouTube com citações reais checáveis. Eleva nível percebido do canal contra o derma genérico do Insta.</li>
+        <li>Contra-argumento automático: para cada afirmação, agente busca paper que <em>contradiz</em>. Treina humildade científica e protege de manchete vazia.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Servidores MCP públicos: procurar "pubmed mcp server" no diretório Smithery. API NCBI é gratuita até 10 req/s com chave.</li>
+        <li>Para Scielo: scrape leve via Crossref API + fallback HTTP. Não tem MCP maduro ainda — gap real, oportunidade de você ter o seu.</li>
+        <li>Workflow: skill devolve markdown estruturado com DOI + PMID + abstract + 1 frase do método. Você decide o que vira roteiro.</li>
+      </ul>
+      <div class="links">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a>
+        <a href="https://www.scielo.br/">Scielo</a>
+        <a href="https://smithery.ai/">Smithery (diretório MCP)</a>
+        <a href="https://www.youtube.com/results?search_query=pubmed+mcp+claude+tutorial">Tutoriais</a>
+      </div>
+    </article>
+
+    <article class="item" id="i5" data-aid="02-05">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 05 · Alto retorno</div>
+        <span class="tag">Whisper</span><span class="tag">Diarização</span><span class="tag">Prontuário</span>
+        <h3>Transcrição de consulta com separação de falas — Whisper v3 + pyannote</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Whisper Large v3 transcreve PT-BR clínico com taxa de erro &lt; 6% (incluindo termos derma). Combinado com <span class="mono">pyannote.audio</span> ou <span class="mono">WhisperX</span>, separa quem falou cada trecho — vira matéria-prima estruturada para o prontuário automático da matéria 6.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Consulta vira transcrição estruturada em 3 minutos. Você revisa e o prontuário sai pronto, mantendo seu padrão HTML.</li>
+        <li>Anamnese ditada vira texto sem tirar olho do paciente. Maior valor percebido na consulta sem perder rigor.</li>
+        <li>Treino de equipe: as biomédica/esteticista também ditam, padrão CAL preservado por geração estruturada (matéria 6).</li>
+      </ul>
+      <div class="box"><strong>Consentimento</strong> · gravar consulta exige consentimento expresso e específico do paciente (não basta o termo geral). Modelo a desenvolver com o agente CLO da matéria 1. Sem isso, prova contra você.</div>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Rodar Whisper Large v3 localmente no seu Mac M-series — sem nuvem, anonimização garantida.</li>
+        <li><span class="mono">WhisperX</span> em um único comando dá transcrição + timestamps + diarização.</li>
+        <li>Custo: zero (local) ou ~US$0,006 por minuto via Groq/Deepgram se preferir cloud com BAA.</li>
+      </ul>
+      <div class="links">
+        <a href="https://github.com/m-bain/whisperX">WhisperX</a>
+        <a href="https://github.com/pyannote/pyannote-audio">pyannote.audio</a>
+        <a href="https://www.youtube.com/results?search_query=whisperx+transcri%C3%A7%C3%A3o+consulta+m%C3%A9dica+tutorial">Tutoriais</a>
+      </div>
+    </article>
+
+    <article class="item" id="i6" data-aid="02-06">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 06</div>
+        <span class="tag">Prontuário</span><span class="tag">Skill</span>
+        <h3>Sua skill de prontuário HTML virando padrão da clínica</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você já tem o padrão de prontuário (HTML, anamnese + propedêutica, sem emojis, sem inventar dado, omitir seções não mencionadas). Falta empacotar como skill e instalar para Flávia, biomédica e estagiário usarem. Entrada: transcrição da matéria 5. Saída: prontuário pronto no seu padrão.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Padronização entre profissionais — todo prontuário da CAL sai igual, indepedente de quem digitou.</li>
+        <li>Auditoria fácil em caso de processo: estrutura previsível, campos sempre nos mesmos lugares.</li>
+        <li>Integração: prontuário pronto vira arquivo na pasta Drive do paciente (com ID anonimizado se for backup nuvem).</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Skill <span class="mono">prontuario-cal</span> na sua prateleira <span class="mono">~/Documents/Claude/SkillsBank/</span>, symlink instalada nas máquinas da equipe.</li>
+        <li>Atualiza só na prateleira, todos pegam.</li>
+        <li>Input padrão: transcrição + tipo de consulta (primeira, retorno, procedimento). Output: HTML pronto.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.youtube.com/results?search_query=claude+code+skill+tutorial+portugu%C3%AAs">Tutoriais Claude Skills</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção III</span>
+    <h2>Equipe, atas e processos</h2>
+    <div class="sub">O COO em modo de execução real.</div>
+
+    <article class="item" id="i7" data-aid="02-07">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 07</div>
+        <span class="tag">Granola</span><span class="tag">Otter</span><span class="tag">Atas</span>
+        <h3>Atas vivas — o Agente Secretário fora do papel</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Granola e Otter rodam silenciosos durante reunião e devolvem ata estruturada com decisões, ações, responsáveis e prazos — sem "tape recorder" inibindo a conversa. Para o Conselho da CAL é o agente Secretário deixando de ser teoria.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Reunião mensal você + Flávia: sai ata em 5 minutos, com action items separados por pessoa.</li>
+        <li>Sessões 1, 2, 3 do Pacto de Visão (diagnóstico, futuro, trade-offs) já saem documentadas — direto para a pasta <span class="mono">contexto/</span> do projeto Claude Code do Conselho.</li>
+        <li>Conversa com fornecedor (vendedor de aparelho, advogado, contador) vira documentação pesquisável.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Granola: US$ 18/mês, roda macOS. Captura áudio do Zoom/Meet/presencial. Output em markdown, plug-and-play com Obsidian.</li>
+        <li>Otter: alternativa mais barata mas menos elegante. Cleft é grátis se quiser testar.</li>
+        <li>Padrão de ata: cabeçalho fixo (data, presentes, pauta), decisões, ações com dono e prazo, próximos passos.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.granola.ai/">Granola</a>
+        <a href="https://otter.ai/">Otter</a>
+        <a href="https://www.youtube.com/results?search_query=granola+ai+notas+reuni%C3%A3o+tutorial">Tutoriais</a>
+      </div>
+    </article>
+
+    <article class="item" id="i8" data-aid="02-08">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 08</div>
+        <span class="tag">POP</span><span class="tag">Gawande</span><span class="tag">Checklist</span>
+        <h3>Checklists Gawande digitais — POPs que se atualizam sozinhos</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Sua cadeira COO tem Atul Gawande como referência ("The Checklist Manifesto"). Atualmente seus POPs vivem em PDF estático ou planilha que ninguém abre. Versão 2026: cada POP é uma página viva no Notion ou no Obsidian Publish (matéria 16 da edição 01) com checkbox por etapa, link para vídeo de demonstração, e revisor automático que sinaliza POP não usado há 60 dias.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>POP do AL LIFT CONTOUR vira sequência de checkboxes que a biomédica marca em tempo real no iPad. Cada procedimento vira evento auditável.</li>
+        <li>Onboarding de novo profissional: agente devolve POPs prioritários por função, com prazo de leitura e quiz curto no fim.</li>
+        <li>Cada POP tem dono nominal e data de próxima revisão. Agente cobra você.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Notion Business (US$15/usuário/mês) ou Obsidian Publish (matéria 16 ed. 01).</li>
+        <li>Template POP padrão CAL (paleta verde, hierarquia Procedimento → Fase → Item).</li>
+        <li>Skill <span class="mono">curador-pops</span> roda toda segunda, devolve lista do que está desatualizado.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.youtube.com/results?search_query=checklist+manifesto+gawande+resumo+portugu%C3%AAs">Sobre o Manifesto Gawande</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção IV</span>
+    <h2>Distribuição e presença</h2>
+    <div class="sub">Onde plantar audiência fora do raio do Meta.</div>
+
+    <article class="item" id="i9" data-aid="02-09">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 09 · Alto retorno</div>
+        <span class="tag">SEO</span><span class="tag">GEO</span><span class="tag">AI Overviews</span>
+        <h3>SEO virou GEO — Generative Engine Optimization</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Google AI Overviews já responde direto sem mandar tráfego para o site. Em 2026 o ganho está em ser <em>citado</em> pela resposta da IA — não em rankear na lista de 10 links que pouca gente vê. Isso muda o que se escreve, como se estrutura e o que se entrega.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Cada página da clínica precisa virar "trecho citável" — pergunta + resposta direta + dado verificável + atribuição clara. Não é mais artigo, é resposta-bloco.</li>
+        <li>Schema.org <span class="mono">MedicalProcedure</span>, <span class="mono">Physician</span>, <span class="mono">FAQPage</span> deixaram de ser opcional. Estruturação semântica é o novo "tag h1 com keyword".</li>
+        <li>Conteúdo do canal vira página com transcrição estruturada (matéria 15 ed. 01) — alimentação direta para AI Overviews que cita você nas perguntas do seu nicho.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Auditar suas 20 páginas mais importantes contra o critério "responde uma pergunta específica em 60 palavras com fonte".</li>
+        <li>Adicionar Schema.org via JSON-LD em todas. Framer (matéria 15 ed. 01) facilita.</li>
+        <li>Agente SEO mensal monitora: para quais perguntas você é citado, para quais o concorrente é.</li>
+      </ul>
+      <div class="links">
+        <a href="https://schema.org/MedicalProcedure">Schema MedicalProcedure</a>
+        <a href="https://www.youtube.com/results?search_query=generative+engine+optimization+geo+tutorial+portugu%C3%AAs">Tutoriais GEO</a>
+      </div>
+    </article>
+
+    <article class="item" id="i10" data-aid="02-10">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 10</div>
+        <span class="tag">Bluesky</span><span class="tag">Threads</span><span class="tag">Diversificação</span>
+        <h3>Segunda casa fora do Meta — antes do próximo apagão</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Bluesky cresceu para 30M+ usuários, Threads passou de 200M MAU. Para um médico com 805k inscritos no YouTube e dependência alta do Instagram, ter zero pegada nas duas é risco de continuidade. Não é "mais conteúdo" — é mesma matéria-prima distribuída.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Cross-posting automatizado via Buffer ou Typefully a partir do mesmo artigo-base da matéria 6 (ed. 01). Custo marginal próximo de zero.</li>
+        <li>Bluesky tem perfil de audiência mais técnica/intelectual — encaixa conteúdo científico denso, o que destaca contra derma de Insta.</li>
+        <li>Threads tem viés de discussão, bom para abrir tópico polêmico (ex.: "harmonização excessiva é doença iatrogênica") sem o algoritmo punir como o Insta pune.</li>
+      </ul>
+      <div class="box"><strong>Realidade</strong> · não espere conversão direta para consulta. O ROI é seguro de continuidade. Se o Insta cair três dias (já caiu), você tem onde estar.</div>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Reservar handle <span class="mono">@dralexandrelima.bsky.social</span> e <span class="mono">@dralexandrelima</span> no Threads. 5 minutos.</li>
+        <li>Buffer ou Typefully fazem distribuição automática a partir de um único draft.</li>
+        <li>Cadência mínima: 2 posts/semana em cada. Abaixo disso, o canal morre.</li>
+      </ul>
+      <div class="links">
+        <a href="https://bsky.app/">Bluesky</a>
+        <a href="https://www.threads.net/">Threads</a>
+        <a href="https://typefully.com/">Typefully</a>
+      </div>
+    </article>
+
+    <article class="item" id="i11" data-aid="02-11">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 11 · Alto retorno</div>
+        <span class="tag">Telegram</span><span class="tag">Discord</span><span class="tag">Club</span>
+        <h3>Comunidade Telegram/Discord como complemento Club</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> O Club hoje é transacional: o paciente paga, vem, sai. Adicionar uma camada de pertencimento fora do consultório multiplica retenção. Telegram canal funciona como newsletter privada (sem algoritmo escondendo posts); Discord/Skool servir como praça com conversa entre membros.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Grupo Club no Telegram: dicas semanais suas, lembretes de cuidado por estação, microaula em vídeo (matéria 14 ed. 01). Você decide o tom, sem moderar replies.</li>
+        <li>Discord Club com canais por tema (rotina, dúvidas, lançamento de procedimento, perguntas para o Dr.). Comunidade modera-se.</li>
+        <li>Sol roteia: dúvida clínica individual ainda vai para WhatsApp; conversa social fica na comunidade. Reduz volume do WhatsApp da Ana.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Começar pelo Telegram (canal, broadcast unidirecional). 30 minutos para configurar.</li>
+        <li>Discord só se o Telegram engajar — Discord exige moderação real.</li>
+        <li>Convite na próxima cobrança Club: "agora você tem acesso a um espaço com a Dra(?)". Posicionamento de valor sobe sem custo.</li>
+      </ul>
+      <div class="links">
+        <a href="https://telegram.org/">Telegram</a>
+        <a href="https://discord.com/">Discord</a>
+        <a href="https://www.youtube.com/results?search_query=telegram+canal+vip+cl%C3%ADnica+tutorial">Tutoriais em PT</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção VI</span>
+    <h2>Fora da caixa</h2>
+    <div class="sub">As cinco da curadoria: pessoal, família, treino, aprendizado, wildcard. Sem ROI direto — exposição deliberada.</div>
+
+    <article class="item" id="i12" data-aid="02-12">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 12 · Pessoal</div>
+        <span class="tag">Bee</span><span class="tag">Cleft</span><span class="tag">Limitless</span>
+        <h3>Captura passiva do dia — wearables AI 2026</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Bee AI Wristband (US$50), Limitless Pendant (US$99) e apps como Cleft/Granola gravam de fundo o seu dia e devolvem, à noite, um resumo: o que foi dito, decisões tomadas, ideias que vieram, follow-ups pendentes. Não é gravar tudo — é deixar que a memória ambiente vire texto pesquisável.</p>
+      <p class="label">Por que olhar isso</p>
+      <ul>
+        <li>Você conversa muito: paciente, equipe, Flávia, filhas, fornecedor, corrida com amigos. 90% disso evapora e volta como sensação difusa de "tinha algo que eu queria fazer".</li>
+        <li>Para um médico crítico, a tentação imediata é "isso é distopia" — talvez seja. Mas o experimento de duas semanas é barato e o aprendizado sobre <em>quanto</em> do seu dia volta a você é único.</li>
+        <li>Risco real: gravar terceiros sem consentimento. No Brasil, conversa em ambiente privado de terceiros sem ciência é eticamente cinzento e legalmente arriscado. Trate como diário pessoal, não como captura social.</li>
+      </ul>
+      <p class="label">Como experimentar sem comprar</p>
+      <ul>
+        <li>Cleft no iPhone — grátis. Roda quando você ativa. Resumo diário no fim. Boa porta de entrada.</li>
+        <li>Se gostar, aí sim hardware dedicado. Bee é o mais discreto e barato.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.bee.computer/">Bee</a>
+        <a href="https://www.limitless.ai/">Limitless</a>
+        <a href="https://cleftnotes.com/">Cleft</a>
+      </div>
+    </article>
+
+    <article class="item" id="i13" data-aid="02-13">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 13 · Família</div>
+        <span class="tag">Beatriz</span><span class="tag">Letícia</span><span class="tag">Khanmigo</span>
+        <h3>IA tutora para Beatriz (13) e Letícia (11)</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Khanmigo (Khan Academy) é a única IA tutora desenhada para criança e adolescente com guardrails sérios e modelo socrático — não dá a resposta, faz pergunta. Brisk Teaching e Magic School têm versão para estudante. Diferente do ChatGPT cru, esses não viram máquina de cola.</p>
+      <p class="label">Por que olhar isso</p>
+      <ul>
+        <li>Bea está em idade onde o ChatGPT vai resolver dever de casa por ela — perdendo justamente o músculo que a escola tenta treinar. Khanmigo recusa fazer isso e ainda dá certificado de progresso.</li>
+        <li>Para Letícia, ainda 11, o ganho está em ter um interlocutor paciente para tirar dúvida de matemática/redação sem você precisar parar consulta.</li>
+        <li>Ângulo de conversa familiar: na próxima semana com você (guarda compartilhada semanal), propor que ambas escolham um tópico de curiosidade e usem Khanmigo para explorar. Modelo de estudo conjunto, não substituição.</li>
+      </ul>
+      <p class="label">Cuidados</p>
+      <ul>
+        <li>Khanmigo exige cadastro com idade da criança. Configurar pelo seu email, não pelos delas — você fica como guardião visualizando histórico.</li>
+        <li>Conversar com Flávia antes — decisão de parentalidade não passa por boletim.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.khanmigo.ai/">Khanmigo</a>
+        <a href="https://www.briskteaching.com/">Brisk Teaching</a>
+      </div>
+    </article>
+
+    <article class="item" id="i14" data-aid="02-14">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 14 · Treino</div>
+        <span class="tag">Runna</span><span class="tag">Garmin Connect+</span><span class="tag">Maratona</span>
+        <h3>Coach IA adaptativo para meia/maratona</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Runna virou o app de treino mais defensável de 2026 — plano semanal personalizado para sua próxima prova, recalibrado a cada corrida pelos dados do Garmin/Apple Watch. Garmin Connect+ lançou em 2025 uma camada de IA própria que sugere recuperação. Combinação cobre meia e maratona com plano de 16-20 semanas.</p>
+      <p class="label">Por que olhar isso</p>
+      <ul>
+        <li>Você treina amador para meia/maratona. Plano genérico de coach humano custa R$ 400-800/mês; Runna sai por US$ 20/mês e adapta ao seu cansaço real, não ao plano de bolo.</li>
+        <li>Risco do médico-atleta é treinar sob fadiga acumulada por orgulho — o app sabe quando recomendar dia leve mesmo você querendo "fazer o tiro hoje". Externalizar essa decisão protege joelho.</li>
+        <li>Integração com nutrição (FuelIn) e força (Hybrid Athlete) fecha o ciclo. Mas comece só com corrida.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Definir prova-alvo (meia em data X, maratona em ano Y). Runna calcula contagem regressiva e plano.</li>
+        <li>Garmin Forerunner sincronizado. Período de 4 semanas para o algoritmo calibrar à sua FC e ritmos.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.runna.com/">Runna</a>
+        <a href="https://www.garmin.com/en-US/connectplus/">Garmin Connect+</a>
+        <a href="https://www.youtube.com/results?search_query=runna+app+plano+treino+maratona+portugu%C3%AAs">Tutoriais em PT</a>
+      </div>
+    </article>
+
+    <article class="item" id="i15" data-aid="02-15">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 15 · Aprendizado</div>
+        <span class="tag">Francês</span><span class="tag">Voice AI</span>
+        <h3>Fluência em francês com ChatGPT Voice / Pi / Sesame</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> ChatGPT Advanced Voice, Pi.ai e Sesame.com chegaram a um patamar em que a conversa em francês com a IA é indistinguível, em fluidez, de aula com tutor humano — menos a pressão social. Para quem estuda idioma em adulto, a dor é "ter com quem conversar sem julgar errado". Resolvido.</p>
+      <p class="label">Por que olhar isso</p>
+      <ul>
+        <li>Você já estuda francês. O gargalo típico nesse estágio é falta de exposição oral diária. 15 min no carro com Pi/ChatGPT Voice em francês = 5x mais que aula semanal.</li>
+        <li>Sesame é o que melhor "atua" como personagem — peça que seja garçom em Lyon, pediatra em Bruxelas, vendedora em Paris. Vocabulário situacional.</li>
+        <li>Custos: ChatGPT Plus já cobre. Pi é grátis. Sesame ainda em beta gratuita.</li>
+      </ul>
+      <p class="label">Rotina sugerida</p>
+      <ul>
+        <li>20 min antes de dormir, 3x/semana, conversa livre. Pedir correção só ao final.</li>
+        <li>1x/semana fazer "aula formal": tópico gramatical específico, pedir exemplos e drills.</li>
+        <li>Logar progresso semanal no Granola — você ouve o que falou hoje e o que falava há 90 dias.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.sesame.com/">Sesame</a>
+        <a href="https://pi.ai/">Pi.ai</a>
+      </div>
+    </article>
+
+    <article class="item" id="i16" data-aid="02-16">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 16 · Wildcard</div>
+        <span class="tag">Ollama</span><span class="tag">LM Studio</span><span class="tag">Local</span>
+        <h3>IA local no seu Mac — privacidade total, custo zero, pra sempre</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Em 2026 dá para rodar Llama 3.3 70B, Qwen 2.5, DeepSeek-R1 e variantes localmente em Mac M-series com 32GB+. Ollama (linha de comando, simples), LM Studio (GUI, mais amigável) ou Open WebUI (interface estilo ChatGPT por cima). Modelo nunca sai do seu disco. Para dado clínico, isso muda tudo.</p>
+      <p class="label">Por que olhar isso</p>
+      <ul>
+        <li>Tudo que você não quer mandar para Anthropic/OpenAI/Google passa por aqui: prontuário com nome real, transcrição de consulta antes da anonimização (matéria 2), dado financeiro pessoal, conversa com Flávia sobre RH.</li>
+        <li>Custo: zero por token. Custo de oportunidade: tempo de setup (~1h) + ~10% da qualidade do Claude/GPT topo.</li>
+        <li>Filosoficamente: ter uma IA que <em>não te abandona</em> se uma empresa quebrar ou mudar preço é tipo ter livros físicos. Diferença de era.</li>
+        <li>Não vai substituir Claude Code no dia a dia. Mas como segunda camada, é fundamental.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Baixar LM Studio (mais amigável). Escolher Llama 3.3 70B quantizado Q4 (~40GB). Roda no seu Mac.</li>
+        <li>Open WebUI por cima para ter UI tipo ChatGPT.</li>
+        <li>Para Claude Code: variável <span class="mono">ANTHROPIC_BASE_URL</span> apontando para servidor OpenAI-compatible local — alguns modelos suportam.</li>
+      </ul>
+      <div class="links">
+        <a href="https://ollama.com/">Ollama</a>
+        <a href="https://lmstudio.ai/">LM Studio</a>
+        <a href="https://github.com/open-webui/open-webui">Open WebUI</a>
+        <a href="https://www.youtube.com/results?search_query=ollama+lm+studio+mac+tutorial+portugu%C3%AAs">Tutoriais em PT</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Próximo passo</span>
+    <h2>Cinco coisas para esta janela de quatro semanas</h2>
+    <div class="sub">Sequência defendida pelo CLO + COO desta edição.</div>
+    <article class="item" id="ifechamento" data-aid="02-fechamento">
+      <div class="header-row"><div class="meta">
+        <div class="num">Plano de ação</div>
+        <h3>Fundações primeiro, expansão depois</h3>
+      </div></div>
+      <ul>
+        <li><strong>Semana 1.</strong> Skill <span class="mono">validador_publicidade.md</span> (matéria 3) rodando antes de cada post. Custo zero, salva manchete.</li>
+        <li><strong>Semana 2.</strong> Presidio local + workflow de anonimização (matéria 2). Sem isso, todo o resto vira passivo regulatório.</li>
+        <li><strong>Semana 3.</strong> Granola nas reuniões com Flávia + Sessão 1 do Pacto de Visão. Matéria 7 + 4 cadeiras pensando em ata.</li>
+        <li><strong>Semana 4.</strong> Auditar suas 20 páginas mais importantes contra critério GEO (matéria 9). Adicionar Schema.org onde falta.</li>
+        <li><strong>Pessoal recorrente.</strong> Pi.ai em francês 3x/semana 20min (matéria 15). Sem checklist, só hábito.</li>
+      </ul>
+      <div class="box"><strong>Veto natural do CFO</strong> · investimento mensal direto desta sequência: Granola US$18 + Runna US$20 = ~R$ 200. Resto é tempo e ferramentas open-source. Muito abaixo do gatilho do pacto.</div>
+    </article>
+  </section>
+
+  <footer class="foot">
+    <h4>Sobre este boletim</h4>
+    <p>Edição 02 · 16 matérias · primeira a seguir o mix da <a href="https://github.com/alexandrelimabarros/novidades-ia-cal/blob/main/CURADORIA.md">diretriz de curadoria CAL</a>: 11 alinhadas ao Conselho + 5 fora da caixa. Edição pessoal não-pública, preparada para Dr. Alexandre Lima · Clínica Alexandre Lima · Belo Horizonte.</p>
+    <p>Próxima edição prevista: julho/2026. Tema possível: agente financeiro CFO em produção (LTV/CAC/payback por procedimento), ferramentas de geração de imagem para conteúdo médico ético, e mais cinco fora da caixa.</p>
+  </footer>
+
+  <div class="signoff">— Boletim CAL nº 02 · Mai–Jun/2026 —</div>
+
+</div>
+
+<script>
+  window.__CAL_EDITION__ = {
+    id: "02",
+    title: "Boletim CAL Nº 02",
+    date: "16.05.2026",
+    url: "/edicoes/02-junho-2026.html"
+  };
+</script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
