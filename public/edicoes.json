@@ -1,5 +1,14 @@
 [
   {
+    "id": "03",
+    "shortTitle": "Jun/2026",
+    "title": "Boletim CAL Nº 03",
+    "date": "16.05.2026",
+    "desc": "CFO em produção, imagem médica ética, inteligência de mercado — e cinco fora da caixa: sono, leitura, agenda família, aprender IA, proteger imagem.",
+    "url": "/edicoes/03-junho-2026.html",
+    "upcoming": false
+  },
+  {
     "id": "02",
     "shortTitle": "Mai–Jun/2026",
     "title": "Boletim CAL Nº 02",
@@ -18,11 +27,11 @@
     "upcoming": false
   },
   {
-    "id": "03",
-    "shortTitle": "Jun/2026",
-    "title": "Boletim CAL Nº 03 (em preparo)",
-    "date": "Jun/2026",
-    "desc": "Tema possível: agente financeiro CFO em produção, geração ética de imagem médica, e mais cinco fora da caixa.",
+    "id": "04",
+    "shortTitle": "Jul/2026",
+    "title": "Boletim CAL Nº 04 (em preparo)",
+    "date": "Jul/2026",
+    "desc": "Tema possível: experiência do paciente Club com IA (CXO em produção), monetização via comunidade.",
     "url": "#",
     "upcoming": true
   }

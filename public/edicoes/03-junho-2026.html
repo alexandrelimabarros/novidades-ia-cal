@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Edição 03 · Jun 2026 · Novidades IA · CAL</title>
+<meta name="description" content="CFO em produção, imagem médica ética, inteligência de mercado — e cinco matérias fora da caixa." />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link" href="/favoritos">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="cover">
+    <div class="top"><span>CAL · Conselho Administrativo</span><span>Vol. 03 · Jun/2026</span></div>
+    <h1>O dinheiro, <em>a imagem</em> e o que ninguém te conta.</h1>
+    <p class="lede">Dezesseis matérias. Onze para a Clínica — CFO em produção real, imagem e vídeo com ética, inteligência de mercado, talento e processo. Cinco fora da caixa: sono, leitura, agenda de família, aprender a aprender, proteção de imagem.</p>
+    <div class="meta">
+      <span>Edição pessoal · Alexandre Lima</span>
+      <span>BH · 16.05.2026</span>
+    </div>
+  </header>
+
+  <div class="editorial">
+    <div class="kicker">Editorial</div>
+    <h2>Você já tem ferramentas. Falta dar conta do que elas ligam.</h2>
+    <p>Edições 01 e 02 cobriram fundação e camada chata: conteúdo, atendimento, LGPD, prontuário, distribuição. A 03 sobe para o que você adia há mais tempo na clínica — saber, com número, qual procedimento dá dinheiro e qual não dá, mais o que fazer com a imagem médica em era de geração instantânea. Da metade pra frente, mantenho a regra: cinco fora da caixa. Dessa vez pesando no sono e na leitura — porque tem evidência mais sólida do que a maioria das tecnologias da primeira metade.</p>
+    <p>Reservei a matéria 16 para um tema impopular entre médicos com canal: <em>proteger sua imagem de virar treino de IA alheia</em>. Não é paranoia — é como reagimos a serviços de imagem na internet em 2010. Vale dois minutos de leitura agora para evitar arrependimento em três anos.</p>
+    <div class="pull">"Sem unit economics por procedimento, toda decisão de mix é palpite com gravata."</div>
+    <p>As <strong>matérias 1, 4, 7 e 9</strong> são as de maior alavanca neste mês. A <strong>matéria 14</strong> (Whoop/Oura para sono) provavelmente tem o maior impacto sobre tudo o resto, embora pareça "saúde pessoal" — não é, é input direto de produtividade.</p>
+  </div>
+
+  <nav class="toc">
+    <h3>Sumário desta edição</h3>
+    <ol>
+      <li><a href="#i1">Agente CFO em produção — Sheets + MDW + Asaas</a></li>
+      <li><a href="#i2">Pricing dinâmico — Hermann Simon na prática</a></li>
+      <li><a href="#i3">Forecasting de caixa 90 dias — Prophet + Claude</a></li>
+      <li><a href="#i4">Midjourney v7 e Flux Krea — imagem médica ética</a></li>
+      <li><a href="#i5">Veo 3 e Runway Gen-4 — B-roll e animação anatômica</a></li>
+      <li><a href="#i6">Brand kit como skill — consistência visual automática</a></li>
+      <li><a href="#i7">Perplexity Deep Research — analista de concorrência BH</a></li>
+      <li><a href="#i8">Análise de reviews (Doctoralia, Maps, RA)</a></li>
+      <li><a href="#i9">Process mining caseiro — o que a Ana realmente faz</a></li>
+      <li><a href="#i10">Recrutamento e onboarding com IA</a></li>
+      <li><a href="#i11">Feedback contínuo da equipe via agente neutro</a></li>
+      <li><a href="#i12">Readwise Reader — biblioteca pessoal que vira nota</a></li>
+      <li><a href="#i13">Cron / Notion Calendar — hub semanal com Flávia</a></li>
+      <li><a href="#i14">Whoop e Oura — sono e HRV do corredor 40+</a></li>
+      <li><a href="#i15">Karpathy nano + Anthropic course — aprender a aprender</a></li>
+      <li><a href="#i16">Glaze e Have I Been Trained — proteger sua imagem</a></li>
+    </ol>
+  </nav>
+
+  <section class="chapter">
+    <span class="badge">Seção I</span>
+    <h2>CFO em produção</h2>
+    <div class="sub">Sair da sensação financeira. Entrar no número semanal.</div>
+
+    <article class="item" id="i1" data-aid="03-01">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 01 · Alto retorno</div>
+        <span class="tag">CFO</span><span class="tag">Sheets API</span><span class="tag">Claude</span>
+        <h3>Agente CFO conectado — relatório semanal de unit economics</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Cadeira CFO no Conselho tem Hermann Simon, Cristina Junqueira e o framework Unit Economics. Em produção real significa: o agente lê toda segunda 7h sua planilha de faturamento + Asaas + MeuDinheiroWeb + agenda do Calendar, calcula LTV/CAC/payback por procedimento, e devolve uma página de relatório no email com 1 sinal de alerta. Sem isso, decisão de mix é palpite.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Saber, com número, se Ultraformer dá margem maior que harmonização — e por quanto.</li>
+        <li>Detectar deriva precoce: queda de ticket médio antes de virar problema de mês.</li>
+        <li>Alimentar a reunião mensal do Conselho com dado, não com sensação.</li>
+        <li>Identificar paciente Club com payback negativo (consumo &gt; receita) — exceção tratada caso a caso.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Skill <span class="mono">cfo_relatorio_semanal.md</span> com prompt fixo de cálculo (LTV = ticket × frequência × duração; CAC = gasto em ads ÷ pacientes novos; Payback = CAC ÷ margem mensal).</li>
+        <li>Cron Vercel ou GitHub Actions disparando toda segunda.</li>
+        <li>Output em Markdown que vira nota no Obsidian — e email para você.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.youtube.com/results?search_query=ltv+cac+cl%C3%ADnica+est%C3%A9tica+unit+economics+tutorial">Tutoriais em PT</a>
+      </div>
+    </article>
+
+    <article class="item" id="i2" data-aid="03-02">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 02</div>
+        <span class="tag">Pricing</span><span class="tag">Hermann Simon</span>
+        <h3>Pricing dinâmico por elasticidade — Hermann Simon na prática</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Simon defende que 90% das empresas precificam pelo custo, 10% pela elasticidade. A diferença em margem é absurda. Para a CAL: tabela única para todo paciente é simplicidade que custa caro. Mover para 3 faixas baseadas em elasticidade observada (Club, recorrente fora do Club, primeira vez) sobe margem ~15% sem perder volume.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Pacote Club: preço deliberadamente abaixo do mercado, garante recorrência e LTV alto. Cuidado calibrado para não canibalizar.</li>
+        <li>Pacote primeira vez: preço de mercado padrão, sem desconto, porque elasticidade é menor (paciente que pesquisou nome veio para você).</li>
+        <li>Procedimentos novos (ex.: Ultraformer subutilizado): preço de penetração nos primeiros 90 dias, depois realinhamento.</li>
+        <li>Agente de pricing roda mensalmente: testa hipótese, sugere micro-ajuste em uma faixa específica, mede impacto em 60 dias.</li>
+      </ul>
+      <div class="box"><strong>Atenção CLO</strong> · variação de preço por perfil de paciente não é discriminação, mas precisa estar documentada por critério objetivo (status Club, primeira vez), nunca por característica pessoal subjetiva. Mantenha tabela transparente, justificada.</div>
+      <div class="links">
+        <a href="https://www.youtube.com/results?search_query=hermann+simon+pricing+power+resumo+portugu%C3%AAs">Sobre Hermann Simon</a>
+      </div>
+    </article>
+
+    <article class="item" id="i3" data-aid="03-03">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 03</div>
+        <span class="tag">Forecasting</span><span class="tag">Prophet</span><span class="tag">StatsForecast</span>
+        <h3>Fluxo de caixa 90 dias — não chegar surpreso no mês 3</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Prophet (Meta), StatsForecast (Nixtla) e modelos via Claude conseguem prever entrada e saída de caixa com 85-90% de acurácia para janelas de 60-90 dias em negócio com sazonalidade clara (clínica tem: dezembro alto, janeiro baixo, datas comemorativas).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Saber em maio se julho vai apertar, com tempo de agir — campanha, antecipação Asaas, postergar investimento.</li>
+        <li>Modelar cenário de aquisição: "se contratar associada em julho, qual o ponto de equilíbrio?".</li>
+        <li>Diálogo com Flávia em base numérica, não em ansiedade.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Histórico de 24 meses de receita por categoria + despesa fixa + variável. Mínimo viável.</li>
+        <li>Skill <span class="mono">forecast_caixa.md</span> roda mensalmente. Output: projeção, intervalo de confiança, sinais de risco.</li>
+        <li>Custo: zero (rodando local) ou ~US$5/mês via Nixtla Cloud.</li>
+      </ul>
+      <div class="links">
+        <a href="https://facebook.github.io/prophet/">Prophet</a>
+        <a href="https://nixtla.github.io/statsforecast/">StatsForecast</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção II</span>
+    <h2>Imagem e vídeo com ética</h2>
+    <div class="sub">Gerar visual sem cair no antes/depois falso. Linha fina, importante.</div>
+
+    <article class="item" id="i4" data-aid="03-04">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 04 · Alto retorno</div>
+        <span class="tag">Midjourney v7</span><span class="tag">Flux Krea</span>
+        <h3>Midjourney v7 e Flux.1 Krea — conceitos éticos para conteúdo médico</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Midjourney v7 (maio/2026) e Flux.1 Krea geram imagens com qualidade indistinguível de fotografia profissional. Usadas certo, viram capa de Reel, thumb de YouTube, ilustração conceitual de mecanismo de ação. Usadas errado, viram antes/depois falso — exatamente o que CFM 2336 proíbe.</p>
+      <p class="label">Possibilidades éticas para a CAL</p>
+      <ul>
+        <li>Conceitos abstratos: representação visual de colágeno, mecanismo de ultrassom microfocado, anatomia da derme. Não substitui foto real de paciente — complementa.</li>
+        <li>Ilustração editorial para blog/artigo: estética da clínica preservada, sem fricção de fotógrafo.</li>
+        <li>Backgrounds e cenários para vídeos de avatar HeyGen (matéria 4 ed. 01).</li>
+      </ul>
+      <div class="box"><strong>Linha vermelha</strong> · jamais usar IA para gerar imagem que <em>simula</em> resultado de procedimento. Antes/depois precisa ser foto real de paciente real, com consentimento expresso. Imagem gerada que pareça paciente real é falsa propaganda — risco de processo e cassação.</div>
+      <div class="links">
+        <a href="https://www.midjourney.com/">Midjourney</a>
+        <a href="https://krea.ai/">Krea (Flux)</a>
+      </div>
+    </article>
+
+    <article class="item" id="i5" data-aid="03-05">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 05</div>
+        <span class="tag">Veo 3</span><span class="tag">Runway Gen-4</span>
+        <h3>Vídeo gerado — B-roll e animação anatômica didática</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Veo 3 (Google, com áudio nativo) e Runway Gen-4 produzem clipes de 8-15 segundos em qualidade comercial. Para canal médico, o ganho está em animação didática — colágeno se reorganizando, onda de ultrassom em profundidade variável, vasodilatação induzida. Coisas que cinegrafista nenhum filma e que gráfico estático não comunica.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Cada vídeo de YouTube ganha 2-3 B-rolls gerados, eleva produção sem aumentar tempo de gravação.</li>
+        <li>Material educacional para Club: 30s explicando "o que o Ultraformer faz na sua pele" com animação real.</li>
+        <li>Reels conceituais: "como age um bioestimulador" — alta retenção, baixa concorrência (poucos médicos fazem).</li>
+      </ul>
+      <p class="label">Cuidados</p>
+      <ul>
+        <li>Sempre legenda "ilustração / animação gerada por computador" — não confundir com imagem real de paciente.</li>
+        <li>Veo 3 custa via Google AI Pro; Runway é US$15/mês plano Standard.</li>
+      </ul>
+      <div class="links">
+        <a href="https://runwayml.com/">Runway</a>
+        <a href="https://deepmind.google/technologies/veo/">Veo</a>
+      </div>
+    </article>
+
+    <article class="item" id="i6" data-aid="03-06">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 06</div>
+        <span class="tag">Brand</span><span class="tag">Skill</span>
+        <h3>Brand kit como skill — consistência visual em todo output</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Sua identidade visual já existe (paleta verde CAL, tipografia, tom). Falta vivê-la em escala: thumb de YouTube, capa de Reel, post de Insta, slide de aula, peça de Ads. Skill <span class="mono">brand-cal</span> consome um briefing curto e devolve o ativo com cor, fonte, hierarquia e tom já corretos.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Cada agente operacional (Roteirista YouTube, Designer Thumb, etc.) chama essa skill como sub-passo.</li>
+        <li>Editor externo recebe pedido com guideline carimbado — menos refação.</li>
+        <li>Coerência percebida pelo paciente sobe sem novo investimento em design.</li>
+      </ul>
+      <p class="label">Conteúdo da skill</p>
+      <ul>
+        <li>Paleta hex com regras de uso (quando usar verde primário, dourado de acento).</li>
+        <li>Tipografia primária (Georgia) e secundária (sistema sans).</li>
+        <li>Glossário tom: o que dizer (ciência aplicada, profissional, claro), o que não (gírias, promessa, milagre).</li>
+        <li>Exemplos de bom e ruim de cada formato (Reel, thumb, post estático).</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção III</span>
+    <h2>Inteligência de mercado</h2>
+    <div class="sub">Ouvir o que o paciente diz por aí — sobre você e sobre o concorrente.</div>
+
+    <article class="item" id="i7" data-aid="03-07">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 07 · Alto retorno</div>
+        <span class="tag">Perplexity</span><span class="tag">Deep Research</span>
+        <h3>Analista de concorrência local automatizado</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Perplexity Deep Research e ChatGPT Pulse fazem agora o que custava 8h de assistente: varrer Instagram + Google + Doctoralia + RA de 6 concorrentes diretos em BH e devolver briefing com mudança de preço, novo procedimento anunciado, post viral, reclamação recorrente.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Sub-agente Analista de Concorrência da Camada 4 sai do papel. Roda toda sexta. Output: 1 página.</li>
+        <li>Detectar oportunidade: concorrente parou de oferecer Ultraformer, paciente fica órfão — janela curta.</li>
+        <li>Detectar risco: três pacientes ex-CAL apareceram no Instagram da concorrência da rua de baixo — sinal de algo.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Lista nominal de 6 concorrentes-alvo + 2 referências nacionais.</li>
+        <li>Prompt fixo: monitorar mudança vs estado anterior. Sem "novidade", relatório curto.</li>
+        <li>Perplexity Pro (US$20/mês) ou pacote ChatGPT.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.perplexity.ai/">Perplexity</a>
+      </div>
+    </article>
+
+    <article class="item" id="i8" data-aid="03-08">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 08</div>
+        <span class="tag">Reviews</span><span class="tag">Sentimento</span>
+        <h3>Análise de reviews — Doctoralia, Google Maps, RA</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Reviews públicos são a coisa mais subutilizada da CAL e da concorrência. Um agente que lê 200 reviews seus + 200 de cada concorrente devolve: temas elogiados (use no posicionamento), temas reclamados (corrija), promessas inconsistentes entre concorrentes (oportunidade de diferenciação).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Resposta-padrão a review negativo gerada pelo agente, você revisa — recuperação de reputação consistente.</li>
+        <li>Identificar quais pacientes Club deixam review espontâneo — esses são embaixadores reais, mereçam atenção.</li>
+        <li>Mapear "o que aparece nos elogios da concorrência e não aparece nos seus" — gap concreto.</li>
+      </ul>
+      <p class="label">Como implementar</p>
+      <ul>
+        <li>Scrape leve (Apify, ou skill Claude com Playwright).</li>
+        <li>Análise mensal. Output: 5 temas, com exemplos. Nada vago.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.doctoralia.com.br/">Doctoralia</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção IV</span>
+    <h2>Operação e talento</h2>
+    <div class="sub">A camada que define se o resto escala ou trava.</div>
+
+    <article class="item" id="i9" data-aid="03-09">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 09 · Alto retorno</div>
+        <span class="tag">Process mining</span><span class="tag">Ana</span>
+        <h3>Process mining caseiro — o que a Ana realmente faz</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> O que a Ana descreve do seu dia raramente é o que ela efetivamente faz. Process mining tradicional custa caro e exige logs estruturados. Versão caseira em 2026: extrair conversa WhatsApp Web por 30 dias (export + Claude classificando), agenda do Calendar, abas abertas frequentes. Output: mapa real do processo.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Descobrir que 40% das mensagens são confirmação D-1 (automatizar 100% via n8n da matéria 8 ed. 01).</li>
+        <li>Detectar que 3 perguntas se repetem 80% do tempo (criar FAQ no Sol).</li>
+        <li>Ver onde Ana realmente agrega valor humano — proteger esse tempo, automatizar o resto.</li>
+      </ul>
+      <div class="box"><strong>Trato com Ana</strong> · isso não é vigilância — apresente como mapeamento para tirar o que ela mais detesta. Se for vendido como controle, gera o oposto da intenção. Combinar antes, mostrar relatório a ela primeiro.</div>
+      <div class="links">
+        <a href="https://www.youtube.com/results?search_query=process+mining+small+business+tutorial+portugu%C3%AAs">Tutoriais</a>
+      </div>
+    </article>
+
+    <article class="item" id="i10" data-aid="03-10">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 10</div>
+        <span class="tag">Recrutamento</span><span class="tag">Onboarding</span>
+        <h3>Recrutamento e onboarding com IA</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Recrutar para clínica de derma em BH é cíclico e doloroso. Em 2026 dá para terceirizar uma boa parte do upper-funnel para agente. Descrição de vaga gerada a partir do POP do cargo, triagem de CV via critério estruturado, scripts de entrevista, plano de 90 dias de onboarding.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Próxima contratação (esteticista, secretária júnior) economiza 6-8h de Flávia.</li>
+        <li>Critério de triagem documentado — proteção contra viés inconsciente (positivo ou negativo).</li>
+        <li>Plano 90 dias custoso de fazer no papel, simples de gerar a partir do perfil + POPs.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.youtube.com/results?search_query=recrutamento+ia+pequena+empresa+tutorial+portugu%C3%AAs">Tutoriais</a>
+      </div>
+    </article>
+
+    <article class="item" id="i11" data-aid="03-11">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 11</div>
+        <span class="tag">Feedback</span><span class="tag">Cultura</span>
+        <h3>Feedback contínuo da equipe via agente neutro</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Avaliação 360 anual é teatro caro. Funciona melhor: agente neutro conduz check-in mensal de 10 min com cada pessoa via WhatsApp ou tela, devolve para você e Flávia um resumo agregado e sinaliza pessoa em risco (intenção de sair, conflito velado, sobrecarga).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Cinco pessoas, cinco conversas/mês, ~50 min de leitura sua + Flávia. Mantém pulso real.</li>
+        <li>Detectar saída antes da carta — pessoa em risco geralmente sinaliza 60 dias antes em conversa neutra.</li>
+        <li>Anônimo agregado para tema cultural (clima, segurança psicológica).</li>
+      </ul>
+      <div class="box"><strong>Cuidado</strong> · agente nunca substitui conversa de gente. É instrumento de antena, não de feedback de avaliação. Decisão sobre pessoa nunca é tomada só pelo que o agente reportou.</div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção VI</span>
+    <h2>Fora da caixa</h2>
+    <div class="sub">Pessoal, família, treino, aprendizado, wildcard. Cinco para alargar superfície.</div>
+
+    <article class="item" id="i12" data-aid="03-12">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 12 · Pessoal</div>
+        <span class="tag">Readwise Reader</span><span class="tag">Obsidian</span>
+        <h3>Readwise Reader — a biblioteca que vira nota sozinha</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Readwise Reader é leitor único para PDF, EPUB, artigo web, transcrição YouTube, Twitter/X. Você grifa enquanto lê (no celular, na corrida, no consultório entre pacientes). Tudo vira nota no Obsidian automaticamente. Em 2026 ganhou camada de IA que sumariza, faz fichas e propõe conexões com leituras anteriores.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Você já tem livros lidos, papers, conteúdos. Estão fragmentados em Kindle, Apple Books, navegador. Readwise consolida e faz o "spaced repetition" do que destacou: você revisa, sem esforço, o que leu há 3 meses.</li>
+        <li>Para um médico crítico, é a única forma viável de manter base própria de literatura — algo entre fichamento clássico e arquivo digital.</li>
+        <li>O conteúdo destacado vira input direto para o agente Pesquisador Científico (matéria 4 ed. 02).</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>US$10/mês. Free trial 30 dias. Plug-in oficial para Obsidian.</li>
+        <li>Comece importando livros lidos no Kindle dos últimos 12 meses — instantânea base de conhecimento.</li>
+      </ul>
+      <div class="links">
+        <a href="https://readwise.io/read">Readwise Reader</a>
+      </div>
+    </article>
+
+    <article class="item" id="i13" data-aid="03-13">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 13 · Família</div>
+        <span class="tag">Cron</span><span class="tag">Notion Calendar</span>
+        <h3>Hub semanal com Flávia — agenda que respeita guarda compartilhada</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você e Flávia coordenam guarda compartilhada semanal de Beatriz e Letícia, mais clínica, mais vida própria. Cron (agora Notion Calendar) virou o melhor cliente de Google Calendar de 2026: linha do tempo unificada de múltiplas contas, comandos rápidos via teclado, IA que sugere horário ao trocar mensagem com a outra pessoa.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Reduz fricção de pequenas decisões diárias (quem busca, quem leva, conflito de compromisso) — é onde casal coparental perde energia.</li>
+        <li>Calendário compartilhado com camada "família" + camada "trabalho" sem mistura — privacidade preservada onde precisa.</li>
+        <li>Conecta com Asana ou Linear: tarefa virou evento, evento virou tarefa.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Grátis. Baixar Notion Calendar (antigo Cron) e logar com as contas que você usa.</li>
+        <li>Combinar com Flávia uma estrutura padrão: cores por categoria, lembretes D-1.</li>
+        <li>Não tentar mudar tudo em uma semana — só introduzir.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.notion.so/product/calendar">Notion Calendar</a>
+      </div>
+    </article>
+
+    <article class="item" id="i14" data-aid="03-14">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 14 · Treino</div>
+        <span class="tag">Whoop</span><span class="tag">Oura</span><span class="tag">Sono</span>
+        <h3>Sono e HRV — o input que governa todo o resto</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Whoop 5.0 (assinatura) e Oura Ring 4 medem sono em estágios, HRV (variabilidade da frequência cardíaca), recuperação fisiológica. Evidência sólida em corredor amador 40+: sono curto crônico reduz VO2max, aumenta lesão, derruba imunidade. E afeta decisão clínica do dia seguinte mais do que se admite.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Você treina para meia/maratona, atende paciente, gerencia clínica, é pai. Sono é a variável que governa tudo — e que ninguém mede com seriedade.</li>
+        <li>Whoop manda métrica diária para o app, Oura tem visualização melhor. Ambos integram com Runna (matéria 14 ed. 02).</li>
+        <li>Para médico, a parte mais interessante é a longitudinal: 12 meses de dados próprios sobre como sono interage com performance — autoexperimento real.</li>
+      </ul>
+      <p class="label">Cuidados</p>
+      <ul>
+        <li>Whoop é wristband, US$200 + assinatura. Oura é anel, US$300 + assinatura barata.</li>
+        <li>Não viciar em score — instrumento, não validação. Médico precisa lembrar disso na frente do espelho.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.whoop.com/">Whoop</a>
+        <a href="https://ouraring.com/">Oura</a>
+      </div>
+    </article>
+
+    <article class="item" id="i15" data-aid="03-15">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 15 · Aprendizado</div>
+        <span class="tag">Karpathy</span><span class="tag">Anthropic Course</span>
+        <h3>Aprender a aprender IA — Karpathy nano + Anthropic course</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Karpathy lançou Eureka Labs com micro-cursos de IA em formato denso, gratuitos no YouTube — "Let's build GPT from scratch" virou referência. Anthropic publicou "Building with Claude Code" em 2025 com curso oficial. Em 4 semanas, você passa de usuário para alguém que entende <em>por dentro</em> o que pede ao Claude.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Você já usa Claude Code intensamente. O ganho marginal de entender modelo, tokens, contexto, RAG, função-de-custo, é desproporcional ao tempo investido — vira interlocutor melhor da própria ferramenta.</li>
+        <li>Combina com o time da clínica: você vira a pessoa que pode treinar Ana e Flávia, não dependência do consultor externo.</li>
+        <li>Tudo gratuito. Pré-requisito é tempo, não dinheiro.</li>
+      </ul>
+      <p class="label">Caminho sugerido</p>
+      <ul>
+        <li>Semana 1-2: "Let's build GPT from scratch" (Karpathy). 2h/dia.</li>
+        <li>Semana 3-4: "Building with Claude Code" (Anthropic). Hands-on com seus próprios projetos.</li>
+        <li>Logar no Obsidian o que aprende — feedback via Readwise (matéria 12).</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.youtube.com/@AndrejKarpathy">Karpathy YouTube</a>
+        <a href="https://www.anthropic.com/learn">Anthropic Learn</a>
+      </div>
+    </article>
+
+    <article class="item" id="i16" data-aid="03-16">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 16 · Wildcard</div>
+        <span class="tag">Glaze</span><span class="tag">Nightshade</span><span class="tag">Imagem</span>
+        <h3>Proteger sua imagem de virar treino de IA alheia</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Sua imagem pública (805k YouTube, Instagram, site) é hoje matéria-prima para treino de modelos de imagem e vídeo sem seu consentimento. Glaze e Nightshade (Universidade de Chicago) aplicam perturbações imperceptíveis em imagens que <em>quebram</em> tentativa de treino. Have I Been Trained mostra se sua imagem já caiu em algum dataset público (LAION, etc.).</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Em 2-3 anos, qualquer um poderá gerar "Dr. Alexandre Lima recomenda X" com sua cara e voz. A linha jurídica ainda está sendo desenhada — a defesa técnica não.</li>
+        <li>Aplicar Glaze nas fotos novas que entram no site/Insta protege futuro. Não desfaz passado.</li>
+        <li>Have I Been Trained permite "opt-out" parcial em alguns datasets — não resolve, mas registra intenção legal.</li>
+      </ul>
+      <div class="box"><strong>Realidade dura</strong> · ainda não existe proteção total. Mas tomar zero medida em 2026 é deixar a defesa em "esperança". Esse boletim é o lembrete.</div>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Glaze é grátis, roda local no Mac. ~20s por imagem.</li>
+        <li>Buscar seu nome em Have I Been Trained — verificar exposição atual.</li>
+        <li>Adicionar cláusula de "no AI training" nos termos do site.</li>
+      </ul>
+      <div class="links">
+        <a href="https://glaze.cs.uchicago.edu/">Glaze</a>
+        <a href="https://nightshade.cs.uchicago.edu/">Nightshade</a>
+        <a href="https://haveibeentrained.com/">Have I Been Trained</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Próximo passo</span>
+    <h2>Cinco coisas para esta janela</h2>
+    <div class="sub">Sequência defendida pelo CFO + COO desta edição.</div>
+    <article class="item" id="ifechamento" data-aid="03-fechamento">
+      <div class="header-row"><div class="meta">
+        <div class="num">Plano de ação</div>
+        <h3>Número primeiro, imagem depois</h3>
+      </div></div>
+      <ul>
+        <li><strong>Semana 1.</strong> Agente CFO conectado (matéria 1). Sem dado semanal, todo resto vira sensação.</li>
+        <li><strong>Semana 2.</strong> Perplexity Deep Research apontado para 6 concorrentes (matéria 7). Roda toda sexta.</li>
+        <li><strong>Semana 3.</strong> Process mining 30 dias do WhatsApp da Ana (matéria 9) — combinado antes com ela.</li>
+        <li><strong>Semana 4.</strong> Testar Midjourney v7 em 3 thumbs de YouTube (matéria 4). Comparar CTR.</li>
+        <li><strong>Pessoal recorrente.</strong> Whoop ou Oura (matéria 14). 30 dias de medição. Sono é input, não vaidade.</li>
+      </ul>
+      <div class="box"><strong>Veto natural do CFO</strong> · custo somado mensal: Perplexity US$20 + Whoop/Oura US$30 + Midjourney US$30 + Readwise US$10 = ~R$ 500. Mais tempo de implementação. Bem abaixo de R$ 5k.</div>
+    </article>
+  </section>
+
+  <footer class="foot">
+    <h4>Sobre este boletim</h4>
+    <p>Edição 03 · 16 matérias · mix 11 alinhadas + 5 fora da caixa, conforme <a href="https://github.com/alexandrelimabarros/novidades-ia-cal/blob/main/CURADORIA.md">CURADORIA.md</a>. Próxima edição prevista: julho/2026. Tema possível: experiência do paciente Club com IA (CXO em produção), monetização via comunidade, e mais cinco fora da caixa.</p>
+  </footer>
+
+  <div class="signoff">— Boletim CAL nº 03 · Jun/2026 —</div>
+
+</div>
+
+<script>
+  window.__CAL_EDITION__ = {
+    id: "03",
+    title: "Boletim CAL Nº 03",
+    date: "16.05.2026",
+    url: "/edicoes/03-junho-2026.html"
+  };
+</script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
