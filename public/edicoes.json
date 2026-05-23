@@ -1,5 +1,14 @@
 [
   {
+    "id": "04",
+    "shortTitle": "Jul/2026",
+    "title": "Boletim CAL Nº 04",
+    "date": "16.05.2026",
+    "desc": "Skills e agentes prontos para conteúdo, aquisição, conversão e presença local — foco editorial em marketing.",
+    "url": "/edicoes/04-julho-2026.html",
+    "upcoming": false
+  },
+  {
     "id": "03",
     "shortTitle": "Jun/2026",
     "title": "Boletim CAL Nº 03",
@@ -27,11 +36,11 @@
     "upcoming": false
   },
   {
-    "id": "04",
-    "shortTitle": "Jul/2026",
-    "title": "Boletim CAL Nº 04 (em preparo)",
-    "date": "Jul/2026",
-    "desc": "Tema possível: experiência do paciente Club com IA (CXO em produção), monetização via comunidade.",
+    "id": "05",
+    "shortTitle": "Ago/2026",
+    "title": "Boletim CAL Nº 05 (em preparo)",
+    "date": "Ago/2026",
+    "desc": "Tema possível: CXO em produção (experiência Club com IA), monetização via comunidade.",
     "url": "#",
     "upcoming": true
   }

@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Edição 04 · Jul 2026 · Novidades IA · CAL</title>
+<meta name="description" content="Skills e agentes prontos para produção de conteúdo, estratégia de aquisição e funil — e cinco fora da caixa." />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link" href="/favoritos">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="cover">
+    <div class="top"><span>CAL · Conselho Administrativo</span><span>Vol. 04 · Jul/2026</span></div>
+    <h1>A prateleira de <em>skills e agentes</em>.</h1>
+    <p class="lede">Dezesseis matérias. Onze com foco em marketing e produção de conteúdo: cinco skills e agentes prontos para instalar, três jogadas de aquisição, duas de conversão, uma de presença local. Cinco fora da caixa para alargar.</p>
+    <div class="meta">
+      <span>Edição pessoal · Alexandre Lima</span>
+      <span>BH · 16.05.2026</span>
+    </div>
+  </header>
+
+  <div class="editorial">
+    <div class="kicker">Editorial</div>
+    <h2>Skill é o que sobra quando o entusiasmo passa.</h2>
+    <p>Toda ferramenta nova vira gambiarra particular se não for empacotada. Esta edição é deliberadamente prática na primeira metade: cinco skills e agentes desenhados para a sua prateleira (<span class="mono">~/Documents/Claude/SkillsBank/</span>), com prompt-base, input/output esperado e regra de uso. São coisas que você instala uma vez e a equipe inteira passa a usar — Flávia, Ana, biomédica, estagiário. Cadeira pensa, subagente executa, e o subagente vira commodity.</p>
+    <p>Em seguida, três jogadas de aquisição que ainda não saíram em edições anteriores: TikTok no recorte de 2026 (mudou), UGC com consentimento blindado, e a peça mais subestimada da estratégia de criador médico — a sua newsletter pessoal, independente das plataformas que podem cair amanhã.</p>
+    <div class="pull">"Se não está na prateleira, não existe. Se não foi instalado, não escala."</div>
+    <p>As <strong>matérias 1, 3, 6 e 11</strong> são as de maior alavanca neste mês. A matéria <strong>5</strong> (agente que lê retenção do YouTube) é a que muda mais a qualidade da pauta dos próximos seis meses.</p>
+  </div>
+
+  <nav class="toc">
+    <h3>Sumário desta edição</h3>
+    <ol>
+      <li><a href="#i1">Skill `roteirista-yt-cal` — teleprompter no seu padrão</a></li>
+      <li><a href="#i2">Skill `roteirista-reels-cal` — gancho de 5s</a></li>
+      <li><a href="#i3">Agente `gancho-machine` — 20 ganchos ranqueados</a></li>
+      <li><a href="#i4">Agente `tradutor-paciente` — jargão para escolaridade média</a></li>
+      <li><a href="#i5">Agente `analista-retencao-yt` — onde o vídeo morre</a></li>
+      <li><a href="#i6">TikTok 2026 — segundo canal, novo algoritmo</a></li>
+      <li><a href="#i7">UGC com consentimento blindado</a></li>
+      <li><a href="#i8">Newsletter pessoal do Dr. — ativo independente</a></li>
+      <li><a href="#i9">Landing page por origem — copy que muda pelo clique</a></li>
+      <li><a href="#i10">YouTube Series Theme + Shorts encadeados</a></li>
+      <li><a href="#i11">Google Business Profile com IA semanal</a></li>
+      <li><a href="#i12">Mem.ai e Capacities — segundo cérebro além do Obsidian</a></li>
+      <li><a href="#i13">Spotify Family + IA — ritual com as filhas</a></li>
+      <li><a href="#i14">Hyrox + IA — cross-training para destravar maratona</a></li>
+      <li><a href="#i15">História da medicina como tutor socrático</a></li>
+      <li><a href="#i16">Suno v5 e Udio — trilha sonora própria</a></li>
+    </ol>
+  </nav>
+
+  <section class="chapter">
+    <span class="badge">Seção I</span>
+    <h2>Skills e agentes para sua prateleira</h2>
+    <div class="sub">Empacotar o que você já faz para a equipe usar e a IA não esquecer.</div>
+
+    <article class="item" id="i1" data-aid="04-01">
+      <div class="header-row"><div class="meta">
+        <div class="num">Skill 01 · Alto retorno</div>
+        <span class="tag">Roteiro YouTube</span><span class="tag">Skill</span>
+        <h3>`roteirista-yt-cal` — teleprompter no padrão Alexandre</h3>
+      </div></div>
+      <p><strong>O que é.</strong> Skill que recebe um tema e devolve roteiro completo no seu formato: marcadores entre colchetes <span class="mono">[INÍCIO] [ENGAJAMENTO] [CIÊNCIA] [CTA] [FIM]</span>, frases curtas, linha em branco entre frases, abertura e fechamento com ponto isolado, ênfase em Belo Horizonte quando couber, estrutura expandida (gancho + curiosidades/mitos + ciência + casos + CTA).</p>
+      <p class="label">Input / Output</p>
+      <ul>
+        <li>Input: tema, ângulo (mito a derrubar / procedimento a explicar / contra-tendência), 2 papers de referência opcionais.</li>
+        <li>Output: roteiro &gt; 18 min, com marcadores prontos para teleprompter.</li>
+        <li>Modelo: Opus para roteiro principal, Sonnet para variações.</li>
+      </ul>
+      <p class="label">Como instalar</p>
+      <ul>
+        <li>Criar <span class="mono">~/Documents/Claude/SkillsBank/roteirista-yt-cal/</span> com o frontmatter <span class="mono">name</span>, <span class="mono">description</span> e o prompt-base.</li>
+        <li>Referenciar pasta autoritativa "Vascular Clinica &gt; roteiros de youtube" no Drive como exemplos few-shot.</li>
+        <li>Instalar global com symlink: <span class="mono">ln -s ~/Documents/Claude/SkillsBank/roteirista-yt-cal ~/.claude/skills/roteirista-yt-cal</span>.</li>
+      </ul>
+      <div class="box"><strong>Esqueleto do prompt</strong> · "Você é o roteirista do Dr. Alexandre Lima, dermatologista em BH. Escreve roteiros para canal YouTube no formato teleprompter: marcadores entre colchetes, frases curtas, linha em branco entre frases. Tom: profissional, claro, estratégico. Citação científica obrigatória quando afirmar mecanismo. Nunca prometer resultado. Sempre enfatizar localização Belo Horizonte quando o tema permitir."</div>
+    </article>
+
+    <article class="item" id="i2" data-aid="04-02">
+      <div class="header-row"><div class="meta">
+        <div class="num">Skill 02</div>
+        <span class="tag">Roteiro Reels</span><span class="tag">Skill</span>
+        <h3>`roteirista-reels-cal` — versão condensada do mesmo tema</h3>
+      </div></div>
+      <p><strong>O que é.</strong> Skill irmã da 01. Recebe o mesmo tema e produz versão Reel/Shorts de 30-60s. Gancho de 5 segundos calibrado para retenção mobile, mesma essência condensada, CTA específico CAL (consulta / Club / Calendly).</p>
+      <p class="label">Input / Output</p>
+      <ul>
+        <li>Input: tema + público-alvo (paciente novo, Club, médico).</li>
+        <li>Output: 3 variantes de Reel (gancho A, B, C); cada uma com texto teleprompter + descrição de B-roll + CTA + hashtags.</li>
+        <li>Conecta com matérias 4 e 5 da edição 03 (Midjourney + Veo) para imagem/B-roll.</li>
+      </ul>
+      <p class="label">Regra de qualidade</p>
+      <ul>
+        <li>Gancho não pode prometer resultado (CFM 2336).</li>
+        <li>Gancho não pode ser clickbait genérico — precisa ter contexto científico ou clínico em 5s.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i3" data-aid="04-03">
+      <div class="header-row"><div class="meta">
+        <div class="num">Agente 03 · Alto retorno</div>
+        <span class="tag">Ganchos</span><span class="tag">Retenção</span>
+        <h3>`gancho-machine` — 20 ganchos por tema, ranqueados</h3>
+      </div></div>
+      <p><strong>O que é.</strong> Agente que recebe um tema e devolve 20 ganchos diferentes em formato condensado, ranqueados por probabilidade de retenção, com justificativa em uma linha (princípio de copywriting usado, gatilho psicológico, padrão de retenção mapeado em vídeos de tração).</p>
+      <p class="label">Por que funciona</p>
+      <ul>
+        <li>Médico criador escolhe gancho por intuição. Intuição é boa mas enviesada — você prefere o que <em>você</em> acharia interessante, não o que o algoritmo prefere.</li>
+        <li>20 ganchos em paralelo expõe variedade. O ranking pelo agente é só sugestão; você escolhe o que ressoa.</li>
+        <li>Subir os 3 melhores como teste A/B/C nas thumbs do mesmo Short — a verdade está no CTR, não no ranking.</li>
+      </ul>
+      <p class="label">Conteúdo do prompt</p>
+      <ul>
+        <li>Tabela de padrões de gancho que funcionam em médico criador (mitologia comum, contra-intuição, microdrama, autoridade contestatória, "ninguém te disse").</li>
+        <li>Lista de proibições CFM (promessa, antes/depois falso, autoridade exclusiva).</li>
+        <li>Few-shot: 30 ganchos seus que tiveram performance acima da média no canal.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i4" data-aid="04-04">
+      <div class="header-row"><div class="meta">
+        <div class="num">Agente 04</div>
+        <span class="tag">Linguagem</span><span class="tag">Acessibilidade</span>
+        <h3>`tradutor-paciente` — derma sem perder o paciente leigo</h3>
+      </div></div>
+      <p><strong>O que é.</strong> Agente que pega seu texto técnico (roteiro, post, página) e devolve versão para escolaridade média do brasileiro (8º ano, ~Flesch 70). Mantém precisão científica; substitui jargão por explicação curta.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Reduz friction do paciente novo entendendo o site, post, FAQ do Sol.</li>
+        <li>Aumenta retenção em vídeo — frase técnica perde audiência mobile.</li>
+        <li>Detecta "maldição do conhecimento" sua sem você precisar mostrar para Flávia.</li>
+      </ul>
+      <p class="label">Regra de uso</p>
+      <ul>
+        <li>Output em duas versões: traduzida E original. Você escolhe.</li>
+        <li>Conteúdo para outros médicos (curso AL LIFT CONTOUR) NÃO passa por aqui — esse precisa do jargão.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i5" data-aid="04-05">
+      <div class="header-row"><div class="meta">
+        <div class="num">Agente 05 · Alto retorno</div>
+        <span class="tag">YouTube MCP</span><span class="tag">Retenção</span>
+        <h3>`analista-retencao-yt` — onde o vídeo morre, por quê, o que fazer</h3>
+      </div></div>
+      <p><strong>O que é.</strong> Agente que usa o YouTube MCP (matéria 1 ed. 01) para ler o gráfico de retenção dos seus vídeos com mais views, identifica os 3 pontos de maior queda, cruza com transcrição, e devolve diagnóstico + sugestão de edição (cortar trecho X, reabrir gancho na marca Y) ou refilmagem.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Material para edição rápida: vídeo de 12 min vira 11 min com retenção média +18%.</li>
+        <li>Padrão repetido entre vídeos vira aprendizado: você descobre que sempre perde audiência quando começa a citar paper. Conserto possível: contextualizar antes de citar.</li>
+        <li>Pauta de refilmagem: vídeos com alto CTR mas baixa retenção são candidatos a regravação parcial.</li>
+      </ul>
+      <p class="label">Como rodar</p>
+      <ul>
+        <li>Roda mensal sobre os 10 vídeos com mais views nos últimos 90 dias.</li>
+        <li>Output em Markdown que vira nota no Obsidian + acionável para o editor externo.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção II</span>
+    <h2>Estratégia de aquisição</h2>
+    <div class="sub">Onde encontrar paciente novo que ainda não te conhece.</div>
+
+    <article class="item" id="i6" data-aid="04-06">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 06 · Alto retorno</div>
+        <span class="tag">TikTok</span><span class="tag">Aquisição</span>
+        <h3>TikTok 2026 — algoritmo distinto, oportunidade para derma</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> 2024-2025 a sabedoria era "TikTok não vende serviço de saúde". 2026 mudou — TikTok Shop para produtos físicos, e mais relevante para você, o algoritmo virou mais "search engine" que "feed", o que beneficia conteúdo educativo médico. Derma cresce 3-4x mais rápido no TikTok hoje que no Insta para perfil novo.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Reuso direto dos Reels da matéria 2 — zero custo marginal de produção.</li>
+        <li>Público mais jovem (18-30) — alimenta funil de paciente novo Club nos próximos 5 anos.</li>
+        <li>Termo de busca "dermatologista BH" + variações tem volume crescente, baixa concorrência local.</li>
+      </ul>
+      <div class="box"><strong>Realidade</strong> · TikTok ainda é mais difícil de monetizar em consulta presencial direta. Use como topo de funil; conversão acontece quando paciente migra para Insta/site/WhatsApp. Mapear essa jornada exige UTM disciplina.</div>
+    </article>
+
+    <article class="item" id="i7" data-aid="04-07">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 07</div>
+        <span class="tag">UGC</span><span class="tag">Depoimento</span><span class="tag">LGPD</span>
+        <h3>UGC com consentimento blindado — depoimento que escala</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> User-Generated Content (depoimento espontâneo de paciente) é o tipo de conteúdo com maior conversão em saúde. O obstáculo é jurídico: CFM 2336 não permite depoimento que ateste resultado, LGPD exige consentimento específico. Em 2026, o caminho é blindar com termo digital assinado + reedição que mostra experiência (não resultado).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Paciente Club entusiasta convidado a gravar vídeo curto sobre a <em>experiência</em> (atendimento, conforto, comunicação) — não sobre resultado estético.</li>
+        <li>Plataforma como Trustmary ou Senja captura, assina termo digital, organiza biblioteca.</li>
+        <li>Agente CLO (matéria 1 ed. 02) revisa cada peça antes de publicar.</li>
+      </ul>
+      <p class="label">Estrutura do termo</p>
+      <ul>
+        <li>Consentimento específico (não genérico), revogável, com prazo definido.</li>
+        <li>Especifica plataformas onde poderá ser usado.</li>
+        <li>Paciente fica com cópia. Você guarda original assinado por 5 anos.</li>
+      </ul>
+      <div class="links">
+        <a href="https://trustmary.com/">Trustmary</a>
+        <a href="https://senja.io/">Senja</a>
+      </div>
+    </article>
+
+    <article class="item" id="i8" data-aid="04-08">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 08 · Alto retorno</div>
+        <span class="tag">Newsletter</span><span class="tag">Beehiiv</span>
+        <h3>Newsletter pessoal do Dr. — ativo que ninguém pode tirar</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você tem 805k inscritos no YouTube. Não tem nenhum email. Se o canal cair amanhã (Strike, mudança de política), você fica com zero. Newsletter pessoal (Beehiiv, Resend, Ghost) é o único ativo de audiência que viaja com você de plataforma em plataforma.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Lead magnet: e-book curto "5 hábitos de pele que sua dermatologista nunca te disse" → captura no site → newsletter quinzenal.</li>
+        <li>Conteúdo recortado dos roteiros (matéria 1) — zero produção marginal.</li>
+        <li>Beehiiv tem segmentação avançada: pacientes Club vs leads vs colegas médicos recebem versões diferentes.</li>
+        <li>Em 18 meses, lista de 5-10k qualificados — vale mais que 100k seguidores de Insta.</li>
+      </ul>
+      <p class="label">Como começar</p>
+      <ul>
+        <li>Beehiiv free até 2.500 inscritos. Migrar para pago só quando crescer.</li>
+        <li>Cadência: quinzenal, 600-900 palavras, formato fixo (1 ideia + 1 case + 1 link útil).</li>
+        <li>Anunciar 1x/mês no canal e Insta. Não pedir email — oferecer trade claro.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.beehiiv.com/">Beehiiv</a>
+        <a href="https://resend.com/">Resend</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção III</span>
+    <h2>Conversão e funil</h2>
+    <div class="sub">Do clique ao agendamento, com menos vazamentos.</div>
+
+    <article class="item" id="i9" data-aid="04-09">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 09</div>
+        <span class="tag">Landing</span><span class="tag">Personalização</span>
+        <h3>Landing page por origem — copy diferente para cada porta</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Em 2026, ferramentas como Mutiny, Webflow Optimize ou implementação caseira via Edge Functions permitem que a mesma landing mude headline, imagem e CTA conforme origem do clique (anúncio Meta sobre Ultraformer ≠ Reel sobre rotina de pele ≠ orgânico de Google). Aumento de conversão típico: 30-80%.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Reel sobre Ultraformer leva para landing com headline sobre Ultraformer (não landing genérica).</li>
+        <li>Anúncio para 35+ mostra imagem e tom diferente do anúncio para 25-30.</li>
+        <li>Tráfego de Doctoralia chega com tom diferente do tráfego de Insta.</li>
+      </ul>
+      <p class="label">Como começar (caseiro)</p>
+      <ul>
+        <li>Framer (matéria 15 ed. 01) suporta variantes de página por UTM via componentes condicionais.</li>
+        <li>UTM disciplinado: <span class="mono">?utm_source=ig&utm_medium=reel&utm_campaign=ultraformer-mai26</span>.</li>
+        <li>3 variantes inicialmente — não 30. Medir 30 dias.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i10" data-aid="04-10">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 10</div>
+        <span class="tag">YouTube</span><span class="tag">Series Theme</span>
+        <h3>Series Theme + Shorts encadeados — funil dentro do YouTube</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> YouTube Series Theme (relançado 2025) deixa você agrupar vídeos como playlist com narrativa contínua e aparece em destaque. Combinado com Shorts encadeados (cada Short menciona o próximo), constrói funil interno: viewer fica no canal mais tempo, algoritmo recompensa.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Série "Anti-mitos da derma estética" — 8 Shorts encadeados, cada um derruba um mito. Final aponta para vídeo longo.</li>
+        <li>Série "Por dentro do consultório CAL" — 6 vídeos sobre rotina, processo, ciência. Posicionamento premium.</li>
+        <li>Vinheta visual padrão CAL — paleta verde, abertura comum. Sinaliza qualidade ao algoritmo.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção IV</span>
+    <h2>Presença local</h2>
+    <div class="sub">Belo Horizonte é o seu raio real. SEO local importa mais que SEO nacional.</div>
+
+    <article class="item" id="i11" data-aid="04-11">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 11 · Alto retorno</div>
+        <span class="tag">Google Business</span><span class="tag">Local SEO</span>
+        <h3>Google Business Profile + IA semanal — dominar "dermatologista BH"</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Google Business Profile (ex-Meu Negócio) é o ativo mais subutilizado por médicos. Posts semanais, perguntas respondidas, fotos atualizadas, eventos — tudo entra no ranking local. Em 2026, agente que automatiza essa rotina mantendo tom CAL muda posição no "pacote local" do Google substancialmente.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Posts semanais (não anúncios) sobre dicas, novidades, casos — visíveis para quem busca "dermatologista BH".</li>
+        <li>Respostas rápidas a perguntas públicas — agente sugere, você revisa em 30s.</li>
+        <li>Resposta a reviews positivos e negativos com tom CAL — reputação cuidada.</li>
+        <li>Reservar GBP para Flávia/Ana também — você não é o único nome da clínica.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Verificar que GBP da CAL está completo: horários, telefone, fotos profissionais, procedimentos listados.</li>
+        <li>Skill <span class="mono">gbp-cal</span> gera post semanal + responde Q&A. Você aprova em batch.</li>
+        <li>Integrar com agente Validador (matéria 3 ed. 02) antes de publicar.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção VI</span>
+    <h2>Fora da caixa</h2>
+    <div class="sub">Cinco para alargar superfície.</div>
+
+    <article class="item" id="i12" data-aid="04-12">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 12 · Pessoal</div>
+        <span class="tag">Mem.ai</span><span class="tag">Capacities</span>
+        <h3>Segundo cérebro além do Obsidian</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você usa Obsidian para conhecimento estratégico. Mem.ai e Capacities resolvem o que Obsidian não resolve bem: anotação de momento (no celular, na corrida, no consultório), recuperação por contexto em vez de hierarquia, e IA que conecta nota nova com notas velhas automaticamente.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Obsidian é ótimo para conhecimento ordenado. Ruim para captura rápida no momento.</li>
+        <li>Mem.ai entende "aquela conversa com o cardiologista mês passado" e devolve sem você buscar.</li>
+        <li>Capacities trabalha com objetos (pessoas, projetos, ideias) — modelo melhor para quem pensa em rede, não em hierarquia.</li>
+      </ul>
+      <p class="label">Cuidado</p>
+      <ul>
+        <li>Não migrar Obsidian. Adicionar uma camada. Os dois conversam mal — tratar como ferramentas distintas.</li>
+        <li>Privacidade: Mem.ai usa cloud com OpenAI/Anthropic. Para nota com PII, ficar no Obsidian local.</li>
+      </ul>
+      <div class="links">
+        <a href="https://mem.ai/">Mem.ai</a>
+        <a href="https://capacities.io/">Capacities</a>
+      </div>
+    </article>
+
+    <article class="item" id="i13" data-aid="04-13">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 13 · Família</div>
+        <span class="tag">Spotify Family</span><span class="tag">AI DJ</span>
+        <h3>Playlist conjunta com Beatriz e Letícia — ritual semanal</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Spotify Family (R$32/mês) + AI DJ (que mistura preferência de cada perfil em playlist única) é base trivial para construir um ritual semanal pequeno com as filhas: cada uma adiciona 3 músicas por semana, na sexta toca a playlist da família no carro/cozinha. Sem celular, sem conteúdo de tela.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>13 e 11 anos — fase em que ritual ancestral perde força. Inventar pequenos artifício novos importa.</li>
+        <li>Música é território neutro: não compete com escola, com tela, com regras. É só presença.</li>
+        <li>AI DJ entrega narração entre faixas que vira matéria de conversa ("o que é esse gênero?").</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Conta Family já cobre você + as duas + Flávia se quiser.</li>
+        <li>Criar playlist "Família" colaborativa. Regra: 3 músicas/semana cada, sem veto.</li>
+        <li>Combinar uma noite/semana sem celular para ouvir junto.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i14" data-aid="04-14">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 14 · Treino</div>
+        <span class="tag">Hyrox</span><span class="tag">Cross-training</span>
+        <h3>Hyrox + IA — quando só correr trava sua maratona</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Hyrox virou em 2026 o cross-training mais relevante para corredor amador 40+. 8 exercícios funcionais entre corridas de 1km cada. A IA do Runna (matéria 14 ed. 02) e o WOD AI do CrossLifter integram bem — programação que protege joelho, melhora economia de corrida e atende lacuna de força que corredor puro tem.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Maratona amador 40+ trava por falta de força específica, não por falta de quilometragem.</li>
+        <li>Hyrox tem comunidade em BH crescendo — fator social que mantém constância.</li>
+        <li>Sessões de 60 min substituem treino chato de academia, alta densidade.</li>
+      </ul>
+      <div class="links">
+        <a href="https://hyrox.com/">Hyrox</a>
+      </div>
+    </article>
+
+    <article class="item" id="i15" data-aid="04-15">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 15 · Aprendizado</div>
+        <span class="tag">Tutor socrático</span><span class="tag">História</span>
+        <h3>História da medicina e filosofia da ciência com IA tutor</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> ChatGPT/Claude no modo "tutor socrático" funciona surpreendentemente bem para aprender áreas pelas quais você não tem caminho formal. Para um médico crítico que quer entender mais filosofia da ciência (Popper, Kuhn, Feyerabend) ou história da própria especialidade (de Hipócrates a Hebra a dermatologia molecular) — material denso, professor acessível, ritmo seu.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Conteúdo que enriquece intelectualmente sem agenda de ROI — esse é o ponto.</li>
+        <li>História da própria especialidade dá lastro a tudo que você fala no canal e em curso.</li>
+        <li>Filosofia da ciência protege contra modismos clínicos disfarçados de evidência.</li>
+      </ul>
+      <p class="label">Caminho sugerido</p>
+      <ul>
+        <li>Prompt: "Você é meu tutor de história da dermatologia. Comece por Hebra (séc XIX) e me leve até 2026. Faça perguntas socráticas a cada conceito. Cite fontes primárias quando possível."</li>
+        <li>1 sessão de 30 min/semana. Notas no Readwise (matéria 12 ed. 03).</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i16" data-aid="04-16">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 16 · Wildcard</div>
+        <span class="tag">Suno v5</span><span class="tag">Udio</span>
+        <h3>Trilha sonora própria — Suno v5 e Udio para canal e clínica</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Suno v5 (abril/2026) e Udio geram música original em qualquer gênero com letra ou instrumental. Para canal médico, abre possibilidades estranhas e baratas: jingle de abertura próprio, trilha para B-roll de procedimento, playlist ambiente para sala de espera com identidade CAL.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Música genérica de banco "Epidemic Sound" é cara e identifica seu vídeo como mais um. Trilha própria diferencia.</li>
+        <li>Sala de espera com playlist gerada para tom CAL (calmo, brasileiro, instrumental denso) — UX subliminar do paciente.</li>
+        <li>Custos baixos: Suno Pro US$10/mês para uso pessoal/clínica.</li>
+      </ul>
+      <p class="label">Cuidados</p>
+      <ul>
+        <li>Direitos autorais ainda em zona cinzenta. Para uso interno e canal próprio, tranquilo. Para curso pago/produto, ler termos.</li>
+        <li>Não cantar mensagem científica em jingle — fica gimmick. Use instrumental.</li>
+      </ul>
+      <div class="links">
+        <a href="https://suno.com/">Suno</a>
+        <a href="https://www.udio.com/">Udio</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Próximo passo</span>
+    <h2>Cinco coisas para esta janela</h2>
+    <div class="sub">Sequência da edição 04 — instalação primeiro, distribuição depois.</div>
+    <article class="item" id="ifechamento" data-aid="04-fechamento">
+      <div class="header-row"><div class="meta">
+        <div class="num">Plano de ação</div>
+        <h3>Da prateleira para a operação real</h3>
+      </div></div>
+      <ul>
+        <li><strong>Semana 1.</strong> Construir skills <span class="mono">roteirista-yt-cal</span> e <span class="mono">roteirista-reels-cal</span> (matérias 1 e 2). Empacotar o que você já faz.</li>
+        <li><strong>Semana 2.</strong> Agente <span class="mono">analista-retencao-yt</span> rodando sobre seus 10 vídeos mais vistos (matéria 5). Diagnóstico real do canal.</li>
+        <li><strong>Semana 3.</strong> Newsletter no Beehiiv lançada com lead magnet (matéria 8). Ativo independente começa.</li>
+        <li><strong>Semana 4.</strong> Google Business Profile auditado e skill <span class="mono">gbp-cal</span> gerando post semanal (matéria 11).</li>
+        <li><strong>Pessoal recorrente.</strong> Playlist semanal com as filhas (matéria 13). Sem produto, sem ROI — ritual.</li>
+      </ul>
+      <div class="box"><strong>Veto natural do CFO</strong> · custo somado mensal: Beehiiv free + Spotify Family R$32 + tempo de implementação. Praticamente zero financeiro. Maior limitante é tempo, não dinheiro.</div>
+    </article>
+  </section>
+
+  <footer class="foot">
+    <h4>Sobre este boletim</h4>
+    <p>Edição 04 · 16 matérias · foco editorial em marketing e produção de conteúdo, com cinco skills/agentes prontos para a prateleira (<span class="mono">~/Documents/Claude/SkillsBank/</span>). Diretrizes em <a href="https://github.com/alexandrelimabarros/novidades-ia-cal/blob/main/CURADORIA.md">CURADORIA.md</a>.</p>
+    <p>Próxima edição prevista: agosto/2026. Tema possível: CXO em produção (experiência Club com IA), monetização via comunidade e canal de produto recorrente.</p>
+  </footer>
+
+  <div class="signoff">— Boletim CAL nº 04 · Jul/2026 —</div>
+
+</div>
+
+<script>
+  window.__CAL_EDITION__ = {
+    id: "04",
+    title: "Boletim CAL Nº 04",
+    date: "16.05.2026",
+    url: "/edicoes/04-julho-2026.html"
+  };
+</script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
