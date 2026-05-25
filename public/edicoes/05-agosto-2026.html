@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Edição 05 · Ago 2026 · Novidades IA · CAL</title>
+<meta name="description" content="CXO em produção, comunidade Club, personalização e monetização recorrente — e cinco fora da caixa." />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link" href="/favoritos">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="cover">
+    <div class="top"><span>CAL · Conselho Administrativo</span><span>Vol. 05 · Ago/2026</span></div>
+    <h1>O paciente que <em>volta</em>, e quem volta com ele.</h1>
+    <p class="lede">Dezesseis matérias. Onze sobre experiência do paciente, comunidade Club, personalização e monetização recorrente — o CXO em produção. Cinco fora da caixa: GTD, fotos de família, açúcar e corrida, francês com Anki, música generativa para sono.</p>
+    <div class="meta">
+      <span>Edição pessoal · Alexandre Lima</span>
+      <span>BH · 16.05.2026</span>
+    </div>
+  </header>
+
+  <div class="editorial">
+    <div class="kicker">Editorial</div>
+    <h2>O retorno é mais barato que a aquisição. Sempre foi.</h2>
+    <p>Edições 01 a 04 cobriram fundação, dados, finanças e marketing. Esta edição se concentra na cadeira que rende mais por hora investida e que você menos sistematizou: CXO. Horst Schulze (Ritz-Carlton), Daniela Falcão e o framework Economia da Experiência (Pine &amp; Gilmore) estão lá no seu Conselho desde a sessão de definição — falta colocar em produção real.</p>
+    <p>A pergunta operacional simples: o paciente que veio em maio sabe que você lembra dele em agosto? Em 90% dos casos a resposta é não — e isso é dinheiro deixado na mesa, mais que qualquer ad-set que você possa otimizar. As matérias 1, 4, 7 e 10 atacam isso direto.</p>
+    <div class="pull">"Custo de aquisir paciente novo é 5-7x o custo de fazer paciente atual voltar. E pacientes que voltam falam de você."</div>
+    <p>Da metade pra frente, cinco fora da caixa. Dessa vez incluí uma escolha pessoal seu — a pasta <em>Genealogia</em> que está há tempos no seu Drive. Material para projeto familiar com Beatriz e Letícia, não para clínica.</p>
+  </div>
+
+  <nav class="toc">
+    <h3>Sumário desta edição</h3>
+    <ol>
+      <li><a href="#i1">Skill `cxo-cal` — Schulze + Falcão na rotina</a></li>
+      <li><a href="#i2">Jornada do paciente mapeada — fricção micro a micro</a></li>
+      <li><a href="#i3">NPS contínuo via WhatsApp com sentimento</a></li>
+      <li><a href="#i4">Circle / Skool pago — comunidade Club</a></li>
+      <li><a href="#i5">Eventos híbridos Club — Luma + Streamyard</a></li>
+      <li><a href="#i6">Programa de indicação inteligente</a></li>
+      <li><a href="#i7">Memória de paciente — RAG individual</a></li>
+      <li><a href="#i8">Onboarding Club em 14 dias humanizado</a></li>
+      <li><a href="#i9">Aniversários e datas Club com toque humano</a></li>
+      <li><a href="#i10">Tier Club Diamond — top 10% paga +50%</a></li>
+      <li><a href="#i11">Cross-sell inteligente por padrão de jornada</a></li>
+      <li><a href="#i12">Things 3 + IA — GTD pessoal sério</a></li>
+      <li><a href="#i13">Genealogia e fotos antigas com IA</a></li>
+      <li><a href="#i14">Levels CGM + nutricionista IA para corrida</a></li>
+      <li><a href="#i15">Anki + IA — francês que gruda</a></li>
+      <li><a href="#i16">Endel — música generativa para sono e foco</a></li>
+    </ol>
+  </nav>
+
+  <section class="chapter">
+    <span class="badge">Seção I</span>
+    <h2>CXO em produção</h2>
+    <div class="sub">A cadeira mais subestimada do Conselho ganhando teclado.</div>
+
+    <article class="item" id="i1" data-aid="05-01">
+      <div class="header-row"><div class="meta">
+        <div class="num">Skill 01 · Alto retorno</div>
+        <span class="tag">CXO</span><span class="tag">Schulze</span><span class="tag">Skill</span>
+        <h3>`cxo-cal` — Schulze + Falcão + Economia da Experiência operando</h3>
+      </div></div>
+      <p><strong>O que é.</strong> Skill que materializa sua cadeira CXO. Recebe input (nova decisão de processo, peça de comunicação, mudança operacional) e devolve análise sob 3 lentes: Schulze (padrão Ritz-Carlton de antecipação), Falcão (curadoria editorial do que o cliente vê), Pine &amp; Gilmore (experiência como produto, não como brinde).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Toda mudança proposta (preço novo, comunicação nova, fluxo de Sol diferente) passa pelo CXO antes de decidir. Demora 2 minutos. Evita decisão correta no financeiro e errada na experiência.</li>
+        <li>Briefing curto + output em 1 página: o que cada lente diria, conflito entre lentes, recomendação final ponderada.</li>
+        <li>Vira input da reunião mensal do Conselho — sai do plano abstrato.</li>
+      </ul>
+      <p class="label">Esqueleto do prompt</p>
+      <ul>
+        <li>Persona 1 (Schulze): "O standard é antecipação. Se o cliente teve que pedir, falhamos. Se houve atrito, é nosso."</li>
+        <li>Persona 2 (Falcão): "Curadoria é editar o que entra no campo de visão do cliente. Menos é mais, desde que sinalize valor."</li>
+        <li>Persona 3 (Pine &amp; Gilmore): "Cobre pela experiência, não pelo serviço. Memorável é precificável."</li>
+        <li>Output: 3 perspectivas separadas, depois síntese.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i2" data-aid="05-02">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 02 · Alto retorno</div>
+        <span class="tag">Jornada</span><span class="tag">Mapeamento</span>
+        <h3>Jornada do paciente mapeada — fricção micro a micro</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Jornada do paciente da CAL hoje existe na cabeça da Ana, da Flávia e na sua. Mapeada formalmente, com 40-60 pontos de contato do "comecei a seguir no Insta" ao "indico para a amiga", aparecem 8-12 pontos de fricção que ninguém percebe individualmente mas que somam à churn.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Workshop de 3h com você + Flávia + Ana + biomédica. Skill <span class="mono">jornada-paciente-cal</span> conduz a sessão, faz perguntas, organiza output em formato visual.</li>
+        <li>Cada fricção identificada vira ticket pequeno — não projeto. Coisas como: "paciente recebe confirmação com nome errado da Ana", "estacionamento não está claro no Waze", "café da espera fica gelado".</li>
+        <li>Repetir mapeamento a cada 6 meses. A jornada muda silenciosamente.</li>
+      </ul>
+      <p class="label">Como rodar</p>
+      <ul>
+        <li>Template de jornada padrão CAL (anônimo, descobertA → consideração → consulta → procedimento → retorno → indicação).</li>
+        <li>Cada fase com pergunta-eixo: "o que o paciente faz, sente, pensa, falha em conseguir?".</li>
+        <li>Output: mapa visual + lista priorizada de fricções com dono e prazo.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i3" data-aid="05-03">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 03</div>
+        <span class="tag">NPS</span><span class="tag">Sentimento</span>
+        <h3>NPS contínuo via WhatsApp — sentimento e ação automática</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> NPS anual é teatro. NPS contínuo (a cada consulta concluída, mensagem D+1 via WhatsApp com pergunta única) gera 100x mais dado em 60 dias e captura o momento certo. Em 2026, agente classifica resposta em sentimento e dispara ação: detrator vira ligação sua, promotor vira convite para review e indicação.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Toda consulta gera 1 mensagem D+1: "0 a 10, recomendaria o atendimento de hoje a um amigo?". Resposta opcional aberta.</li>
+        <li>Agente classifica em promotor (9-10) / passivo (7-8) / detrator (0-6) e em sentimento (positivo, neutro, frustrado, irritado).</li>
+        <li>Detrator: agente alerta você. Você liga em 24h. Recuperação possível em 70% dos casos.</li>
+        <li>Promotor: agente envia pedido de review em Doctoralia/Google + convite para programa de indicação (matéria 6).</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.youtube.com/results?search_query=nps+cont%C3%ADnuo+cl%C3%ADnica+whatsapp+tutorial">Tutoriais em PT</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção II</span>
+    <h2>Comunidade Club</h2>
+    <div class="sub">Pertencimento como camada que multiplica retenção.</div>
+
+    <article class="item" id="i4" data-aid="05-04">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 04 · Alto retorno</div>
+        <span class="tag">Circle</span><span class="tag">Skool</span><span class="tag">Club</span>
+        <h3>Circle ou Skool pago — comunidade Club que prende</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Club hoje é transação: paga, vem, sai. Adicionar uma camada de comunidade fechada (Circle ou Skool pago) tira a relação do binário "veio/não veio" e cria pertencimento. Em derma estética premium, o efeito sobre churn é de 15-25% a menos em 12 meses.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Espaço fechado só para pacientes Club: canais por tema (rotina, dúvidas, novos procedimentos, perguntas para o Dr.).</li>
+        <li>Live mensal sua de 30min — Q&amp;A, novidade, ciência. Não substitui consulta; complementa.</li>
+        <li>Diferenciação vs Telegram da matéria 11 ed. 02: aqui é comunidade com perfis, gamificação leve, biblioteca de conteúdo, não broadcast.</li>
+        <li>Circle integra com Asaas/Stripe e libera acesso automaticamente conforme status Club.</li>
+      </ul>
+      <p class="label">Como começar</p>
+      <ul>
+        <li>Circle Basic (US$49/mês). Skool pago (US$99/mês). Escolher um — fundir audiências depois é caro.</li>
+        <li>Lançar com seed de 20 Club mais engajados em fase fechada por 30 dias. Refinar regras antes de abrir.</li>
+      </ul>
+      <div class="links">
+        <a href="https://circle.so/">Circle</a>
+        <a href="https://www.skool.com/">Skool</a>
+      </div>
+    </article>
+
+    <article class="item" id="i5" data-aid="05-05">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 05</div>
+        <span class="tag">Luma</span><span class="tag">StreamYard</span><span class="tag">Eventos</span>
+        <h3>Eventos híbridos exclusivos Club — Luma + StreamYard com IA</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> 4 eventos/ano (trimestrais) só para Club. Híbridos: presencial em BH com 12 pessoas + online para os outros. Luma organiza convites e RSVPs, StreamYard transmite com produção profissional, IA pós-evento gera resumo, clipa highlights, manda relatório individualizado para quem não pôde ir.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Conteúdos: "Tendências de derma para [estação]", "Ciência do procedimento X", "Q&amp;A aberto com o Dr.".</li>
+        <li>Tier presencial vira escasso (12 vagas) — diferenciação real para os top pacientes.</li>
+        <li>Conteúdo gravado vira biblioteca da comunidade Circle (matéria 4) — patrimônio cumulativo.</li>
+      </ul>
+      <p class="label">Cuidados</p>
+      <ul>
+        <li>Não fazer evento "pra preencher trimestre". Cada um precisa entregar valor claro — senão o exclusivo vira chato.</li>
+        <li>Skill <span class="mono">curador-evento-cal</span> sugere tema com base em dúvidas recorrentes do WhatsApp + reviews + Q&amp;A pendente.</li>
+      </ul>
+      <div class="links">
+        <a href="https://lu.ma/">Luma</a>
+        <a href="https://streamyard.com/">StreamYard</a>
+      </div>
+    </article>
+
+    <article class="item" id="i6" data-aid="05-06">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 06 · Alto retorno</div>
+        <span class="tag">Indicação</span><span class="tag">Embaixador</span>
+        <h3>Programa de indicação inteligente — detectar embaixador no momento certo</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Indicação é o canal de aquisição mais barato (CAC ~0) e mais convertedor (CR &gt; 60%). Em 2026, agente cruza dados (NPS alto, frequência crescente, review espontâneo, engajamento em comunidade) e identifica o momento certo de pedir indicação — não em campanha massiva, mas em janela individual.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Paciente que deixou review 5★ ontem recebe hoje convite curto e personalizado para indicar — agente sugere texto, Ana envia.</li>
+        <li>Paciente Club há 18 meses com freq alta recebe convite com benefício pessoal (próximo procedimento com bônus, não desconto).</li>
+        <li>Pedidos de indicação NUNCA por broadcast genérico — perde fricção, perde resultado, perde reputação.</li>
+      </ul>
+      <p class="label">Estrutura do programa</p>
+      <ul>
+        <li>Indicado ganha: avaliação inicial com desconto pontual (10-15%).</li>
+        <li>Indicador ganha: crédito para próximo procedimento, não dinheiro.</li>
+        <li>Tracking: link único por paciente (Bitly/Rebrandly) — métrica acionável.</li>
+      </ul>
+      <div class="box"><strong>Atenção CLO</strong> · CFM proíbe descontos divulgados como propaganda médica. Vantagem para indicador/indicado pode existir mas deve ser comunicada de forma fechada, dentro da relação clínico-paciente. Skill <span class="mono">validador_publicidade.md</span> (ed. 02) avalia cada peça.</div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção III</span>
+    <h2>Personalização individual</h2>
+    <div class="sub">Cada paciente é um — não um segmento.</div>
+
+    <article class="item" id="i7" data-aid="05-07">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 07 · Alto retorno</div>
+        <span class="tag">RAG</span><span class="tag">Memória</span>
+        <h3>Memória de paciente — RAG individual para cada interação</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Cada paciente Club tem 8-15 interações ao longo de 18 meses. Hoje, no momento da nova consulta, você relê o prontuário e lembra o que dá. Versão IA 2026: RAG individual (banco vetorial por paciente) acessível a você em segundos. "O que conversamos sobre filhos da Joana na consulta de março?". Resposta literal.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Pré-consulta: agente prepara briefing de 1 página com histórico relevante + temas pessoais mencionados + queixa última.</li>
+        <li>Você entra no atendimento sabendo o que faz a paciente se sentir vista — Schulze em produção real.</li>
+        <li>Sol (WhatsApp) também consulta esse RAG para responder com contexto, não como atendente genérico.</li>
+      </ul>
+      <div class="box"><strong>LGPD em vermelho</strong> · esse é dado clínico sensível. RAG precisa rodar local (Ollama da matéria 16 ed. 02) ou em servidor com BAA e criptografia em repouso. Jamais Pinecone/Weaviate cloud aberto sem due diligence regulatória.</div>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Começar pequeno: 50 pacientes Club mais frequentes. Vetorização local com <span class="mono">nomic-embed-text</span>.</li>
+        <li>Validar 30 dias. Se ROI claro, expandir.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i8" data-aid="05-08">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 08</div>
+        <span class="tag">Onboarding</span><span class="tag">14 dias</span>
+        <h3>Onboarding Club humanizado em 14 dias</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Paciente que entrou no Club ontem precisa sentir o programa em 14 dias — sem espera de mais consulta. Sequência: D0 mensagem de boas-vindas sua personalizada (HeyGen da ed. 01 com nome), D2 microaula de rotina (ed. 01 matéria 14), D5 convite para comunidade (matéria 4), D9 lembrete do primeiro benefício, D14 check-in da Ana.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Reduz remorso de compra (vai do "será que valeu?" para "não acredito que esse pacote tem tanto").</li>
+        <li>Estabelece padrão: Club é experiência, não desconto. Posicionamento de longo prazo.</li>
+        <li>Skill <span class="mono">onboarding-club</span> orquestra a sequência, dispara via n8n da ed. 01.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i9" data-aid="05-09">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 09</div>
+        <span class="tag">Datas</span><span class="tag">Aniversário</span>
+        <h3>Aniversários e marcos Club — automatizado com toque humano</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Aniversário, primeiro ano de Club, "voltou após 6 meses fora" — momentos com peso emocional desproporcional ao custo de marcar. Em 2026, agente detecta e prepara: mensagem manuscrita digital (sua letra real via app), pequeno presente físico (kit minúsculo), vídeo personalizado HeyGen. Não vale automação genérica — só funciona com toque pessoal real.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Aniversário: vídeo 20s seu (gerado) + benefício pequeno + link de agenda.</li>
+        <li>1 ano de Club: kit físico (não barato — uma vela CAL, cartão escrito, brinde editado) + chamada para upgrade Diamond (matéria 10).</li>
+        <li>Recuperação: paciente que sumiu por 6 meses recebe ligação sua (não Ana). Recuperação 35-50%.</li>
+      </ul>
+      <div class="box"><strong>Realidade</strong> · automação que parece automação não funciona aqui — irrita. A IA prepara, você assina pessoalmente. Sem atalho.</div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção IV</span>
+    <h2>Monetização recorrente</h2>
+    <div class="sub">O LTV do Club tem mais espaço do que você acha.</div>
+
+    <article class="item" id="i10" data-aid="05-10">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 10 · Alto retorno</div>
+        <span class="tag">Diamond</span><span class="tag">Tier</span>
+        <h3>Tier Club Diamond — top 10% paga +50% e quer pagar</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Aproximadamente 10% dos seus pacientes Club consomem 35-45% do total. Eles não querem desconto — querem privilégio, acesso, sinalização. Tier Diamond entrega: prioridade de agenda, antecipação de novos procedimentos, comunicação direta com você, eventos privados (matéria 5), 2 horários reservados/mês.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Preço +50% sobre o Club padrão. Inflação de receita do segmento mais valioso, com custo marginal baixo.</li>
+        <li>Vagas limitadas (20-30 inicialmente). Escassez real, não fabricada — porque depende do seu tempo.</li>
+        <li>Comunicação fechada por convite, não em campanha aberta. Quem ganha o convite se sente único.</li>
+      </ul>
+      <div class="box"><strong>Atenção CFO</strong> · não criar Diamond para cobrir buraco. Criar Diamond porque a experiência é genuinamente diferente. Se a entrega for ilusão, o churn é catastrófico — top paciente que se sente enganado vira detrator vocal.</div>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Mapear 20 pacientes que se encaixariam (alta frequência, NPS alto, ticket alto).</li>
+        <li>Conversa pessoal com cada um (você, não Ana). 12 aceitam, 8 declinam. Roda.</li>
+        <li>Vindi/Asaas suporta múltiplos tiers de assinatura sem complicação.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i11" data-aid="05-11">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 11</div>
+        <span class="tag">Cross-sell</span><span class="tag">Inteligência</span>
+        <h3>Cross-sell por padrão de jornada — sugestão certa, momento certo</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Pacientes seguem padrões: quem fez Ultraformer aos 38 normalmente fará bioestimulador entre 40-42. Quem começou com botox em zona dinâmica acaba fazendo área estática em 12-18 meses. Em 2026, agente cruza histórico de jornadas semelhantes e sugere a você (não ao paciente direto) qual procedimento está no horizonte de cada um.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Antes de toda consulta, briefing inclui "próximo procedimento provável segundo histórico de 300 jornadas semelhantes" — você decide se cabe trazer.</li>
+        <li>Não vira pitch — vira orientação clínica que parece magicamente bem-timed.</li>
+        <li>Aumenta ticket médio Club em 15-25% sem aumentar frequência de consulta.</li>
+      </ul>
+      <div class="box"><strong>Linha ética</strong> · sugestão de procedimento precisa nascer de indicação clínica, não de algoritmo. IA prepara dado; você decide. Documentar critério para auditoria.</div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção VI</span>
+    <h2>Fora da caixa</h2>
+    <div class="sub">Cinco para alargar superfície.</div>
+
+    <article class="item" id="i12" data-aid="05-12">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 12 · Pessoal</div>
+        <span class="tag">Things 3</span><span class="tag">GTD</span>
+        <h3>Things 3 + IA — GTD pessoal sério</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você gerencia clínica, conteúdo, filhas, treino, francês — sem sistema único de tarefas pessoais. Things 3 (Apple, US$80 lifetime) continua sendo o melhor app de GTD em 2026 pela simplicidade. Combinado com captura via Siri e agentes que destilam reuniões (Granola da ed. 02) em ações, fecha o ciclo.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Cabeça de médico precisa de "second brain" para tarefa, não só para conhecimento (que está no Obsidian/Readwise).</li>
+        <li>Things tem o equilíbrio único entre estrutura (áreas, projetos, tarefas) e leveza (sem painel de controle).</li>
+        <li>Atalhos Siri: "anota tarefa: ligar pro João sobre POP". Pronto.</li>
+      </ul>
+      <p class="label">Setup mínimo</p>
+      <ul>
+        <li>Áreas: Clínica · Canal · Família · Treino · Francês · Pessoal.</li>
+        <li>Inbox como única porta de entrada. Processamento 5 min/dia.</li>
+        <li>Revisão semanal de 30 min na sexta. Sem isso, vira lixeira.</li>
+      </ul>
+      <div class="links">
+        <a href="https://culturedcode.com/things/">Things 3</a>
+      </div>
+    </article>
+
+    <article class="item" id="i13" data-aid="05-13">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 13 · Família</div>
+        <span class="tag">Genealogia</span><span class="tag">MyHeritage</span>
+        <h3>Genealogia e fotos antigas com IA — projeto com Beatriz e Letícia</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você tem pasta "Genealogia" no Drive há anos. MyHeritage AI Time Machine, Remini e Topaz Photo AI fazem em 2026 o que era impossível ainda em 2023: colorizam fotos preto-e-branco com fidelidade, restauram danificadas, animam retratos antigos brevemente. Projeto familiar profundo, com baixo investimento técnico e alto retorno emocional.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Bea (13) e Letícia (11) na idade certa para conectar com história familiar — fica ancorado como referência pelo resto da vida.</li>
+        <li>Material físico (álbum impresso final, parede de quadros) vira herança literal.</li>
+        <li>Projeto compartilhado: cada uma escolhe um ancestral para pesquisar. Você narra com IA tutor.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>MyHeritage tem subscription mensal — assinar 2 meses, fazer todo o trabalho, cancelar.</li>
+        <li>Remini para fotos individuais (US$10/mês).</li>
+        <li>Resultado: livro físico via Photobook Brasil ou Picaboo.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.myheritage.com/">MyHeritage</a>
+        <a href="https://remini.ai/">Remini</a>
+      </div>
+    </article>
+
+    <article class="item" id="i14" data-aid="05-14">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 14 · Treino</div>
+        <span class="tag">Levels</span><span class="tag">CGM</span><span class="tag">Nutrição</span>
+        <h3>Levels CGM + nutricionista IA — açúcar como variável da maratona</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Monitor de glicemia contínua (CGM) chegou no consumidor saudável em 2024-2025 e em 2026 virou ferramenta padrão de corredor amador sério. Levels nos EUA, Lingo (Abbott) no Brasil. Combinado com nutricionista-IA (MacroFactor, Nucleo), revela onde sua nutrição está sabotando o treino — picos de glicose pós-treino, queda noturna, jejum prolongado errado.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Corredor amador 40+ topa de adaptar dieta. Sem dado, ajusta no escuro.</li>
+        <li>Aprendizado individual em 14 dias: você descobre alimentos que <em>seu</em> corpo responde mal, não o que livro diz.</li>
+        <li>Médico que mede o próprio metabolismo tem material clínico interessante para o canal (com cautela CFM — falar do experimento, não prescrever a paciente).</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>14 dias com sensor (~R$ 350). Suficiente para padrão.</li>
+        <li>Não viciar — instrumento, não meta. Médico precisa lembrar.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.levelshealth.com/">Levels</a>
+      </div>
+    </article>
+
+    <article class="item" id="i15" data-aid="05-15">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 15 · Aprendizado</div>
+        <span class="tag">Anki</span><span class="tag">Francês</span>
+        <h3>Anki + IA — espaçamento que grude o francês</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Edição 02 cobriu Pi/Sesame para conversa em francês. Falta a outra metade: vocabulário grudado por longo prazo. Anki (algoritmo de repetição espaçada, científico desde anos 80) + IA que gera cartões a partir do que você converso com Pi resolve a memória. 15 min/dia de Anki retém 95% do vocabulário em 12 meses.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Adulto estudante de idioma esquece 70% do que aprende em 30 dias sem repetição espaçada. Anki vira a janela onde o que você conversou ontem volta amanhã.</li>
+        <li>Em 2026, AnkiHub e plugins de IA geram cartões com áudio (TTS), exemplo de uso e imagem — sem você criar manual.</li>
+        <li>Combinação Pi (conversa) + Anki (memória) é o stack mais defensável de idioma em 2026 para adulto.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Anki Mobile (iOS US$25 lifetime). Desktop grátis.</li>
+        <li>Deck inicial "5000 palavras mais comuns do francês". 30 cartões novos/dia.</li>
+      </ul>
+      <div class="links">
+        <a href="https://apps.ankiweb.net/">Anki</a>
+      </div>
+    </article>
+
+    <article class="item" id="i16" data-aid="05-16">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 16 · Wildcard</div>
+        <span class="tag">Endel</span><span class="tag">Música generativa</span>
+        <h3>Endel — música generativa para sono, foco e corrida</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Endel é o app de música generativa mais maduro de 2026: gera trilhas em tempo real (não pré-gravadas) ajustadas a contexto (foco, relaxar, dormir, correr) e variáveis pessoais (FC do Apple Watch, hora do dia, clima). Tem parceria com Universal Music e estudos do MIT/Sleep Foundation.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Ligado às matérias 14 ed. 03 (Whoop/Oura) e 14 ed. 02 (Runna): sono profundo melhora performance — Endel tem evidência leve mas crescente.</li>
+        <li>Para foco em tarefa de Claude Code/escrita, substitui playlist de YouTube com anúncio.</li>
+        <li>Música de corrida adaptativa ao ritmo de FC — experimento interessante.</li>
+      </ul>
+      <p class="label">Cuidado</p>
+      <ul>
+        <li>Não é mágica — é ferramenta. Sono ruim por outras causas (cafeína à noite, tela em LED, ansiedade) não é resolvido por trilha.</li>
+        <li>US$10/mês. Free trial 7 dias.</li>
+      </ul>
+      <div class="links">
+        <a href="https://endel.io/">Endel</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Próximo passo</span>
+    <h2>Cinco coisas para esta janela</h2>
+    <div class="sub">A sequência de CXO que rende mais por hora.</div>
+    <article class="item" id="ifechamento" data-aid="05-fechamento">
+      <div class="header-row"><div class="meta">
+        <div class="num">Plano de ação</div>
+        <h3>Retenção primeiro, expansão depois</h3>
+      </div></div>
+      <ul>
+        <li><strong>Semana 1.</strong> Workshop de jornada do paciente (matéria 2) com você + Flávia + Ana. 3h. Saída: lista priorizada de 5 fricções.</li>
+        <li><strong>Semana 2.</strong> Skill <span class="mono">cxo-cal</span> (matéria 1) operando para toda decisão nova de comunicação/processo.</li>
+        <li><strong>Semana 3.</strong> NPS contínuo via WhatsApp (matéria 3). Cada consulta gera 1 mensagem D+1. Primeira leva de dados em 30 dias.</li>
+        <li><strong>Semana 4.</strong> Tier Diamond (matéria 10) lançado em fase fechada com 20 convites manuais. Sem campanha.</li>
+        <li><strong>Pessoal recorrente.</strong> Things 3 instalado e processado todo dia (matéria 12). Sem isso, o resto fica na cabeça.</li>
+      </ul>
+      <div class="box"><strong>Veto natural do CFO</strong> · custo mensal: Circle US$49 (se lançar comunidade) + Endel US$10 + Levels CGM ~R$350 em 14 dias. Tudo abaixo de R$ 600. Maior limitante é tempo de implementação, não dinheiro.</div>
+    </article>
+  </section>
+
+  <footer class="foot">
+    <h4>Sobre este boletim</h4>
+    <p>Edição 05 · 16 matérias · foco em CXO em produção, comunidade Club e monetização recorrente. Mix 11+5 conforme <a href="https://github.com/alexandrelimabarros/novidades-ia-cal/blob/main/CURADORIA.md">CURADORIA.md</a>.</p>
+    <p>Próxima edição prevista: setembro/2026. Tema possível: COO em produção (operação clínica padronizada, escala sem perder qualidade), com mais cinco fora da caixa.</p>
+  </footer>
+
+  <div class="signoff">— Boletim CAL nº 05 · Ago/2026 —</div>
+
+</div>
+
+<script>
+  window.__CAL_EDITION__ = {
+    id: "05",
+    title: "Boletim CAL Nº 05",
+    date: "16.05.2026",
+    url: "/edicoes/05-agosto-2026.html"
+  };
+</script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
