@@ -1,5 +1,14 @@
 [
   {
+    "id": "06",
+    "shortTitle": "Set/2026",
+    "title": "Boletim CAL Nº 06",
+    "date": "16.05.2026",
+    "desc": "COO em produção — padronização, agenda, suprimentos, qualidade — e cinco fora da caixa.",
+    "url": "/edicoes/06-setembro-2026.html",
+    "upcoming": false
+  },
+  {
     "id": "05",
     "shortTitle": "Ago/2026",
     "title": "Boletim CAL Nº 05",
@@ -45,11 +54,11 @@
     "upcoming": false
   },
   {
-    "id": "06",
-    "shortTitle": "Set/2026",
-    "title": "Boletim CAL Nº 06 (em preparo)",
-    "date": "Set/2026",
-    "desc": "Tema possível: COO em produção — operação clínica padronizada, escala sem perder qualidade.",
+    "id": "07",
+    "shortTitle": "Out/2026",
+    "title": "Boletim CAL Nº 07 (em preparo)",
+    "date": "Out/2026",
+    "desc": "Tema possível: integração entre cadeiras do Conselho — sistema, não agentes isolados.",
     "url": "#",
     "upcoming": true
   }

@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Edição 06 · Set 2026 · Novidades IA · CAL</title>
+<meta name="description" content="COO em produção — padronização, agenda, suprimentos, qualidade — e cinco fora da caixa." />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link" href="/favoritos">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="cover">
+    <div class="top"><span>CAL · Conselho Administrativo</span><span>Vol. 06 · Set/2026</span></div>
+    <h1>A operação que <em>não te depende</em>.</h1>
+    <p class="lede">Dezesseis matérias. Onze sobre COO em produção — padronização clínica, agenda inteligente, suprimentos e qualidade contínua. Cinco fora da caixa: calendário com IA, viagem com filhas, análise biomecânica, livros por áudio com notas, casa inteligente.</p>
+    <div class="meta">
+      <span>Edição pessoal · Alexandre Lima</span>
+      <span>BH · 16.05.2026</span>
+    </div>
+  </header>
+
+  <div class="editorial">
+    <div class="kicker">Editorial</div>
+    <h2>Operação boa é a que continua quando o dono viaja.</h2>
+    <p>Cinco edições atrás, o Pacto de Visão 2029–2031 pedia "Alexandre atendendo menos sem perder a CAL". A pergunta operacional é simples: se você sair 30 dias amanhã, o que para? Cinco anos atrás, quase tudo. Hoje, menos. A 06 ataca o que ainda para: protocolo clínico padronizado de verdade, agenda que se preenche sozinha, insumos que nunca faltam, eventos adversos catalogados, PDCA real.</p>
+    <p>Atul Gawande, Dra. Ludhmila Hajjar e o PDCA-Falconi estão no seu Conselho desde a definição da cadeira COO. Versão 2026 não é Gawande lido — é Gawande operando como sub-agente que <em>recusa</em> avançar quando o checklist não foi cumprido. A diferença é exatamente essa: dispositivo, não inspiração.</p>
+    <div class="pull">"Toda operação subscala porque dependeu de uma cabeça. Toda escala bem feita transformou a cabeça em sistema."</div>
+    <p>As matérias 1, 2, 4 e 9 são as de maior alavanca. A 16 (casa inteligente com IA) é a única não-óbvia desta edição — vale ler com atenção, mesmo que pareça wildcard distante do consultório.</p>
+  </div>
+
+  <nav class="toc">
+    <h3>Sumário desta edição</h3>
+    <ol>
+      <li><a href="#i1">Skill `coo-cal` — Gawande + Hajjar + PDCA</a></li>
+      <li><a href="#i2">Checklist clínico digital — Gawande aplicado</a></li>
+      <li><a href="#i3">Sistema de eventos adversos — causa raiz</a></li>
+      <li><a href="#i4">Agenda com IA — janelas, no-show, otimização</a></li>
+      <li><a href="#i5">Calendário com buffers — clínico vs operacional</a></li>
+      <li><a href="#i6">Previsão de demanda sazonal</a></li>
+      <li><a href="#i7">Gestão de insumos — previsão e reposição</a></li>
+      <li><a href="#i8">Validade e perdas — monitor automático</a></li>
+      <li><a href="#i9">PDCA mensal automatizado — Falconi em prática</a></li>
+      <li><a href="#i10">Auditoria interna de POPs</a></li>
+      <li><a href="#i11">Microaprendizado contínuo da equipe</a></li>
+      <li><a href="#i12">Reclaim.ai / Motion — calendário com IA</a></li>
+      <li><a href="#i13">Mindtrip / Wonderplan — viagem com as filhas</a></li>
+      <li><a href="#i14">Análise biomecânica de corrida via smartphone</a></li>
+      <li><a href="#i15">Speechify + IA — livros enquanto corre/dirige</a></li>
+      <li><a href="#i16">HomeKit + Matter + IA — casa que responde</a></li>
+    </ol>
+  </nav>
+
+  <section class="chapter">
+    <span class="badge">Seção I</span>
+    <h2>Padronização e qualidade clínica</h2>
+    <div class="sub">O que Gawande escreveu vira dispositivo, não livro.</div>
+
+    <article class="item" id="i1" data-aid="06-01">
+      <div class="header-row"><div class="meta">
+        <div class="num">Skill 01 · Alto retorno</div>
+        <span class="tag">COO</span><span class="tag">Gawande</span><span class="tag">Skill</span>
+        <h3>`coo-cal` — Gawande + Hajjar + PDCA-Falconi operando</h3>
+      </div></div>
+      <p><strong>O que é.</strong> Skill que materializa sua cadeira COO. Recebe input (proposta de novo procedimento, mudança de protocolo, incidente clínico, queixa operacional) e devolve análise sob 3 lentes: Gawande (checklist e segurança), Hajjar (rigor de UTI aplicado à derma estética), PDCA-Falconi (ciclo de melhoria com método).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Toda proposta operacional passa por <span class="mono">coo-cal</span> antes de virar piloto. Output em 1 página.</li>
+        <li>Lente Hajjar é a mais defensável — protocolos de UTI são insumo para derma estética em segurança, não inverso. Você ganha tempo de adoção.</li>
+        <li>Lente Falconi sai do "vamos tentar" para "vamos medir, ajustar, padronizar".</li>
+      </ul>
+      <p class="label">Esqueleto do prompt</p>
+      <ul>
+        <li>Persona 1 (Gawande): "Checklist primeiro. O que pode dar errado? O que falhou em casos parecidos? Onde a equipe pula etapa por achar que sabe?"</li>
+        <li>Persona 2 (Hajjar): "Cada decisão tem efeito sistêmico. Qual o pior caso? Qual o plano B? Quem decide quando paramos?"</li>
+        <li>Persona 3 (Falconi-PDCA): "Plan-Do-Check-Act. Sem métrica antes, sem melhoria. Métrica é número, não sensação."</li>
+        <li>Output: 3 perspectivas, síntese, recomendação com critério de medição.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i2" data-aid="06-02">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 02 · Alto retorno</div>
+        <span class="tag">Checklist</span><span class="tag">Procedimento</span>
+        <h3>Checklist clínico digital — Gawande aplicado, sem PDF na gaveta</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> POPs em PDF estático ninguém abre. Checklist clínico digital (Notion + iPad ou app dedicado tipo SafetyCulture) é checkbox por etapa em tempo real, com timestamp e responsável. Cada procedimento vira evento auditável; equipe não pula etapa porque o sistema não avança.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Pré-procedimento: identificação do paciente, alergia, foto de marcação, consentimento assinado. Sem isso checked, biomédica não inicia.</li>
+        <li>Intra-procedimento: lote do produto, dose, observação. Captura para rastreabilidade.</li>
+        <li>Pós: orientação entregue, retorno agendado, foto pós. Vira input do CRM e do conteúdo.</li>
+      </ul>
+      <div class="box"><strong>Conexão com edição 02</strong> · liga direto com matéria 8 (POPs Gawande digitais) e matéria 5 (Whisper + diarização). Cada execução de protocolo gera registro estruturado para auditoria.</div>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Começar pelo procedimento mais frequente. Mapear etapa a etapa em 2h.</li>
+        <li>Notion + plugin de form ou SafetyCulture (US$24/usuário/mês).</li>
+        <li>Roll-out em 30 dias com biomédica. Refinar com feedback dela antes de expandir.</li>
+      </ul>
+      <div class="links">
+        <a href="https://safetyculture.com/">SafetyCulture</a>
+      </div>
+    </article>
+
+    <article class="item" id="i3" data-aid="06-03">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 03</div>
+        <span class="tag">Eventos adversos</span><span class="tag">Causa raiz</span>
+        <h3>Sistema de eventos adversos — registro estruturado e análise</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Em derma estética, evento adverso menor (eritema persistente, equimose, paciente insatisfeito) acontece em 5-12% dos procedimentos — número normal. O que não pode é não saber qual é seu número, qual procedimento concentra, qual paciente concentra. Sistema simples (Airtable ou Sheets + skill) captura, classifica, sugere análise de causa raiz (5 Whys de Toyota).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Dashboard mensal: taxa de evento por procedimento, por profissional, por lote de produto. Sem números, gestão é narrativa.</li>
+        <li>Detectar padrão antes do processo: 3 equimoses em 30 dias num procedimento específico — pausa e revisão de técnica.</li>
+        <li>Material protegido em caso de questionamento — você tem documentação de melhoria contínua, não só de incidente.</li>
+      </ul>
+      <div class="box"><strong>Atenção CLO</strong> · sistema de evento adverso é também documento de defesa. Mantenha em ambiente que respeite sigilo (não Google Sheets aberto). Vincule à matéria 7 da ed 05 (RAG por paciente).</div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção II</span>
+    <h2>Agenda e capacidade</h2>
+    <div class="sub">O ativo mais escasso da clínica é o seu tempo. Tratado como tal.</div>
+
+    <article class="item" id="i4" data-aid="06-04">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 04 · Alto retorno</div>
+        <span class="tag">Agenda</span><span class="tag">No-show</span>
+        <h3>Agenda com IA — janelas, no-show previsto, preenchimento automático</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Sua agenda hoje provavelmente perde 8-15% por no-show e janelas que não foram preenchidas. Em 2026, agente cruza histórico (paciente X falta 30% das vezes em segunda 8h), padrão (mesma janela vaga repetida) e lista de espera, e propõe: confirmação dupla para alto risco, oferta automática de vaga para lista de espera, overbooking inteligente em horário de alto no-show.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Modelo de no-show treinado em 12 meses do seu histórico — geralmente 80%+ de acerto.</li>
+        <li>Skill <span class="mono">agenda-cal</span> roda toda noite, devolve a manhã seguinte com sugestões: confirmar X, oferecer vaga Y, overbooking Z.</li>
+        <li>Receita recuperada típica: 6-10% no primeiro trimestre.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Exportar 12 meses do Google Calendar + status (compareceu/faltou/reagendou).</li>
+        <li>Skill simples no Claude Code: classificação binária no-show + lógica de sugestão.</li>
+        <li>Integração com WhatsApp da Ana via n8n da edição 01.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i5" data-aid="06-05">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 05</div>
+        <span class="tag">Buffer</span><span class="tag">Bloqueio</span>
+        <h3>Calendário com buffers automáticos — clínico vs operacional</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Médico que atende sem buffer entre consultas atrasa, decide pior, sai exausto. Reclaim.ai e Motion (matéria 12) automatizam bloqueio: 10 min entre consultas, 1h diária para trabalho profundo, almoço protegido contra encaixe, deep work segunda manhã. Em 2026, isso é diferencial competitivo de quem entrega qualidade sustentável.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Bloqueio em cascata: se você atrasa 15 min, próximo paciente é avisado automaticamente pelo Sol.</li>
+        <li>Janela de prontuário garantida — não tem como pular para "ver na pausa do almoço".</li>
+        <li>Reunião com Flávia ou Conselho não compete com atendimento — slots reservados na agenda mensalmente.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i6" data-aid="06-06">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 06</div>
+        <span class="tag">Demanda</span><span class="tag">Sazonalidade</span>
+        <h3>Previsão de demanda sazonal — equipe na hora certa</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Derma estética tem sazonalidade clara: pré-verão (set-nov) explode, janeiro derrete, retorno em março. Em 2026, modelo simples (Prophet da matéria 3 ed. 03) com 24 meses de dados prevê demanda por procedimento e por janela. Permite alocar equipe extra, antecipar compra de insumo, abrir agenda para retorno em vez de novo na época certa.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Em maio, plano operacional para outubro está pronto — não improvisado em setembro.</li>
+        <li>Contratação temporária (estagiário, esteticista extra) negociada com antecedência, preço melhor.</li>
+        <li>Comunicação proativa com Club: "agenda de outubro vai abrir, pacientes Club têm acesso antecipado".</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção III</span>
+    <h2>Suprimentos e estoque</h2>
+    <div class="sub">Dinheiro parado em insumo é dinheiro errado.</div>
+
+    <article class="item" id="i7" data-aid="06-07">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 07</div>
+        <span class="tag">Insumos</span><span class="tag">Reposição</span>
+        <h3>Gestão de insumos com IA — previsão de consumo, reposição automática</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Clínica de derma trabalha com 60-120 SKUs (toxina, preenchedores, agulhas, anestésicos, fios, equipamentos descartáveis). Em 2026, agente cruza consumo histórico, agenda futura prevista (matérias 4 e 6) e prazo de fornecedor, e devolve: pedido sugerido por semana, alerta de estoque crítico, oportunidade de compra em lote com desconto.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Fim do "acabou X bem na hora do procedimento" — antecipação algorítmica.</li>
+        <li>Capital de giro otimizado: estoque reduzido em 20-30% sem ruptura.</li>
+        <li>Compra concentrada por fornecedor em dia da semana — negociação melhor.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Planilha simples de SKUs (já existe na clínica, certamente) → skill <span class="mono">estoque-cal</span>.</li>
+        <li>Atualização semanal manual da Ana ou biomédica. 5 min.</li>
+        <li>Output: pedido sugerido em PDF para Flávia aprovar.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i8" data-aid="06-08">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 08</div>
+        <span class="tag">Validade</span><span class="tag">Perdas</span>
+        <h3>Validade e perdas — monitor que avisa antes do vencimento</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Toxina e preenchedor têm validade. Perda por vencimento é dinheiro queimado e risco regulatório. Sistema simples: cada SKU tem data de validade no Airtable; agente roda semanalmente, alerta o que vence em 30/60/90 dias, sugere uso priorizado em campanhas internas (Club, microcampanha).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Zero perda por vencimento em 90 dias.</li>
+        <li>Campanha-ação curta: "toxina lote X com janela curta, preço especial para Club esta semana". Recupera margem antes que vire perda.</li>
+        <li>Histórico de perdas vira input para ajuste de compras futuras (matéria 7).</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção IV</span>
+    <h2>Qualidade contínua</h2>
+    <div class="sub">A diferença entre clínica boa e clínica que se mantém boa.</div>
+
+    <article class="item" id="i9" data-aid="06-09">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 09 · Alto retorno</div>
+        <span class="tag">PDCA</span><span class="tag">Falconi</span>
+        <h3>PDCA mensal automatizado — ciclo Falconi em prática</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> PDCA é o melhor método de gestão que ninguém aplica porque dá trabalho. Em 2026, agente conduz o ciclo: <em>Plan</em> coleta meta do mês, <em>Do</em> registra execução semanal via NPS+métricas, <em>Check</em> calcula desvio, <em>Act</em> propõe ajuste para próximo ciclo. Tudo agendado, com a sua aprovação rápida em cada gate.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Reunião mensal do Conselho deixa de ser "como foi o mês?" e vira "Act do PDCA". Tempo de meta-conversa cai 70%.</li>
+        <li>Métrica viva por área: financeira (ed 03 matéria 1), CXO (ed 05 matéria 3), conteúdo (ed 04 matéria 5). Cada uma com PDCA próprio.</li>
+        <li>Histórico cumulativo: você vê em 12 meses o que melhorou, o que regrediu, o que ficou parado.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i10" data-aid="06-10">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 10</div>
+        <span class="tag">Auditoria</span><span class="tag">POP</span>
+        <h3>Auditoria interna de POPs — agente confere execução vs registro</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> POP escrito não garante POP executado. Auditoria interna mensal (skill que cruza registro do checklist da matéria 2 com POP padrão) revela aderência real. Em derma, aderência típica em clínica boa é 70-85%. Saber é metade do caminho para subir.</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Relatório mensal: aderência por POP, por profissional, por procedimento.</li>
+        <li>Conversa individual baseada em dado, não em sensação.</li>
+        <li>POPs com aderência baixa entram em revisão — talvez o POP está errado, não a equipe.</li>
+      </ul>
+      <div class="box"><strong>Cuidado cultural</strong> · auditoria sem propósito de melhoria vira controle. Apresente para a equipe como dispositivo de descoberta: "POP X está sendo difícil de seguir — o que precisa mudar nele?".</div>
+    </article>
+
+    <article class="item" id="i11" data-aid="06-11">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 11</div>
+        <span class="tag">Treinamento</span><span class="tag">Microaprendizado</span>
+        <h3>Microaprendizado contínuo da equipe</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Treinamento anual de equipe é evento; não treinamento. Microaprendizado distribuído (3-5 min/dia, conteúdo curto, quiz no final) tem retenção de longo prazo 3-5x maior. Em 2026, agente gera conteúdo a partir dos POPs, casos reais e ciência recente, distribui via WhatsApp Business ou app dedicado (Edume, EdApp).</p>
+      <p class="label">Possibilidades para a CAL</p>
+      <ul>
+        <li>Pílula diária para biomédica/esteticista sobre técnica, segurança, novidade. 3 min na entrada do expediente.</li>
+        <li>Quiz semanal por função — dado para você sobre conhecimento real da equipe.</li>
+        <li>Onboarding de novo profissional vira biblioteca curada — não conversa repetida.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.edapp.com/">EdApp</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção VI</span>
+    <h2>Fora da caixa</h2>
+    <div class="sub">Cinco para alargar superfície.</div>
+
+    <article class="item" id="i12" data-aid="06-12">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 12 · Pessoal</div>
+        <span class="tag">Reclaim</span><span class="tag">Motion</span>
+        <h3>Reclaim.ai / Motion — agenda que se defende sozinha</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Reclaim.ai e Motion são as duas pontas do calendário com IA em 2026. Reclaim foca em proteger blocos de tempo (deep work, treino, almoço, hábito) e remarcar automaticamente conforme conflitos. Motion vai além: olha sua lista de tarefas + prazos e auto-agenda quando você vai fazer cada coisa.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Você gerencia atendimento + Conselho + canal + treino + filhas + francês. Calendário que decide por você é diferença entre dia de qualidade e dia de bombeiro.</li>
+        <li>Reclaim é mais leve, US$10/mês — começa por aí.</li>
+        <li>Motion é mais ambicioso, US$34/mês — vale se você quer terceirizar agendamento de tarefa para IA.</li>
+        <li>Combina com Things 3 da ed 05.</li>
+      </ul>
+      <div class="links">
+        <a href="https://reclaim.ai/">Reclaim.ai</a>
+        <a href="https://www.usemotion.com/">Motion</a>
+      </div>
+    </article>
+
+    <article class="item" id="i13" data-aid="06-13">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 13 · Família</div>
+        <span class="tag">Mindtrip</span><span class="tag">Viagem</span>
+        <h3>Mindtrip / Wonderplan — planejar viagem com as filhas sem dor</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Viajar com Beatriz (13) e Letícia (11) na guarda compartilhada exige planejamento que respeita semana de cada, idade, interesse, custo. Mindtrip e Wonderplan são planejadores de viagem com IA que entendem "férias de 7 dias com filhas 11 e 13, gosto de natureza, sem muita caminhada, máximo R$ 12k incluindo passagem" — devolvem roteiro com hotel, atividade por dia, custo previsto.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Não é "planejador genérico" — é equilíbrio de fadiga, idade, interesse e orçamento.</li>
+        <li>Bea e Letícia podem participar do planejamento: cada uma escolhe 1 atividade obrigatória. Vira ritual.</li>
+        <li>Reduz fricção da viagem em si — você chega com plano que se ajusta no dia.</li>
+      </ul>
+      <p class="label">Cuidado</p>
+      <ul>
+        <li>IA sugere hotel com base em review, não em conhecimento próprio. Sempre verificar Booking e fotos antes de fechar.</li>
+      </ul>
+      <div class="links">
+        <a href="https://mindtrip.ai/">Mindtrip</a>
+        <a href="https://wonderplan.ai/">Wonderplan</a>
+      </div>
+    </article>
+
+    <article class="item" id="i14" data-aid="06-14">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 14 · Treino</div>
+        <span class="tag">Biomecânica</span><span class="tag">Smartphone</span>
+        <h3>Análise biomecânica de corrida via smartphone</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> RunDNA, Output Sports e apps como Coach's Eye usam câmera lenta do iPhone para análise biomecânica de corrida — overpronação, cadência, projeção do quadril, contato do pé. Em 2026, IA destila o vídeo em diagnóstico de 1 página: o que está errado, qual exercício corrige, risco de lesão.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Corredor amador 40+ acumula assimetria silenciosamente. Análise revela antes de lesão.</li>
+        <li>Avaliação presencial com fisioterapeuta esportivo custa R$ 600-1000. Versão IA custa R$ 50 — não substitui, mas dá baseline e revisita a cada 90 dias.</li>
+        <li>Combinação com Whoop (ed 03) e Runna (ed 02) fecha visão completa.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Gravar 30s correndo de lado e por trás. Subir no app.</li>
+        <li>Output em 24h. Custo único.</li>
+      </ul>
+      <div class="links">
+        <a href="https://rundna.com/">RunDNA</a>
+      </div>
+    </article>
+
+    <article class="item" id="i15" data-aid="06-15">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 15 · Aprendizado</div>
+        <span class="tag">Speechify</span><span class="tag">Audiobook</span>
+        <h3>Speechify + IA notes — livros enquanto corre, dirige, anda</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Speechify Pro converte qualquer texto (PDF, artigo, livro) em audiobook com vozes naturais — pode ser sua voz clonada (ed 01 matéria 5). Combinado com IA que escuta junto e destila em notas no Obsidian/Readwise (ed 03 matéria 12), transforma tempo morto (corrida, carro, caminhada) em leitura ativa.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Médico que treina para maratona acumula 6-10h/semana de tempo passivo. Audiolivro vira leitura paralela.</li>
+        <li>Livros médicos densos (cirurgia dermatológica, farmacologia) raramente saem em audiobook comercial — Speechify resolve.</li>
+        <li>Velocidade ajustável (1.5x-2.5x): 1 livro/semana vira possível, com retenção razoável se complementada por nota.</li>
+      </ul>
+      <p class="label">Cuidado</p>
+      <ul>
+        <li>Audiolivro não substitui leitura focada para conteúdo denso. Funciona melhor para narrativa, biografia, ensaio.</li>
+        <li>Para paper científico, melhor ler com Readwise. Foco distinto.</li>
+      </ul>
+      <div class="links">
+        <a href="https://speechify.com/">Speechify</a>
+      </div>
+    </article>
+
+    <article class="item" id="i16" data-aid="06-16">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 16 · Wildcard</div>
+        <span class="tag">HomeKit</span><span class="tag">Matter</span>
+        <h3>Casa que responde — HomeKit + Matter + IA contextual</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Apple HomeKit + protocolo Matter (universal entre fabricantes) chegou em 2025-2026 ao ponto onde casa inteligente deixa de ser hobby e vira utilidade. Adicionar IA contextual (Apple Intelligence + Siri + automações inteligentes) faz a casa <em>antecipar</em>: luzes baixam quando você inicia treino, café começa quando despertador toca, ar-condicionado se ajusta quando filhas chegam, modo "consultório em casa" desliga notificação.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Não é luxo — é redução real de atrito micro que acumula. 50 decisões pequenas/dia que viram zero.</li>
+        <li>Casa de coparental compartilhada precisa lidar com ritmo de cada semana — automações por presença de filhas reduzem combinados verbais.</li>
+        <li>Custo baixo: lâmpada Matter R$ 80, plug R$ 40. Não precisa trocar tudo — começa com 5 dispositivos.</li>
+        <li>Privacidade: HomeKit/Matter processam local quando possível — diferente de Alexa/Google que dependem de cloud.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>HomePod mini (R$ 800) como hub. Aurora Lite ou Aqara como hub Matter avançado.</li>
+        <li>5 cenas iniciais: "Acordar", "Trabalhar", "Treinar", "Receber filhas", "Dormir".</li>
+        <li>Iterar 30 dias — só mantém o que de fato usa.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.apple.com/home-app/">Apple Home</a>
+        <a href="https://csa-iot.org/all-solutions/matter/">Matter</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Próximo passo</span>
+    <h2>Cinco coisas para esta janela</h2>
+    <div class="sub">Sequência do COO. Operação primeiro, depois o resto.</div>
+    <article class="item" id="ifechamento" data-aid="06-fechamento">
+      <div class="header-row"><div class="meta">
+        <div class="num">Plano de ação</div>
+        <h3>Sistema antes de heroísmo</h3>
+      </div></div>
+      <ul>
+        <li><strong>Semana 1.</strong> Skill <span class="mono">coo-cal</span> (matéria 1) instalada e usada em toda decisão operacional nova.</li>
+        <li><strong>Semana 2.</strong> Checklist digital (matéria 2) implementado no procedimento mais frequente — piloto com biomédica.</li>
+        <li><strong>Semana 3.</strong> Skill <span class="mono">agenda-cal</span> (matéria 4) rodando todas as noites. Primeira leitura de no-show previsto.</li>
+        <li><strong>Semana 4.</strong> PDCA mensal (matéria 9) substitui formato atual da reunião com Flávia.</li>
+        <li><strong>Pessoal recorrente.</strong> Reclaim.ai (matéria 12) protegendo blocos de deep work + treino + almoço. Sem isso, tudo o anterior é proposta.</li>
+      </ul>
+      <div class="box"><strong>Veto natural do CFO</strong> · custo mensal: SafetyCulture US$24 + Reclaim US$10 = ~R$ 200. Sem investimento maior. Limite é tempo, sempre.</div>
+    </article>
+  </section>
+
+  <footer class="foot">
+    <h4>Sobre este boletim</h4>
+    <p>Edição 06 · 16 matérias · foco em COO em produção. Encerra o ciclo de uma cadeira por edição (CFO ed 03, marketing/CGO ed 04, CXO ed 05, COO ed 06). Mix 11+5 conforme <a href="https://github.com/alexandrelimabarros/novidades-ia-cal/blob/main/CURADORIA.md">CURADORIA.md</a>.</p>
+    <p>Próxima edição prevista: outubro/2026. Tema possível: integração entre cadeiras (Conselho funcionando como sistema, não como agentes isolados) — mais cinco fora da caixa.</p>
+  </footer>
+
+  <div class="signoff">— Boletim CAL nº 06 · Set/2026 —</div>
+
+</div>
+
+<script>
+  window.__CAL_EDITION__ = {
+    id: "06",
+    title: "Boletim CAL Nº 06",
+    date: "16.05.2026",
+    url: "/edicoes/06-setembro-2026.html"
+  };
+</script>
+<script src="/assets/app.js"></script>
+</body>
+</html>
