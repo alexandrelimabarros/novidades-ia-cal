@@ -9,6 +9,7 @@
     { "source": "/edicao/04", "destination": "/edicoes/04-julho-2026.html", "permanent": false },
     { "source": "/edicao/05", "destination": "/edicoes/05-agosto-2026.html", "permanent": false },
     { "source": "/edicao/06", "destination": "/edicoes/06-setembro-2026.html", "permanent": false },
-    { "source": "/ultima", "destination": "/edicoes/06-setembro-2026.html", "permanent": false }
+    { "source": "/edicao/07", "destination": "/edicoes/07-outubro-2026.html", "permanent": false },
+    { "source": "/ultima", "destination": "/edicoes/07-outubro-2026.html", "permanent": false }
   ]
 }

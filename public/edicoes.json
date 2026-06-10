@@ -1,5 +1,14 @@
 [
   {
+    "id": "07",
+    "shortTitle": "Out/2026",
+    "title": "Boletim CAL Nº 07",
+    "date": "16.05.2026",
+    "desc": "CEO em produção — estratégia, portfólio, oceano azul — e IA para infoprodutos e cursos. Mais cinco fora da caixa.",
+    "url": "/edicoes/07-outubro-2026.html",
+    "upcoming": false
+  },
+  {
     "id": "06",
     "shortTitle": "Set/2026",
     "title": "Boletim CAL Nº 06",
@@ -54,11 +63,11 @@
     "upcoming": false
   },
   {
-    "id": "07",
-    "shortTitle": "Out/2026",
-    "title": "Boletim CAL Nº 07 (em preparo)",
-    "date": "Out/2026",
-    "desc": "Tema possível: integração entre cadeiras do Conselho — sistema, não agentes isolados.",
+    "id": "08",
+    "shortTitle": "Nov/2026",
+    "title": "Boletim CAL Nº 08 (em preparo)",
+    "date": "Nov/2026",
+    "desc": "Tema possível: Conselho como sistema integrado, ou especial só de fora da caixa.",
     "url": "#",
     "upcoming": true
   }
