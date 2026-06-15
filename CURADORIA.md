@@ -33,6 +33,19 @@ Matérias deliberadamente fora do escopo CAL imediato, escolhidas por **aumentar
 - A partir da edição 02, **acrescentar uma 6ª seção** chamada `Seção VI · Fora da caixa` — onde caem as 5 matérias do Eixo B.
 - IDs continuam `data-aid="<edicao>-<nn>"`, sem mudar o esquema de favoritos.
 
+## Datação das edições (REGRA — não inventar mês futuro)
+
+- Cada edição é rotulada com o **mês real em que foi produzida**, nunca um mês futuro fictício.
+- Aplicar a data corrente da produção em **quatro lugares**, todos coerentes entre si:
+  1. `<title>` — `Edição NN · <Mês> AAAA · ...`
+  2. capa, linha `Vol. NN · <Mês abrev>/AAAA`
+  3. capa, `.meta` → `BH · DD.MM.AAAA`
+  4. `window.__CAL_EDITION__.date` (usado ao salvar favoritos) + `signoff` do rodapé.
+- No manifesto `edicoes.json`: `shortTitle` e `date` também com o mês/data real.
+- **Não usar** o tema da cadeira (CFO, CXO etc.) para projetar mês — o tema é editorial, a data é factual.
+- Linha "próxima edição" no rodapé: usar `Na próxima edição — <tema>`, **sem** mês fixo (era a origem do bug de "meses à frente").
+- O **nome do arquivo/slug** pode conter mês desatualizado sem problema (fica escondido atrás dos redirects `/edicao/NN` e `/ultima`); não renomear para não quebrar favoritos salvos.
+
 ## Selo "Alto retorno"
 
 - Atribuído a no máximo **5 matérias** por edição (Eixo A apenas, normalmente).
@@ -48,3 +61,4 @@ Matérias deliberadamente fora do escopo CAL imediato, escolhidas por **aumentar
 ## Histórico de mudanças
 
 - **2026-05-15** — criação. Eixos A/B definidos após feedback da edição 01 (autor pediu mais variedade fora do escopo profissional CAL).
+- **2026-06-14** — correção do bug de datação: edições 02–06 estavam rotuladas com meses futuros (Jun–Set) por causa do esquema fictício "uma cadeira por mês". Realinhadas ao mês real de produção (eds 01–06 = Mai/2026, ed 07 = Jun/2026). Regra de datação adicionada acima.

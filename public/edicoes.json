@@ -1,16 +1,16 @@
 [
   {
     "id": "07",
-    "shortTitle": "Out/2026",
+    "shortTitle": "Jun/2026",
     "title": "Boletim CAL Nº 07",
-    "date": "16.05.2026",
+    "date": "14.06.2026",
     "desc": "CEO em produção — estratégia, portfólio, oceano azul — e IA para infoprodutos e cursos. Mais cinco fora da caixa.",
     "url": "/edicoes/07-outubro-2026.html",
     "upcoming": false
   },
   {
     "id": "06",
-    "shortTitle": "Set/2026",
+    "shortTitle": "Mai/2026",
     "title": "Boletim CAL Nº 06",
     "date": "16.05.2026",
     "desc": "COO em produção — padronização, agenda, suprimentos, qualidade — e cinco fora da caixa.",
@@ -19,7 +19,7 @@
   },
   {
     "id": "05",
-    "shortTitle": "Ago/2026",
+    "shortTitle": "Mai/2026",
     "title": "Boletim CAL Nº 05",
     "date": "16.05.2026",
     "desc": "CXO em produção, comunidade Club, personalização e monetização recorrente — e cinco fora da caixa.",
@@ -28,7 +28,7 @@
   },
   {
     "id": "04",
-    "shortTitle": "Jul/2026",
+    "shortTitle": "Mai/2026",
     "title": "Boletim CAL Nº 04",
     "date": "16.05.2026",
     "desc": "Skills e agentes prontos para conteúdo, aquisição, conversão e presença local — foco editorial em marketing.",
@@ -37,7 +37,7 @@
   },
   {
     "id": "03",
-    "shortTitle": "Jun/2026",
+    "shortTitle": "Mai/2026",
     "title": "Boletim CAL Nº 03",
     "date": "16.05.2026",
     "desc": "CFO em produção, imagem médica ética, inteligência de mercado — e cinco fora da caixa: sono, leitura, agenda família, aprender IA, proteger imagem.",
@@ -46,7 +46,7 @@
   },
   {
     "id": "02",
-    "shortTitle": "Mai–Jun/2026",
+    "shortTitle": "Mai/2026",
     "title": "Boletim CAL Nº 02",
     "date": "16.05.2026",
     "desc": "LGPD, prontuário inteligente, distribuição além do Meta — e cinco fora da caixa: corrida, francês, filhas, IA local.",
@@ -64,9 +64,9 @@
   },
   {
     "id": "08",
-    "shortTitle": "Nov/2026",
+    "shortTitle": "Jul/2026",
     "title": "Boletim CAL Nº 08 (em preparo)",
-    "date": "Nov/2026",
+    "date": "Jul/2026",
     "desc": "Tema possível: Conselho como sistema integrado, ou especial só de fora da caixa.",
     "url": "#",
     "upcoming": true
