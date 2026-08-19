@@ -14,7 +14,7 @@
 Toda edição deve combinar **dois eixos**:
 
 ### Eixo A — Alinhado ao contexto CAL (alvo: ~11 de 16 matérias)
-Coisas que respondem direto à arquitetura do Conselho, aos projetos ativos, aos pontos de dor já mapeados (clínica, canal YouTube, Sol, Club, Airbnb, conteúdo, ads, financeiro, produto digital). É o que faz o boletim ser meu, não genérico.
+Coisas que respondem direto à arquitetura do Conselho, aos projetos ativos, aos pontos de dor já mapeados (clínica, canal YouTube, Sol, Clube, Airbnb, conteúdo, ads, financeiro, produto digital). É o que faz o boletim ser meu, não genérico.
 
 ### Eixo B — Fugir da caixa (alvo: **~5 de 16 matérias por edição**)
 Matérias deliberadamente fora do escopo CAL imediato, escolhidas por **aumentar superfície de exposição** a usos de IA que o autor não teria buscado sozinho. Distribuição sugerida desses 5:

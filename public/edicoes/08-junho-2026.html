@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Edição 08 · Jun 2026 · Novidades IA · CAL</title>
+<meta name="description" content="Artigo de revisão sobre preenchimento labial com evidência indexada, cinco frentes de eficiência pessoal e cinco fora da caixa." />
+<link rel="stylesheet" href="/assets/styles.css" />
+<style>
+  /* Específico desta edição: aparato de artigo científico */
+  .abstract{background:var(--soft);border-left:4px solid var(--accent);padding:18px 22px;margin:20px 0}
+  .abstract h4{font-family:-apple-system,Arial,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+  .abstract p{margin:0 0 8px;font-size:15px}
+  sup.ref{font-size:11px;color:var(--accent);font-weight:700}
+  .refs{padding:24px 56px 8px;border-top:1px solid #d8d3c2}
+  .refs h3{font-family:-apple-system,Arial,sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  .refs ol{margin:0;padding-left:22px;font-size:13px;line-height:1.5}
+  .refs li{margin:0 0 10px}
+  .refs .pmid{font-family:"SF Mono",Menlo,monospace;font-size:11px;color:var(--accent)}
+  .evidence{display:inline-block;font-family:-apple-system,Arial,sans-serif;font-size:10px;padding:2px 8px;border-radius:3px;letter-spacing:.06em;text-transform:uppercase;margin-left:6px;vertical-align:middle}
+  .ev-alta{background:#0b3d2e;color:#fff}
+  .ev-media{background:#c7a14a;color:#1a1a1a}
+  .ev-baixa{background:#d8d3c2;color:#555}
+  @media (max-width:640px){ .refs{padding-left:24px;padding-right:24px} }
+</style>
+</head>
+<body>
+<nav class="topbar">
+  <div class="inner">
+    <a class="brand" href="/">CAL · <em>Novidades IA</em></a>
+    <a class="link" href="https://menu-direcao.vercel.app" title="Voltar ao Menu Direcao">← Menu</a>
+    <span class="spacer"></span>
+    <select id="ed-select" aria-label="Selecionar edição"><option>Edições…</option></select>
+    <a class="link" href="/favoritos.html">★ Favoritos <span class="fav-badge" id="fav-count" style="display:none">0</span></a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="cover">
+    <div class="top"><span>CAL · Conselho Administrativo</span><span>Vol. 08 · Jun/2026</span></div>
+    <h1>O lábio sob ultrassom, <em>e o seu tempo sob medida</em>.</h1>
+    <p class="lede">Edição em dois blocos. Um artigo de revisão sobre preenchimento labial com 16 referências indexadas e conferidas no PubMed. Cinco frentes para recuperar horas da sua semana. E as cinco fora da caixa de sempre.</p>
+    <div class="meta">
+      <span>Edição pessoal · Alexandre Lima</span>
+      <span>BH · 14.06.2026</span>
+    </div>
+  </header>
+
+  <div class="editorial">
+    <div class="kicker">Editorial</div>
+    <h2>Um estudo de 2026 diz que você provavelmente injeta no músculo.</h2>
+    <p>O artigo de revisão desta edição existe porque um achado recente merece sua atenção clínica: um estudo transversal multicêntrico com ultrassom de alta frequência em 126 participantes (Londres e Amsterdã) mediu que a camada subcutânea do lábio tem, em média, <strong>menos de 1 mm</strong> — o que resulta em deposição intramuscular do produto na maioria dos pacientes tratados, mesmo quando a intenção era submucosa ou subcutânea<sup class="ref">1</sup>. O mesmo trabalho associa técnicas de vetor vertical a deposição mais profunda, hipervascularidade e evidência de migração.</p>
+    <p>Isso não é um argumento contra o procedimento. É um argumento contra a certeza. E conecta com o segundo achado que selecionei: a manutenção volumétrica nos lábios em 12 semanas foi de <strong>37,2%</strong>, a menor de todas as regiões faciais medidas por imagem 3D num estudo prospectivo com 101 pacientes<sup class="ref">2</sup>. O lábio perde volume mais rápido do que o discurso comercial sugere.</p>
+    <div class="pull">Toda referência abaixo teve PMID e DOI conferidos em lote na API do NCBI antes desta edição fechar. O que não passou na conferência não entrou.</div>
+    <p>O segundo bloco responde ao seu segundo pedido: eficiência. Cortei tudo que já saiu nas edições 01 a 07 e fui para o que ainda não tocamos — medir antes de otimizar, ditado como entrada primária, camada de comando único, arquitetura de semana e a matriz do que só você pode fazer.</p>
+  </div>
+
+  <nav class="toc">
+    <h3>Sumário desta edição</h3>
+    <ol>
+      <li><a href="#i1">Revisão: anatomia vascular e a ilusão da zona segura</a></li>
+      <li><a href="#i2">Revisão: onde o produto realmente fica</a></li>
+      <li><a href="#i3">Revisão: eficácia e durabilidade real</a></li>
+      <li><a href="#i4">Revisão: reologia e escolha do produto</a></li>
+      <li><a href="#i5">Revisão: complicação vascular aguda</a></li>
+      <li><a href="#i6">Revisão: complicações tardias e hialuronidase</a></li>
+      <li><a href="#i7">Medir antes de otimizar</a></li>
+      <li><a href="#i8">Ditado como entrada primária</a></li>
+      <li><a href="#i9">Raycast — camada de comando única</a></li>
+      <li><a href="#i10">Arquitetura de semana por tema</a></li>
+      <li><a href="#i11">Matriz de delegação e políticas pessoais</a></li>
+      <li><a href="#i12">Finanças pessoais com IA</a></li>
+      <li><a href="#i13">RPG narrado por IA com Beatriz e Letícia</a></li>
+      <li><a href="#i14">Zona 2 e limiar — treino metabólico</a></li>
+      <li><a href="#i15">Leitura crítica e bioestatística com IA</a></li>
+      <li><a href="#i16">Idade biológica — o wildcard cético</a></li>
+    </ol>
+  </nav>
+
+  <section class="chapter">
+    <span class="badge">Seção I</span>
+    <h2>Artigo de revisão: preenchimento labial</h2>
+    <div class="sub">Ácido hialurônico em lábios — anatomia, posicionamento, durabilidade, reologia e complicações. 16 referências indexadas.</div>
+
+    <div class="abstract">
+      <h4>Resumo estruturado</h4>
+      <p><strong>Contexto.</strong> O aumento labial com ácido hialurônico (AH) é um dos procedimentos injetáveis mais realizados. A literatura recente desloca o eixo da discussão da técnica para a <em>anatomia individual</em> e para a <em>verificação por imagem</em>.</p>
+      <p><strong>Achados principais.</strong> (a) As artérias labiais apresentam grande variabilidade de trajeto, presença e localização, o que fragiliza o conceito de zona segura universal<sup class="ref">3</sup>. (b) A escassez de espaço subcutâneo no lábio leva à deposição intramuscular na maioria dos tratados<sup class="ref">1</sup>. (c) A manutenção volumétrica labial em 12 semanas é a menor da face<sup class="ref">2</sup>. (d) A hialuronidase é o pilar do manejo, com protocolos de dose distintos para complicações emergentes e não emergentes<sup class="ref">4</sup>.</p>
+      <p><strong>Implicação prática.</strong> Planejamento individualizado, volumes conservadores, expectativa de durabilidade calibrada e protocolo de emergência escrito e treinado.</p>
+    </div>
+
+    <article class="item" id="i1" data-aid="08-01">
+      <div class="header-row"><div class="meta">
+        <div class="num">Revisão · Parte 1</div>
+        <span class="tag">Anatomia</span><span class="tag">Risco vascular</span>
+        <h3>Anatomia vascular: a zona segura é um conceito frágil<span class="evidence ev-media">Revisão de literatura</span></h3>
+      </div></div>
+      <p><strong>O que a evidência mostra.</strong> Uma revisão de literatura dedicada ao trajeto das artérias labiais concluiu que elas exibem grande variabilidade quanto a trajeto, presença e localização<sup class="ref">3</sup>. Os autores são explícitos ao recomendar que o aumento de volume labial seja feito com cautela e com consciência dessa variação anatômica. Uma revisão anatômica mais recente, dedicada a lábios e filtro, reforça o raciocínio de diagnóstico anatômico antes de técnica padronizada<sup class="ref">5</sup>.</p>
+      <p class="label">Leitura crítica</p>
+      <ul>
+        <li>O achado não diz que a injeção labial é insegura. Diz que <em>mapas fixos</em> de profundidade e trajeto não se sustentam como garantia individual.</li>
+        <li>Consequência direta: protocolos que dependem de "a artéria está sempre em X" carregam risco residual que nenhuma técnica elimina.</li>
+        <li>[Inferência] Para a CAL, isso favorece o discurso de avaliação individualizada que você já usa, com respaldo citável.</li>
+      </ul>
+      <p class="label">Sobre aspiração pré-injeção</p>
+      <ul>
+        <li>Um estudo em modelo humano <em>in vivo</em> (cânula em veia periférica) avaliou 10 preenchedores de AH e concluiu que a aspiração pré-injeção tem utilidade como ponto de checagem de segurança<sup class="ref">6</sup>.</li>
+        <li>O tempo até visualizar o refluxo teve relação significativa com calibre da agulha, concentração de AH e módulos G′, G″ e G*. Volume de recuo de 0,5 mL reduziu o tempo em comparação a 0,2 mL.</li>
+        <li><strong>Contra-argumento honesto:</strong> os próprios autores registram que a aspiração permanece controversa como checkpoint e que estudos adicionais são necessários para validar os resultados. Aspiração negativa não é certificado de segurança.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i2" data-aid="08-02">
+      <div class="header-row"><div class="meta">
+        <div class="num">Revisão · Parte 2 · Destaque</div>
+        <span class="tag">Ultrassom</span><span class="tag">Migração</span>
+        <h3>Onde o produto realmente fica: o achado que muda a conversa<span class="evidence ev-alta">Transversal multicêntrico</span></h3>
+      </div></div>
+      <p><strong>O estudo.</strong> Transversal com 126 participantes, em clínicas de Londres e Amsterdã, usando ultrassom de alta frequência para medir espessura das camadas labiais, dimensões de glândulas submucosas e posição do preenchedor<sup class="ref">1</sup>.</p>
+      <p class="label">Resultados relevantes para a prática</p>
+      <ul>
+        <li>Pacientes tratados apresentaram aumento significativo de espessura no tecido conjuntivo e na <em>pars peripheralis</em>.</li>
+        <li>A camada subcutânea mediu, em média, <strong>menos de 1 mm</strong> em lábio superior e inferior — resultando em posicionamento intramuscular do produto na maioria dos indivíduos tratados.</li>
+        <li>Técnicas de injeção vertical associaram-se a deposição mais profunda, hipervascularidade e evidência de migração.</li>
+        <li>A anatomia labial variou significativamente com sexo, raça e etnia, IMC e idade.</li>
+      </ul>
+      <div class="box"><strong>Por que isso importa</strong> · o discurso corrente de "plano submucoso" descreve uma intenção, não necessariamente o resultado verificável. O estudo sustenta o uso de ultrassom como ferramenta de avaliação, alinhado a uma revisão dedicada a complicações em lábios e região perioral que já defendia orientação ultrassonográfica<sup class="ref">7</sup>.</div>
+      <p class="label">Limitações que você deve considerar</p>
+      <ul>
+        <li>Desenho transversal: não estabelece causalidade nem acompanha desfecho ao longo do tempo. Os próprios autores pedem estudos de longo prazo e de perspectiva do paciente.</li>
+        <li>Amostra europeia em dois centros — a generalização para a população brasileira atendida em Belo Horizonte não é automática, ainda mais porque o próprio trabalho mostra variação por raça e etnia.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i3" data-aid="08-03">
+      <div class="header-row"><div class="meta">
+        <div class="num">Revisão · Parte 3</div>
+        <span class="tag">Eficácia</span><span class="tag">Durabilidade</span>
+        <h3>Eficácia consolidada, durabilidade superestimada<span class="evidence ev-alta">Meta-análise + prospectivo</span></h3>
+      </div></div>
+      <p><strong>Eficácia.</strong> Meta-análise conduzida conforme PRISMA, com protocolo registrado no PROSPERO (CRD42018102899), com busca em CENTRAL, Embase e MEDLINE, concluiu que o ácido hialurônico é um preenchedor eficaz para aumento labial<sup class="ref">8</sup>. Este é o alicerce de evidência do procedimento e é sólido.</p>
+      <p><strong>Durabilidade — o dado incômodo.</strong> Estudo prospectivo com 101 mulheres de 40 a 65 anos, com imagem 3D Vectra M3 e FACE-Q, mediu manutenção volumétrica ao longo de 12 semanas<sup class="ref">2</sup>:</p>
+      <ul>
+        <li>Face inteira: <strong>65,5%</strong></li>
+        <li>Malar e terço médio estendido: <strong>79,2%</strong></li>
+        <li>Perioral superior: <strong>62,7%</strong></li>
+        <li><strong>Lábios: 37,2%</strong> — a menor manutenção de todas as regiões</li>
+        <li>O produto usado no bordo labial (Restylane Silk) teve o menor fator de deslocamento tecidual (TDF 0,56) e menor volume efetivo (EV 70%) entre os avaliados.</li>
+      </ul>
+      <p class="label">Como usar isso na consulta e no conteúdo</p>
+      <ul>
+        <li>Áreas de grande mímica perdem volume mais rápido. Isso é mecanicamente coerente e agora tem número.</li>
+        <li>[Inferência] Ajustar a expectativa do paciente na primeira consulta reduz frustração no terceiro mês, que é quando ela costuma aparecer. Isso é retenção, não só ética.</li>
+        <li>O mesmo estudo registrou melhora significativa nos desfechos relatados pelo paciente, incluindo função psicológica e social — o benefício percebido é real mesmo com a curva volumétrica caindo.</li>
+      </ul>
+      <div class="box"><strong>Cuidado de leitura</strong> · o seguimento foi de 12 semanas. O estudo não autoriza afirmações sobre 6 ou 12 meses. Qualquer número além disso, nesta referência, seria extrapolação minha e não entra.</div>
+    </article>
+
+    <article class="item" id="i4" data-aid="08-04">
+      <div class="header-row"><div class="meta">
+        <div class="num">Revisão · Parte 4</div>
+        <span class="tag">Reologia</span><span class="tag">Produto</span>
+        <h3>Reologia: por que o produto certo não é o mais caro<span class="evidence ev-baixa">Nível de evidência V</span></h3>
+      </div></div>
+      <p><strong>O estudo.</strong> Análise reológica de 24 seringas (8 de cada) de três preenchedores indicados para volumização labial: Belotero Intense (Merz), Kysse (Galderma) e Volift (Allergan), em reômetro Kinexus PRO com geometria de placas paralelas<sup class="ref">9</sup>.</p>
+      <p class="label">Resultados</p>
+      <ul>
+        <li><strong>Volift:</strong> maior resistência à deformação, refletida em valores mais altos de G*.</li>
+        <li><strong>Kysse:</strong> destacou-se pela maior coesividade.</li>
+        <li>Os autores concluem que as variações reológicas sugerem que cada produto pode ser mais adequado a aplicações clínicas distintas.</li>
+      </ul>
+      <p class="label">Leitura crítica</p>
+      <ul>
+        <li>O próprio periódico classifica o trabalho como <strong>nível de evidência V</strong>. É caracterização laboratorial, não desfecho clínico comparativo.</li>
+        <li>Não existe, nesta referência, demonstração de que maior coesividade produza melhor resultado estético no lábio. A ponte entre bancada e paciente permanece por fazer.</li>
+        <li>[Especulação] O uso mais defensável dessa informação é conversar sobre <em>adequação</em> do produto ao objetivo (definição de bordo versus volume de corpo), não sobre superioridade de marca.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i5" data-aid="08-05">
+      <div class="header-row"><div class="meta">
+        <div class="num">Revisão · Parte 5 · Crítico</div>
+        <span class="tag">Oclusão vascular</span><span class="tag">Emergência</span>
+        <h3>Complicação vascular aguda: o que a literatura sustenta<span class="evidence ev-media">Diretriz + revisão sistemática</span></h3>
+      </div></div>
+      <p><strong>Perda visual — onde o risco realmente se concentra.</strong> Relatório da American Academy of Ophthalmology revisou a literatura e identificou 198 casos de perda visual por injeção intravascular acidental de preenchedor<sup class="ref">10</sup>. Distribuição do material: ácido hialurônico em 164 casos (83%), gordura autóloga em 29 (15%), colágeno em 3, ácido poli-L-láctico em 1 e hidroxiapatita de cálcio em 1.</p>
+      <p class="label">Sítios de injeção descritos (226 sítios, às vezes múltiplos por caso)</p>
+      <ul>
+        <li>Nariz: 90 casos (40%)</li>
+        <li>Testa: 56 (25%)</li>
+        <li>Glabela: 26 (12%)</li>
+        <li>Têmpora: 21 (9%)</li>
+        <li>Frontal: 17 (7%)</li>
+        <li>Sulco nasolabial: 9 (4%)</li>
+      </ul>
+      <div class="box"><strong>Honestidade sobre o dado</strong> · o lábio não figura entre os principais sítios associados a perda visual nesta série. O terço médio e superior concentram o risco oftalmológico. Isso <em>não</em> torna o lábio isento — necrose cutânea e comprometimento vascular labial estão descritos —, mas seria desonesto usar esta referência para afirmar risco de cegueira por preenchimento labial. Todos os 19 artigos incluídos receberam classificação de nível III pelo metodologista do painel.</div>
+      <p class="label">Manejo</p>
+      <ul>
+        <li>A AAO registra que <strong>nenhum protocolo baseado em evidência foi estabelecido</strong> para o manejo da perda visual, e que a trombólise intra-arterial teve algum sucesso em recanalizar artérias ocluídas<sup class="ref">10</sup>.</li>
+        <li>Para oclusão vascular por AH existe diretriz de manejo dedicada<sup class="ref">11</sup> e uma revisão sistemática de 2026 focada especificamente em oclusão com envolvimento cutâneo exclusivo, propondo diagnóstico, classificação e tratamento<sup class="ref">12</sup> — provavelmente a referência mais útil para o cenário labial.</li>
+        <li>Complicações emergentes exigem hialuronidase <strong>imediata</strong><sup class="ref">4</sup>.</li>
+      </ul>
+      <p class="label">Ação concreta para a CAL</p>
+      <ul>
+        <li>Protocolo de emergência impresso, na sala, com dose, diluição e sequência. Não em PDF no Drive.</li>
+        <li>Estoque de hialuronidase verificado por validade (conecta com a matéria 8 da edição 06).</li>
+        <li>Simulação com a equipe uma vez por semestre. Checklist de Gawande aplicado ao pior cenário (edição 06, matéria 2).</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i6" data-aid="08-06">
+      <div class="header-row"><div class="meta">
+        <div class="num">Revisão · Parte 6</div>
+        <span class="tag">Nódulos tardios</span><span class="tag">Hialuronidase</span>
+        <h3>Complicações tardias e o uso racional da hialuronidase<span class="evidence ev-media">Revisão</span></h3>
+      </div></div>
+      <p><strong>Doses e indicações.</strong> Revisão dedicada a aplicações e recomendações de dose de hialuronidase para complicações de preenchedores<sup class="ref">4</sup> sintetiza:</p>
+      <ul>
+        <li><strong>Complicações não emergentes</strong> (efeito Tyndall, nódulos não inflamados, reações alérgicas ou de hipersensibilidade): doses baixas ou moderadas.</li>
+        <li><strong>Nódulos inflamatórios:</strong> considerar hialuronidase com antibiótico oral prévio ou simultâneo.</li>
+        <li><strong>Granulomas</strong> que não responderam a corticoide intralesional: hialuronidase pode ser tentada.</li>
+        <li><strong>Complicações emergentes</strong> (oclusão vascular, cegueira): tratamento imediato.</li>
+        <li>Os autores registram que há <strong>dados controlados limitados</strong>, ainda que a experiência clínica seja crescente, e que as recomendações incorporam sugestões de painéis de especialistas.</li>
+      </ul>
+      <p><strong>Nódulos de início tardio.</strong> Há revisão específica sobre nódulos de início tardio após preenchedores de AH e suas considerações de tratamento<sup class="ref">13</sup>. Uma revisão de escopo sobre uso de hialuronidase no manejo de complicações de intervenções estéticas complementa o quadro<sup class="ref">14</sup>.</p>
+      <p><strong>Segurança geral do procedimento labial.</strong> Revisão dedicada à avaliação de segurança em injeções labiais de AH<sup class="ref">15</sup> e revisão de considerações e técnicas<sup class="ref">16</sup> fecham a base para protocolo interno.</p>
+      <div class="box"><strong>Nota do CLO</strong> · qualquer conteúdo de canal derivado deste artigo precisa passar pelo validador de publicidade médica (edição 02, matéria 3). Discussão técnica de complicação é conteúdo delicado: educa e assusta na mesma frase. Para público leigo, o ângulo defensável é "como escolher quem injeta", não "os riscos que você corre".</div>
+    </article>
+  </section>
+
+  <div class="refs">
+    <h3>Referências — todas com PMID conferido na API do NCBI em 14.06.2026</h3>
+    <ol>
+      <li>Ultrasound Evaluation of Lip Anatomy and Filler Placement: A Cross-Sectional Study of Injection Accuracy, Migration, and Demographic Variation. <em>Plast Reconstr Surg</em>. 2026. <span class="pmid">PMID 41494527</span> · DOI 10.1097/PRS.0000000000012772</li>
+      <li>A Large Prospective Volumetric and Patient-Reported Outcome Analysis of Hyaluronic Acid Facial Fillers. <em>Plast Reconstr Surg</em>. 2025. <span class="pmid">PMID 40178806</span> · DOI 10.1097/PRS.0000000000012135</li>
+      <li>Anatomical Variations in the Course of Labial Arteries: A Literature Review. <em>Aesthet Surg J</em>. 2019. <span class="pmid">PMID 30204834</span> · DOI 10.1093/asj/sjy235</li>
+      <li>Hyaluronidase for Dermal Filler Complications: Review of Applications and Dosage Recommendations. <em>JMIR Dermatol</em>. 2024. <span class="pmid">PMID 38231537</span> · DOI 10.2196/50403</li>
+      <li>Anatomical-Based Diagnosis and Filler Injection Techniques: Lips and Philtrum. <em>Life (Basel)</em>. 2025. <span class="pmid">PMID 40003724</span> · DOI 10.3390/life15020315</li>
+      <li>Utility of Preinjection Aspiration for Hyaluronic Fillers: A Novel In Vivo Human Evaluation. <em>J Cutan Med Surg</em>. 2020. <span class="pmid">PMID 32316755</span> · DOI 10.1177/1203475420921387</li>
+      <li>Complications of fillers in the lips and perioral area: Prevention, assessment, and management focusing on ultrasound guidance. <em>J Plast Reconstr Aesthet Surg</em>. 2023. <span class="pmid">PMID 37002059</span> · DOI 10.1016/j.bjps.2023.01.048</li>
+      <li>Hyaluronic Acid Is an Effective Dermal Filler for Lip Augmentation: A Meta-Analysis. <em>Front Surg</em>. 2021. <span class="pmid">PMID 34422892</span> · DOI 10.3389/fsurg.2021.681028</li>
+      <li>Rheological Properties of Hyaluronic Acid Fillers for Lip Volumization. <em>Aesthetic Plast Surg</em>. 2025. <span class="pmid">PMID 40770500</span> · DOI 10.1007/s00266-025-05121-2</li>
+      <li>Vision-Threatening Complications of Soft Tissue Fillers: A Report by the American Academy of Ophthalmology. <em>Ophthalmology</em>. 2025. <span class="pmid">PMID 40167411</span> · DOI 10.1016/j.ophtha.2025.01.020</li>
+      <li>Guideline for the Management of Hyaluronic Acid Filler-induced Vascular Occlusion. <em>J Clin Aesthet Dermatol</em>. 2021. <span class="pmid">PMID 34188752</span></li>
+      <li>Guide for Managing Vascular Occlusion Caused by Fillers with Exclusive Cutaneous Involvement: A Review of Diagnosis, Classification, and Treatment. <em>Aesthetic Plast Surg</em>. 2026. <span class="pmid">PMID 40770496</span> · DOI 10.1007/s00266-025-05104-3</li>
+      <li>Delayed-onset Nodules (DONs) and Considering their Treatment following use of Hyaluronic Acid (HA) Fillers. <em>J Clin Aesthet Dermatol</em>. 2021. <span class="pmid">PMID 34840652</span></li>
+      <li>A Scoping Review of Hyaluronidase Use in Managing the Complications of Aesthetic Interventions. <em>Aesthetic Plast Surg</em>. 2024. <span class="pmid">PMID 36536092</span> · DOI 10.1007/s00266-022-03207-9</li>
+      <li>Evaluating safety in hyaluronic acid lip injections. <em>Expert Opin Drug Saf</em>. 2021. <span class="pmid">PMID 34328377</span> · DOI 10.1080/14740338.2021.1962283</li>
+      <li>Lip Augmentation With Hyaluronic Acid Fillers: A Review of Considerations and Techniques. <em>J Drugs Dermatol</em>. 2023. <span class="pmid">PMID 36607750</span> · DOI 10.36849/JDD.6304</li>
+    </ol>
+  </div>
+
+  <section class="chapter">
+    <span class="badge">Seção II</span>
+    <h2>Eficiência</h2>
+    <div class="sub">Cinco frentes que ainda não saíram nas edições 01 a 07. Da medição à delegação.</div>
+
+    <article class="item" id="i7" data-aid="08-07">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 07 · Alto retorno</div>
+        <span class="tag">Timing</span><span class="tag">Rize</span><span class="tag">Diagnóstico</span>
+        <h3>Medir antes de otimizar — o exame antes do tratamento</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Você não trataria um paciente sem exame. Mas otimiza a própria agenda por sensação. Timing (macOS, rastreamento automático, sem cronômetro manual) e Rize (com camada de IA que categoriza foco versus fragmentação) registram passivamente onde o tempo vai. Duas semanas de dado costumam desmentir a autoimagem.</p>
+      <p class="label">O que você provavelmente vai descobrir</p>
+      <ul>
+        <li>O tempo real gasto em WhatsApp e e-mail em blocos de 2-3 minutos espalhados, que somam mais de uma hora e destroem o foco entre eles.</li>
+        <li>Que o "dia de gravação" tem menos horas de gravação do que você imagina.</li>
+        <li>Quantas trocas de contexto por hora você faz. Acima de 4-5, produção profunda não acontece.</li>
+      </ul>
+      <p class="label">Como usar</p>
+      <ul>
+        <li>Duas semanas medindo <strong>sem mudar nada</strong>. Mudar durante a medição contamina o baseline. Isso é método, não perfeccionismo.</li>
+        <li>Só então escolher uma intervenção das matérias 8 a 11. Uma, não quatro.</li>
+        <li>Remedir 30 dias depois. Se não melhorou, a intervenção estava errada — não você.</li>
+      </ul>
+      <div class="links">
+        <a href="https://timingapp.com/">Timing</a>
+        <a href="https://rize.io/">Rize</a>
+      </div>
+    </article>
+
+    <article class="item" id="i8" data-aid="08-08">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 08 · Alto retorno</div>
+        <span class="tag">Wispr Flow</span><span class="tag">superwhisper</span>
+        <h3>Ditado como entrada primária — parar de digitar</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Wispr Flow e superwhisper transformam voz em texto formatado em qualquer aplicativo do Mac, com correção de contexto e remoção de hesitação. Não é o ditado do sistema: entende jargão médico, aprende vocabulário próprio e produz texto limpo, não transcrição bruta. Fala típica fica entre 130 e 150 palavras por minuto; digitação, entre 40 e 60.</p>
+      <p class="label">Onde muda seu dia</p>
+      <ul>
+        <li>Resposta longa de WhatsApp que hoje você adia porque dá preguiça de digitar: 40 segundos falando.</li>
+        <li>Rascunho de roteiro no teleprompter — falar o roteiro é mais natural do que escrevê-lo, e o texto já sai no seu ritmo de fala.</li>
+        <li>Prompt para o Claude Code: ditar um parágrafo de contexto é muito mais rico do que digitar uma linha seca.</li>
+        <li>Nota de voz depois da consulta vira texto estruturado direto no prontuário (conecta com edição 02, matéria 5).</li>
+      </ul>
+      <div class="box"><strong>Privacidade</strong> · superwhisper roda modelo <strong>local</strong> no Mac, sem enviar áudio para nuvem. Para qualquer conteúdo com dado de paciente, essa é a escolha obrigatória. Wispr Flow processa em nuvem — reserve para conteúdo não clínico.</div>
+      <div class="links">
+        <a href="https://superwhisper.com/">superwhisper</a>
+        <a href="https://wisprflow.ai/">Wispr Flow</a>
+      </div>
+    </article>
+
+    <article class="item" id="i9" data-aid="08-09">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 09</div>
+        <span class="tag">Raycast</span><span class="tag">Snippets</span>
+        <h3>Raycast — uma tecla para tudo, e frases que se escrevem sozinhas</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Raycast substitui o Spotlight e vira camada única de comando: abrir app, buscar arquivo, rodar script, consultar agenda, expandir texto, chamar IA. O ganho não é o app em si — é <strong>eliminar a navegação por mouse</strong> entre dezenas de micro-tarefas diárias.</p>
+      <p class="label">Uso específico para você</p>
+      <ul>
+        <li><strong>Snippets clínicos:</strong> digitar <span class="mono">;posbotox</span> expande a orientação completa de pós-procedimento. As 20 respostas que você repete viram 20 atalhos.</li>
+        <li><strong>Quicklinks:</strong> <span class="mono">agenda</span>, <span class="mono">prontuario</span>, <span class="mono">boletim</span> abrem direto o destino certo.</li>
+        <li><strong>Scripts:</strong> disparar suas skills do Claude Code sem abrir terminal.</li>
+        <li><strong>Janela de IA:</strong> pergunta rápida sem trocar de app nem perder o contexto da tela.</li>
+      </ul>
+      <p class="label">Como entrar</p>
+      <ul>
+        <li>Gratuito no essencial. Comece só com snippets — é o que dá retorno na primeira semana.</li>
+        <li>Regra: toda vez que digitar a mesma frase pela terceira vez, ela vira snippet naquele momento. Não depois.</li>
+      </ul>
+      <div class="links">
+        <a href="https://www.raycast.com/">Raycast</a>
+      </div>
+    </article>
+
+    <article class="item" id="i10" data-aid="08-10">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 10 · Alto retorno</div>
+        <span class="tag">Day theming</span><span class="tag">Foco</span>
+        <h3>Arquitetura de semana por tema — parar de ser cinco pessoas por dia</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Não é ferramenta, é decisão. Você hoje é dermatologista, criador de conteúdo, gestor, pai e corredor <em>no mesmo dia</em>, alternando várias vezes. Cada troca cobra um custo de recuperação de atenção. Arquitetura por tema agrupa o mesmo tipo de trabalho no mesmo bloco: dias de atendimento cheios de atendimento, e um bloco fixo por semana para cada outro papel.</p>
+      <p class="label">Desenho possível para a CAL</p>
+      <ul>
+        <li><strong>Seg, qua, sex:</strong> atendimento denso, sem reunião, sem gravação.</li>
+        <li><strong>Ter manhã:</strong> conteúdo — gravação e roteiro em bloco único (a produção em lote é o que torna o canal sustentável).</li>
+        <li><strong>Qui manhã:</strong> gestão — Flávia, Conselho, números, decisões.</li>
+        <li><strong>Sexta fim de tarde:</strong> revisão semanal, 30 minutos, sem exceção.</li>
+      </ul>
+      <div class="box"><strong>Onde isso costuma falhar</strong> · o bloco de gestão é o primeiro a ser canibalizado por um encaixe de paciente. Se o bloco não for tratado como consulta marcada, ele não existe. [Inferência] Este é provavelmente o maior vazamento de eficiência da sua semana, e não custa dinheiro nenhum para tapar.</div>
+    </article>
+
+    <article class="item" id="i11" data-aid="08-11">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 11</div>
+        <span class="tag">Delegação</span><span class="tag">Políticas</span>
+        <h3>Matriz de delegação e políticas pessoais — decidir uma vez, não toda vez</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Duas técnicas que se somam. A <em>matriz de delegação</em> classifica cada tarefa recorrente em: só você pode fazer (assinatura médica, decisão clínica, presença no vídeo), outra pessoa pode fazer com seu padrão (agendamento, resposta padrão, edição), ou ninguém precisa fazer (existe por inércia). As <em>políticas pessoais</em> eliminam a decisão repetida transformando-a em regra escrita.</p>
+      <p class="label">Exemplos de política pessoal</p>
+      <ul>
+        <li>"Não atendo fora dos blocos de agenda, exceto urgência clínica de paciente meu." Decide uma vez, não 40 vezes por mês.</li>
+        <li>"Convite para palestra só com 60 dias de antecedência e alinhado ao pilar do trimestre."</li>
+        <li>"Compra acima de R$ 5 mil passa pelo CFO do Conselho." (Já está no seu pacto — vale escrever como política operacional.)</li>
+        <li>"Não respondo dúvida clínica individual por rede social." Protege você juridicamente e libera tempo.</li>
+      </ul>
+      <p class="label">Como a IA entra</p>
+      <ul>
+        <li>Skill <span class="mono">delegacao-cal</span> recebe a lista de tarefas recorrentes (extraída do dado da matéria 7) e propõe a classificação, com o POP de cada item delegável.</li>
+        <li>Cada política escrita vira também resposta-padrão pronta para Ana usar, no tom da clínica.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Seção VI</span>
+    <h2>Fora da caixa</h2>
+    <div class="sub">Cinco para alargar superfície. Nenhuma repete as edições anteriores.</div>
+
+    <article class="item" id="i12" data-aid="08-12">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 12 · Pessoal</div>
+        <span class="tag">Finanças pessoais</span><span class="tag">Organização</span>
+        <h3>Finanças pessoais com IA — a lacuna que eu vinha evitando</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Nas sete edições anteriores tratei do financeiro da clínica, nunca do pessoal. Apps brasileiros como Mobills e Organizze já categorizam automaticamente e, em 2026, aceitam Open Finance — puxam extrato de todos os bancos num lugar só. A camada de IA responde em linguagem natural: "quanto gastei com restaurante nos últimos 3 meses e como isso mudou".</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Você tem renda de clínica, canal, Airbnb e um apartamento na planta. Isso é complexidade suficiente para que a visão consolidada não caiba na cabeça.</li>
+        <li>Separação limpa entre pessoa física e jurídica é higiene contábil básica que costuma ser a primeira a se perder em consultório de dono.</li>
+        <li>O ganho não é economizar — é <strong>parar de decidir no escuro</strong> sobre o que a operação pessoal realmente consome.</li>
+      </ul>
+      <div class="box"><strong>Limite que eu respeito</strong> · não dou orientação de investimento, e ferramenta de IA generalista também não deveria. O escopo aqui é organização e visibilidade. Decisão de alocação é conversa com profissional certificado, não com app nem com boletim.</div>
+      <div class="links">
+        <a href="https://www.mobills.com.br/">Mobills</a>
+        <a href="https://www.organizze.com.br/">Organizze</a>
+      </div>
+    </article>
+
+    <article class="item" id="i13" data-aid="08-13">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 13 · Família</div>
+        <span class="tag">RPG</span><span class="tag">Narrativa</span>
+        <h3>RPG narrado por IA — uma mesa com Beatriz e Letícia</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Claude ou ChatGPT como mestre de jogo de uma aventura colaborativa. Você e as meninas são os personagens; a IA narra o cenário, responde às escolhas e mantém a continuidade entre sessões. Diferente de tela individual: é uma mesa, com todos olhando para a mesma história.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>13 e 11 anos é a janela em que narrativa colaborativa ainda funciona e o interesse por tela individual já está ganhando. Vale disputar.</li>
+        <li>Exercita argumentação, consequência de escolha e escrita — sem parecer exercício.</li>
+        <li>Cada uma cria o próprio personagem. Continuidade entre semanas dá o gancho de "quando é a próxima sessão?" que rituais precisam ter.</li>
+      </ul>
+      <p class="label">Como começar</p>
+      <ul>
+        <li>Prompt inicial: "Você é o mestre de uma aventura para três jogadores de 11, 13 e adulto. Cenário de mistério, sem violência gráfica. Descreva a cena e pergunte o que cada um faz. Mantenha um resumo do que aconteceu ao final de cada sessão."</li>
+        <li>Uma sessão de 45 minutos por semana. Salvar o resumo para dar continuidade.</li>
+        <li>Regra da casa: a IA narra, mas quem decide são as pessoas. Se a história ficar chata, vocês mudam — não ela.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i14" data-aid="08-14">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 14 · Treino</div>
+        <span class="tag">Zona 2</span><span class="tag">Limiar</span>
+        <h3>Zona 2 e limiar — treinar o metabolismo, não só a perna</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Edições anteriores cobriram plano (Runna), recuperação (Whoop/Oura), biomecânica (RunDNA) e nutrição (CGM). Falta a camada que organiza tudo: <em>em que intensidade</em> você corre. Zona 2 é o volume de base construído em intensidade baixa e sustentável; limiar é o ponto que define seu teto de prova. Sem definir as zonas por dado próprio, o amador corre tudo em intensidade média — rápido demais para recuperar, devagar demais para adaptar.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>É o erro mais comum e mais barato de corrigir no corredor amador acima de 40 anos.</li>
+        <li>Teste de limiar de campo (protocolo de 30 minutos em ritmo forte constante, com a frequência cardíaca média dos últimos 20 minutos como referência) dá zonas individuais sem laboratório.</li>
+        <li>Aplicativos e a IA do relógio ajustam as zonas ao longo do tempo — mas só se o teste for refeito a cada 8 a 12 semanas.</li>
+      </ul>
+      <div class="box"><strong>Ressalva médica que você já sabe</strong> · teste de esforço máximo em campo pressupõe avaliação cardiológica em dia. Você é médico e conhece o risco, mas o boletim registra: o protocolo não substitui a liberação clínica.</div>
+    </article>
+
+    <article class="item" id="i15" data-aid="08-15">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 15 · Aprendizado</div>
+        <span class="tag">Bioestatística</span><span class="tag">Leitura crítica</span>
+        <h3>Leitura crítica e bioestatística com IA — encaixe direto com esta edição</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> O artigo desta edição só foi possível porque cada referência foi conferida e cada limitação foi lida. Isso é uma habilidade treinável, e a IA é um parceiro incomum de bancada: cole um abstract e peça para ela atacar o desenho do estudo, apontar viés de seleção, questionar o tamanho de amostra, explicar por que "nível de evidência V" muda o peso da conclusão.</p>
+      <p class="label">Por que olhar</p>
+      <ul>
+        <li>Dermatologia estética é um campo com muito estudo pequeno, patrocinado e de desfecho substituto. Ler criticamente é a principal defesa contra modismo.</li>
+        <li>Vira ativo direto de conteúdo: o vídeo "o que esse estudo realmente diz" é diferenciação real contra o derma genérico de rede social.</li>
+        <li>Prompt útil: "Você é revisor de periódico. Ataque este estudo: desenho, amostra, controle, conflito de interesse, validade externa. Depois diga o que ele legitimamente sustenta."</li>
+      </ul>
+      <p class="label">Caminho</p>
+      <ul>
+        <li>Um abstract por semana, 15 minutos. Notas no Readwise (edição 03, matéria 12).</li>
+        <li>Combinar com o agente Pesquisador Científico via MCP do PubMed (edição 02, matéria 4) — busca automatizada, leitura crítica humana.</li>
+      </ul>
+    </article>
+
+    <article class="item" id="i16" data-aid="08-16">
+      <div class="header-row"><div class="meta">
+        <div class="num">Matéria 16 · Wildcard</div>
+        <span class="tag">Metilação</span><span class="tag">Ceticismo</span>
+        <h3>Idade biológica — o wildcard que provavelmente não se sustenta</h3>
+      </div></div>
+      <p><strong>Resumo.</strong> Testes de idade epigenética por metilação de DNA (relógios de Horvath, GrimAge e derivados, comercializados por empresas como TruDiagnostic) prometem dizer sua "idade biológica" e monitorar intervenções. O mercado de longevidade adotou isso com entusiasmo. A ciência é bem menos entusiasmada.</p>
+      <p class="label">Por que trago mesmo assim</p>
+      <ul>
+        <li>Você é dermatologista de estética. Envelhecimento é o seu campo, e a pergunta "isso mede alguma coisa?" vai chegar de paciente, de fornecedor e de colega. Melhor você ter opinião formada antes.</li>
+        <li>É um caso de estudo perfeito para a matéria 15: um campo onde a força do marketing e a força da evidência estão claramente descasadas.</li>
+      </ul>
+      <div class="box"><strong>Onde eu paro</strong> · não afirmo aqui validade clínica nem utilidade preditiva individual desses testes — <strong>[Não Verificado]</strong>, porque não conferi para esta edição uma base indexada que sustente isso, e não vou citar de memória. Se quiser, na próxima edição eu faço o mesmo trabalho que fiz com o preenchimento labial: busca no PubMed, verificação em lote de PMID e revisão com as limitações explícitas. Diga e eu levanto.</div>
+    </article>
+  </section>
+
+  <section class="chapter">
+    <span class="badge">Próximo passo</span>
+    <h2>Cinco coisas para esta janela</h2>
+    <div class="sub">Clínica primeiro, tempo depois.</div>
+    <article class="item" id="ifechamento" data-aid="08-fechamento">
+      <div class="header-row"><div class="meta">
+        <div class="num">Plano de ação</div>
+        <h3>Do protocolo de emergência ao bloco protegido</h3>
+      </div></div>
+      <ul>
+        <li><strong>Semana 1.</strong> Protocolo de oclusão vascular impresso na sala, com dose e sequência, e estoque de hialuronidase conferido por validade (matéria 5). É a única desta lista que evita catástrofe.</li>
+        <li><strong>Semana 2.</strong> Duas semanas de medição passiva com Timing ou Rize, sem mudar nada (matéria 7).</li>
+        <li><strong>Semana 3.</strong> superwhisper instalado para ditado local (matéria 8) e os 20 snippets mais repetidos no Raycast (matéria 9).</li>
+        <li><strong>Semana 4.</strong> Arquitetura de semana desenhada com Flávia e o bloco de gestão marcado como consulta (matéria 10).</li>
+        <li><strong>Conteúdo do mês.</strong> O achado de migração e posicionamento intramuscular (matéria 2) é um roteiro de vídeo longo esperando para acontecer — com evidência de 2026 que quase ninguém no Instagram brasileiro leu.</li>
+      </ul>
+      <div class="box"><strong>Veto natural do CFO</strong> · superwhisper (~US$ 8/mês), Raycast (gratuito no essencial), Timing (~US$ 12/mês). Menos de R$ 150/mês. O protocolo de emergência custa papel. Nada aqui chega perto do gatilho de R$ 5 mil.</div>
+    </article>
+  </section>
+
+  <footer class="foot">
+    <h4>Sobre este boletim</h4>
+    <p>Edição 08 · artigo de revisão sobre preenchimento labial com 16 referências indexadas, 5 matérias de eficiência e 5 fora da caixa. Todas as citações clínicas tiveram PMID conferido na API do NCBI (esummary) em 14.06.2026 antes do fechamento; afirmações sem respaldo indexado foram marcadas como [Não Verificado] ou removidas.</p>
+    <p>Este boletim é material de estudo pessoal, não é conduta clínica nem substitui julgamento médico. Diretrizes editoriais em <a href="https://github.com/alexandrelimabarros/novidades-ia-cal/blob/main/CURADORIA.md">CURADORIA.md</a>.</p>
+    <p>Na próxima edição — o Conselho como sistema integrado, ou uma revisão com o mesmo rigor sobre outro tema clínico que você escolher (bioestimuladores e ultrassom microfocado são os candidatos naturais).</p>
+  </footer>
+
+  <div class="signoff">— Boletim CAL nº 08 · Jun/2026 —</div>
+
+</div>
+
+<script>
+  window.__CAL_EDITION__ = {
+    id: "08",
+    title: "Boletim CAL Nº 08",
+    date: "14.06.2026",
+    url: "/edicoes/08-junho-2026.html"
+  };
+</script>
+<script src="/assets/app.js"></script>
+</body>
+</html>

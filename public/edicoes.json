@@ -1,5 +1,14 @@
 [
   {
+    "id": "08",
+    "shortTitle": "Jun/2026",
+    "title": "Boletim CAL Nº 08",
+    "date": "14.06.2026",
+    "desc": "Artigo de revisão sobre preenchimento labial com 16 referências indexadas, cinco frentes de eficiência e cinco fora da caixa.",
+    "url": "/edicoes/08-junho-2026.html",
+    "upcoming": false
+  },
+  {
     "id": "07",
     "shortTitle": "Jun/2026",
     "title": "Boletim CAL Nº 07",
@@ -22,7 +31,7 @@
     "shortTitle": "Mai/2026",
     "title": "Boletim CAL Nº 05",
     "date": "16.05.2026",
-    "desc": "CXO em produção, comunidade Club, personalização e monetização recorrente — e cinco fora da caixa.",
+    "desc": "CXO em produção, comunidade do Clube, personalização e monetização recorrente — e cinco fora da caixa.",
     "url": "/edicoes/05-agosto-2026.html",
     "upcoming": false
   },
@@ -63,11 +72,11 @@
     "upcoming": false
   },
   {
-    "id": "08",
+    "id": "09",
     "shortTitle": "Jul/2026",
-    "title": "Boletim CAL Nº 08 (em preparo)",
+    "title": "Boletim CAL Nº 09 (em preparo)",
     "date": "Jul/2026",
-    "desc": "Tema possível: Conselho como sistema integrado, ou especial só de fora da caixa.",
+    "desc": "Tema possível: Conselho como sistema integrado, ou nova revisão clínica com o mesmo rigor (bioestimuladores, ultrassom microfocado).",
     "url": "#",
     "upcoming": true
   }
